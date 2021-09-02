@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Npc
+  - Npc1
+  - Npc2
+  - Npc3
+  - Npc4
+  - Building
+  - Building2
+  - Building3
+  - Building4
+  - WeaponCreator
+  - breakable
+  - WanderPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - jaeryo
+  - Water
+  - UI
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

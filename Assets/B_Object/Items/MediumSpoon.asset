@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad7dafb628d8094fa3680f42f9fe15b, type: 3}
+  m_Name: MediumSpoon
+  m_EditorClassIdentifier: 
+  name: MediumSpoon
+  id: 200
+  icon: {fileID: 21300000, guid: 0931f8bcc0102da40a591f532cda11ca, type: 3}
+  amount: 1
+  isDefaultItem: 0
+  isStackable: 1
+  ItemPrefab: {fileID: 6682933490551952503, guid: d097c09dfac20074b81608c8f17599ca,
+    type: 3}

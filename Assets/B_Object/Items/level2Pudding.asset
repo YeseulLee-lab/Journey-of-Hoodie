@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34830cf5aaeea07429936e949e294a98, type: 3}
+  m_Name: level2Pudding
+  m_EditorClassIdentifier: 
+  name: level2Pudding
+  id: 1
+  BuildingPrefab: {fileID: 6689416329215675538, guid: 2fe33d20bca2dd54e9adb7bb644178e1,
+    type: 3}

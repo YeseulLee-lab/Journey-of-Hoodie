@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class EnterBpudding : MonoBehaviour
+{
+    public GameObject DeleteTimeline;
+    public GameObject puddingpercent;
+    public GameObject StateSave;
+    void OnTriggerEnter(Collider col){
+        if(col.gameObject.tag == "Player"){
+            // PlayerPrefs.DeleteKey("p_x");
+            // PlayerPrefs.DeleteKey("p_y");
+            // PlayerPrefs.DeleteKey("p_z");
+            // PlayerPrefs.DeleteKey("TimeToLoad");
+            SceneManager.LoadScene("B");
+            DontDestroyOnLoad(DeleteTimeline);
+            DontDestroyOnLoad(StateSave);
+            GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent - GameObject.Find("percentManager").GetComponent<Bpercent>().percent1 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;   
+            GameObject.Find("percentManager").GetComponent<Bpercent>().percent1 = GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
+            GameObject.Find("percentManager").GetComponent<Bpercent>().state = true;
+        }
+    }
+
+}
