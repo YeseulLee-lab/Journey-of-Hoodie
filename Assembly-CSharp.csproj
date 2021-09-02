@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{67f29f5b-5f00-bfa3-219e-feae2d8c894f}</ProjectGuid>
+    <ProjectGuid>{d71397bb-a840-0aef-552a-76ebb2778580}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -376,19 +376,19 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
-        <HintPath>C:/Unity/Project/Assets/Database/Plugin/System.Buffers.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="DnsClient">
-        <HintPath>C:/Unity/Project/Assets/Database/Plugin/DnsClient.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
-        <HintPath>C:/Unity/Project/Assets/Database/Plugin/MongoDB.Driver.Core.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.Core.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson">
-        <HintPath>C:/Unity/Project/Assets/Database/Plugin/MongoDB.Bson.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver">
-        <HintPath>C:/Unity/Project/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -736,34 +736,34 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Unity/Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
