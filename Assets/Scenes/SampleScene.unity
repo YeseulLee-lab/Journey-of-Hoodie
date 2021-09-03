@@ -36160,6 +36160,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1985185589}
     m_Modifications:
+    - target: {fileID: 3650746455951055240, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650746455951055240, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650746455951055243, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cef977159ca25d048b54600f9a844c54,
+        type: 3}
+    - target: {fileID: 3650746455951055243, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650746455951055243, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650746455951055243, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3650746456146600852, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -36269,6 +36300,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TalkPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3650746456146600853, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9dbe49c1586d6c47b910a8bdaa55f7d, type: 3}
