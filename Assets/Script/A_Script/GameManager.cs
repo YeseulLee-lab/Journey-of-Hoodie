@@ -60,6 +60,10 @@ public class GameManager : MonoBehaviour
             }
         }
         
+        if(Input.GetButtonDown("Quest"))
+        {
+            StartQuest.SetActive(!StartQuest.activeSelf);
+        }
 
     }
     public void StartAction()       //퀘스트 창 뜨게 하는 함수

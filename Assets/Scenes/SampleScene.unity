@@ -2749,7 +2749,6 @@ GameObject:
   - component: {fileID: 145736133}
   - component: {fileID: 145736137}
   - component: {fileID: 145736136}
-  - component: {fileID: 145736135}
   - component: {fileID: 145736134}
   m_Layer: 5
   m_Name: diary
@@ -2793,18 +2792,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: []
   updatee: {fileID: 381603887}
---- !u!114 &145736135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145736132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 903d84a24b9884f4fa63b66c6eaa6901, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &145736136
 MonoBehaviour:
   m_ObjectHideFlags: 0

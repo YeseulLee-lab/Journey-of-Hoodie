@@ -31,7 +31,7 @@ public class QuestGiver : MonoBehaviour
         
         if(GameManager.MyGameManager.SavedNPC == 5 && GameManager.MyGameManager.allSaved == true){
             tmpLog.AcceptQuest(quests[1]);
-            GameManager.MyGameManager.SavedNPC = 6;
+            //GameManager.MyGameManager.SavedNPC = 6;
             
         }
     }
