@@ -364,6 +364,7 @@
 "Assets/Script/B_Script/Inventory/ItemPickup.cs"
 "Assets/Script/B_Script/Inventory/SaveAndLoad.cs"
 "Assets/Script/B_Script/MapIcePlayer.cs"
+"Assets/Script/B_Script/NewCamera.cs"
 "Assets/Script/B_Script/NPC.cs"
 "Assets/Script/B_Script/NPC/NPC2.cs"
 "Assets/Script/B_Script/percent/apearPercent.cs"
