@@ -19,6 +19,7 @@ public class SaveAndLoad : MonoBehaviour
 
     private void Update()
     {
+        
         if(Input.GetKeyDown(KeyCode.S)){
             Save();
         }else if(Input.GetKeyDown(KeyCode.L)){

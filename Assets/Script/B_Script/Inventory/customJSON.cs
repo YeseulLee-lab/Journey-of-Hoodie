@@ -14,6 +14,7 @@ public class customJSON : MonoBehaviour
     {
         Wrapper<T> wrapper = new Wrapper<T>();
         wrapper.items = list;
+        //Debug.Log(wrapper.items.Count);
         return JsonUtility.ToJson(wrapper);
     }
 
