@@ -69,14 +69,14 @@ public class SaveAndLoad : MonoBehaviour
         List<ItemLoad> itemsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + transform.name));
         List<ItemLoad> weaponsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "weapon"));
         //Debug.Log(Application.persistentDataPath);
-        Debug.Log(InventoryUI.instance.slots.Length);
-        Debug.Log(WeaponInvenUI.instance.slots.Length);
+        //Debug.Log(InventoryUI.instance.slots.Length);
+        //Debug.Log(WeaponInvenUI.instance.slots.Length);
 
         for(int i = itemsToLoad[0].slotIndex; i < InventoryUI.instance.slots.Length; i++)
         {
             foreach(ItemLoad z in itemsToLoad)
             {
-                Debug.Log(z.id);
+                //Debug.Log(z.id);
                 if(i == z.slotIndex)
                 {
                     Item b = Instantiate(items[z.id]);
@@ -89,9 +89,9 @@ public class SaveAndLoad : MonoBehaviour
                     //InventorySlot.instance.ClearSlot();
                     Inventory.instance.items.Add(b);
                     InventoryUI.instance.UpdateUI();
-                    Debug.Log("넣는중,...");
-                    Debug.Log("itemsToLoad.Count: " + itemsToLoad.Count);
-                    Debug.Log("items.Length: " + Inventory.instance.items.Count);
+                    //Debug.Log("넣는중,...");
+                    //Debug.Log("itemsToLoad.Count: " + itemsToLoad.Count);
+                    //Debug.Log("items.Length: " + Inventory.instance.items.Count);
                     //break;
                     
                 }
@@ -102,7 +102,7 @@ public class SaveAndLoad : MonoBehaviour
         {
             foreach(ItemLoad z in weaponsToLoad)
             {
-                Debug.Log(z.id);
+                //Debug.Log(z.id);
                 if(i == z.slotIndex)
                 {
                     Item c = Instantiate(weapons[(z.id/100)-1]);
@@ -115,9 +115,9 @@ public class SaveAndLoad : MonoBehaviour
                     //InventorySlot.instance.ClearSlot();
                     WeaponInven.instance.weapons.Add(c);
                     WeaponInvenUI.instance.UpdateUI();
-                    Debug.Log("넣는중,...");
-                    Debug.Log("weaponsToLoad.Count: " + weaponsToLoad.Count);
-                    Debug.Log("items.Length: " + WeaponInven.instance.weapons.Count);
+                    //Debug.Log("넣는중,...");
+                    //Debug.Log("weaponsToLoad.Count: " + weaponsToLoad.Count);
+                    //Debug.Log("items.Length: " + WeaponInven.instance.weapons.Count);
                     //break;
                     
                 }

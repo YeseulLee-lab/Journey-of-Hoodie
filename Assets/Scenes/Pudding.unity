@@ -9187,6 +9187,7 @@ MonoBehaviour:
   SavedNPC: 0
   SavedBridge: 0
   SelectPanel: {fileID: 312524231}
+  updatee: {fileID: 0}
 --- !u!4 &572738898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2267492913508921703, guid: 65b5f6fa04792f3449faf4ffda3842a8,
@@ -26177,6 +26178,18 @@ MonoBehaviour:
   percentTxt: {fileID: 1678670121}
   AllpercentTxt: {fileID: 395366801}
   RythmGame: {fileID: 1736576671}
+--- !u!114 &1694353193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694353188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e88bf133a5b9e444b2dd7c4cdb03815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1698663714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86867478039833235, guid: f6ca4c1dced543b4babf1ba61b224a87,
