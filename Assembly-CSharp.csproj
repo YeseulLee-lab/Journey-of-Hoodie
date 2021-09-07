@@ -96,6 +96,7 @@
      <Compile Include="Assets\Script\Loading\LevelLoader.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInvenUI.cs" />
      <Compile Include="Assets\Script\Start_Script\CameraControl.cs" />
+     <Compile Include="Assets\Script\B_Script\Save\SaveChangeState.cs" />
      <Compile Include="Assets\Script\Start_Script\StartScreen.cs" />
      <Compile Include="Assets\Script\A_Script\Talk\ObjData.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestLog.cs" />
@@ -123,7 +124,6 @@
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
-     <Compile Include="Assets\Script\B_Script\Save\SaveChangeState.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

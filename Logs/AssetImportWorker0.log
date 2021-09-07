@@ -15,11 +15,11 @@ C:/Unity/Journey of Hoodie
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9420
+4359
 Successfully changed project path to: C:/Unity/Journey of Hoodie
 C:/Unity/Journey of Hoodie
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.25 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 35.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,521 +35,1584 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001865 seconds.
+Registered in 0.001801 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.029 seconds
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.002566 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.792 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1266 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.9 MB.
-System memory in use after: 152.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1744.
-Total: 1.513200 ms (FindLiveObjects: 0.117500 ms CreateObjectMapping: 0.038900 ms MarkObjects: 1.280100 ms  DeleteObjects: 0.075800 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Script/B_Script/Save/StateSave.cs
-  artifactKey: Guid(7b3bfe45139f80441ac678f253335845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/Save/StateSave.cs using Guid(7b3bfe45139f80441ac678f253335845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af30b760925880488cb1e76197227c4') in 0.020916 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 52.631936 seconds.
-  path: Assets/Scenes/Pudding.unity
-  artifactKey: Guid(de7441ec374d32a4b83e63b76975862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Pudding.unity using Guid(de7441ec374d32a4b83e63b76975862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6759569b4c3aeb864df0d2480b08e1b0') in 0.012500 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002666 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 34.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.043 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.5 MB.
-System memory in use after: 150.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1747.
-Total: 1.860400 ms (FindLiveObjects: 0.266900 ms CreateObjectMapping: 0.078800 ms MarkObjects: 1.492800 ms  DeleteObjects: 0.019900 ms)
-
-========================================================================
-Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002402 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.750 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.5 MB.
-System memory in use after: 150.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1750.
-Total: 1.431500 ms (FindLiveObjects: 0.116800 ms CreateObjectMapping: 0.036700 ms MarkObjects: 1.265600 ms  DeleteObjects: 0.011700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002553 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.833 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1247 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.5 MB.
-System memory in use after: 150.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1753.
-Total: 1.926100 ms (FindLiveObjects: 0.137000 ms CreateObjectMapping: 0.045100 ms MarkObjects: 1.727300 ms  DeleteObjects: 0.015200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 754.548933 seconds.
-  path: Assets/Script/B_Script/Save
-  artifactKey: Guid(d80aca04e9aad9148815aa64e0ff4357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/Save using Guid(d80aca04e9aad9148815aa64e0ff4357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618b8d7d92d5dc273ed6ad4ba3b3c55c') in 0.007598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 205.691012 seconds.
-  path: Assets/Script/B_Script/Save/SaveChangeState.cs
-  artifactKey: Guid(6e88bf133a5b9e444b2dd7c4cdb03815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/Save/SaveChangeState.cs using Guid(6e88bf133a5b9e444b2dd7c4cdb03815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520eb8baf10f93afe18e212ca1628d44') in 0.007021 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002363 seconds.
+Registered in 0.002561 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.756 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1757.
-Total: 1.445100 ms (FindLiveObjects: 0.118300 ms CreateObjectMapping: 0.038300 ms MarkObjects: 1.275900 ms  DeleteObjects: 0.011800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.626030 seconds.
-  path: Assets/Script/B_Script/Save/AllSave.cs
-  artifactKey: Guid(1fd9f630f139246488355edfdd665944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/Save/AllSave.cs using Guid(1fd9f630f139246488355edfdd665944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62fcd9183157c8b4a1a55bea5a8971f') in 0.009333 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002572 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.772 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1760.
-Total: 1.492900 ms (FindLiveObjects: 0.116900 ms CreateObjectMapping: 0.038100 ms MarkObjects: 1.324300 ms  DeleteObjects: 0.012800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1081.055047 seconds.
-  path: Assets/Script/B_Script/Save/SaveChangeState.cs
-  artifactKey: Guid(6e88bf133a5b9e444b2dd7c4cdb03815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/Save/SaveChangeState.cs using Guid(6e88bf133a5b9e444b2dd7c4cdb03815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b31a8e52561f519a2d73ccb3249874') in 0.003941 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003103 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.747 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1763.
-Total: 1.694900 ms (FindLiveObjects: 0.124800 ms CreateObjectMapping: 0.051500 ms MarkObjects: 1.503000 ms  DeleteObjects: 0.014900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002338 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.756 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1766.
-Total: 1.490800 ms (FindLiveObjects: 0.130000 ms CreateObjectMapping: 0.045300 ms MarkObjects: 1.302100 ms  DeleteObjects: 0.012700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002463 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.768 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1769.
-Total: 1.489500 ms (FindLiveObjects: 0.117300 ms CreateObjectMapping: 0.038600 ms MarkObjects: 1.320400 ms  DeleteObjects: 0.012100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003330 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.870 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1772.
-Total: 1.625700 ms (FindLiveObjects: 0.126800 ms CreateObjectMapping: 0.037600 ms MarkObjects: 1.446100 ms  DeleteObjects: 0.014400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002442 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.764 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1775.
-Total: 1.510900 ms (FindLiveObjects: 0.114200 ms CreateObjectMapping: 0.037400 ms MarkObjects: 1.346900 ms  DeleteObjects: 0.011800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002725 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.819 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1778.
-Total: 1.684100 ms (FindLiveObjects: 0.190000 ms CreateObjectMapping: 0.053600 ms MarkObjects: 1.425500 ms  DeleteObjects: 0.014000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003041 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.749 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1781.
-Total: 1.446200 ms (FindLiveObjects: 0.117200 ms CreateObjectMapping: 0.039000 ms MarkObjects: 1.277000 ms  DeleteObjects: 0.012300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003101 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.999 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1784.
-Total: 2.366600 ms (FindLiveObjects: 0.160900 ms CreateObjectMapping: 0.064900 ms MarkObjects: 2.121000 ms  DeleteObjects: 0.018300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002472 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.928 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1787.
-Total: 1.848800 ms (FindLiveObjects: 0.136900 ms CreateObjectMapping: 0.041200 ms MarkObjects: 1.653300 ms  DeleteObjects: 0.016100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002494 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.800 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1790.
-Total: 1.522700 ms (FindLiveObjects: 0.117700 ms CreateObjectMapping: 0.041000 ms MarkObjects: 1.351300 ms  DeleteObjects: 0.011900 ms)
-
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002546 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.826 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
+Unloading 1267 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.0 MB.
+System memory in use after: 152.0 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1793.
-Total: 1.726000 ms (FindLiveObjects: 0.139800 ms CreateObjectMapping: 0.053600 ms MarkObjects: 1.514800 ms  DeleteObjects: 0.016500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002387 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1796.
-Total: 1.504600 ms (FindLiveObjects: 0.124600 ms CreateObjectMapping: 0.038200 ms MarkObjects: 1.327500 ms  DeleteObjects: 0.013200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002527 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.773 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1799.
-Total: 1.587300 ms (FindLiveObjects: 0.127800 ms CreateObjectMapping: 0.033800 ms MarkObjects: 1.412200 ms  DeleteObjects: 0.012700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002426 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.835 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.6 MB.
-System memory in use after: 150.7 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1802.
-Total: 1.934900 ms (FindLiveObjects: 0.186400 ms CreateObjectMapping: 0.060200 ms MarkObjects: 1.670700 ms  DeleteObjects: 0.016000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1745.
+Total: 1.642100 ms (FindLiveObjects: 0.195600 ms CreateObjectMapping: 0.061500 ms MarkObjects: 1.308500 ms  DeleteObjects: 0.075500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1043.507383 seconds.
-  path: Assets/Scenes/B.unity
-  artifactKey: Guid(6e042a6fd9c8eee44b9ac4ae140b4989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/B.unity using Guid(6e042a6fd9c8eee44b9ac4ae140b4989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e877c13f9b26de4bf664d81faaaf50d7') in 0.192625 seconds 
+  path: Assets/Scenes/Pudding.unity
+  artifactKey: Guid(de7441ec374d32a4b83e63b76975862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding.unity using Guid(de7441ec374d32a4b83e63b76975862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46bc506941d8fc14e4a9edf001029c1d') in 0.010519 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 71.128532 seconds.
-  path: Assets/Script/B_Script/BreadEnter.playable
-  artifactKey: Guid(57b08dabd7a92314d900c878a8b5d502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/BreadEnter.playable using Guid(57b08dabd7a92314d900c878a8b5d502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c185e23c4c6918238511298975f65b9b') in 0.025856 seconds 
+  Time since last request: 22.975978 seconds.
+  path: Assets/B_Object/B_Ground.png
+  artifactKey: Guid(c0cc55d2941033e40a53a57272d77c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/B_Ground.png using Guid(c0cc55d2941033e40a53a57272d77c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ce7f3c890501ba8d831b097cb5af1d') in 0.113708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/B_Object/cheese3.fbx
+  artifactKey: Guid(907d6b692d5e28c42afaa8b90a9b4de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/cheese3.fbx using Guid(907d6b692d5e28c42afaa8b90a9b4de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04cd1e282eb931b00e08c7923eea3a3c') in 0.133177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/B_Object/Bed.png
+  artifactKey: Guid(005a84524e19c704393cddef9158b153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bed.png using Guid(005a84524e19c704393cddef9158b153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ba64f862220f48f2e5bf505711e47c') in 0.008011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/B_Object/cheese2.fbx
+  artifactKey: Guid(f337eaef7df61a34fb7517444a38297d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/cheese2.fbx using Guid(f337eaef7df61a34fb7517444a38297d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34295523c5c07f0d05425103563d244c') in 0.035727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/B_Object/BreadTree.fbx
+  artifactKey: Guid(9ceeb006ac184bf4999f5277bcf6a28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BreadTree.fbx using Guid(9ceeb006ac184bf4999f5277bcf6a28f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58659267f0368019f8c5c61f38b77a2d') in 0.018226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/B_Object/Bed.fbx
+  artifactKey: Guid(b482422c395de02428a5528a1ba1aac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bed.fbx using Guid(b482422c395de02428a5528a1ba1aac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb0131fa45d4ccf0e9013579177ac2e') in 0.017850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/B_Object/cheeseMinimapRenTex.renderTexture
+  artifactKey: Guid(5a2d8fa0c257d3443bcc55bacbbe83ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/cheeseMinimapRenTex.renderTexture using Guid(5a2d8fa0c257d3443bcc55bacbbe83ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e0f76e012dafd3af034e8ba385d0a4') in 0.012836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/B_Object/Bread1house.png
+  artifactKey: Guid(b9140ebe69cd0594c83f2dee8687efa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread1house.png using Guid(b9140ebe69cd0594c83f2dee8687efa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a0b123e14f1896ccb83eb1eb43fdfe') in 0.019002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/B_Object/Bread2house.png
+  artifactKey: Guid(f81ce63ef83427c43aa83cdf83f1ef49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread2house.png using Guid(f81ce63ef83427c43aa83cdf83f1ef49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b2c87f1ea09c7bd43c46b98700a25e') in 0.011095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/B_Object/cheese.png
+  artifactKey: Guid(6fb06dfabae97d348b533b2eb200368e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/cheese.png using Guid(6fb06dfabae97d348b533b2eb200368e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ee1fb292edd7efef84dc13dd7ecd75') in 0.009584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/B_Object/Bread3house.png
+  artifactKey: Guid(0655f4bf2f5074743836013c63e82627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread3house.png using Guid(0655f4bf2f5074743836013c63e82627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4df8cec244b306a1fafb7def981150') in 0.011512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/B_Object/BTimeline.playable
+  artifactKey: Guid(f2bafdaab67eeda45b526f2d29184202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BTimeline.playable using Guid(f2bafdaab67eeda45b526f2d29184202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c62e07ccef556b449e540bfdb2bbd2f') in 0.020905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/B_Object/CottonCandyLowTree.fbx
+  artifactKey: Guid(591a371dfd745c246abafea3ef4a4081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CottonCandyLowTree.fbx using Guid(591a371dfd745c246abafea3ef4a4081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c005d79dfca11b8fdac82017911a5162') in 0.017725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/B_Object/CottonCandyTree.fbx
+  artifactKey: Guid(8f374fecc322d46489fb888818426e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CottonCandyTree.fbx using Guid(8f374fecc322d46489fb888818426e49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd468d60984aa0048ccb2c75426f5a5') in 0.021683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/B_Object/Fork 1.png
+  artifactKey: Guid(030629db492b23e4f88c23133d0d9e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Fork 1.png using Guid(030629db492b23e4f88c23133d0d9e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fdffe4f9d00ee79230ce7921fe551d') in 0.011443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/B_Object/House5.fbx
+  artifactKey: Guid(7500777cc285639448b9725f18dedee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/House5.fbx using Guid(7500777cc285639448b9725f18dedee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73680045ca9fae8363dbf4615f746a03') in 0.016246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/B_Object/Ground4.png
+  artifactKey: Guid(eaf4b657865ddc7488efc57073d82478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground4.png using Guid(eaf4b657865ddc7488efc57073d82478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7bf3677a6e4c746aef686b15ae92ab8') in 0.008196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/B_Object/Bread3.fbx
+  artifactKey: Guid(a73ec01d28a0d904f810878c2b1e5581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread3.fbx using Guid(a73ec01d28a0d904f810878c2b1e5581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999576a737afe7d1c79f68c8f19f8def') in 0.039980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/B_Object/CheeseGround.png
+  artifactKey: Guid(eb348c6ffcd4afa45a5e2db9e5e928a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CheeseGround.png using Guid(eb348c6ffcd4afa45a5e2db9e5e928a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec48a223c19373836b98f4c7f05f087') in 0.010105 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000132 seconds.
-  path: Assets/Script/B_Script/PuddingEnter.playable
-  artifactKey: Guid(418960916721a914cb5e540807d3adff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/PuddingEnter.playable using Guid(418960916721a914cb5e540807d3adff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2006007c81eeaf49be0ba74d5d55ca8') in 0.009844 seconds 
+  path: Assets/B_Object/icecreamSleep.png
+  artifactKey: Guid(5d9b88236abee664ea4059ef5db48072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/icecreamSleep.png using Guid(5d9b88236abee664ea4059ef5db48072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f867265e40dd3321789e0250b8fcda') in 0.008913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/B_Object/CheeseGround.fbx
+  artifactKey: Guid(e8d0dce8b49f7c64693e882751f260c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CheeseGround.fbx using Guid(e8d0dce8b49f7c64693e882751f260c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42744030a5c8f5af5ad9b97f0a84f4e9') in 0.018753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/B_Object/ice cream.jpg
+  artifactKey: Guid(c3dfc134f7653fd418cf8c96301fb3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/ice cream.jpg using Guid(c3dfc134f7653fd418cf8c96301fb3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb3128323f0093bea97d4b7a96b8e6f') in 0.009878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/B_Object/Bread2.fbx
+  artifactKey: Guid(38553881006518e429ffde28fd02cb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread2.fbx using Guid(38553881006518e429ffde28fd02cb73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5efee8be85e6a773fa3f967b1bce3289') in 0.030783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/B_Object/IceCream2.FBX
+  artifactKey: Guid(62f73b70acc1dc74c8d125be7b9e80eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/IceCream2.FBX using Guid(62f73b70acc1dc74c8d125be7b9e80eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c40cf63a9521b8e03a79d7848f27569') in 0.031846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/B_Object/Ground2.png
+  artifactKey: Guid(61d5d444cc5d5804584bca85b139aba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground2.png using Guid(61d5d444cc5d5804584bca85b139aba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ee6e2c17037ab93ef1836f6249536d') in 0.009604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/B_Object/BreadGround.fbx
+  artifactKey: Guid(5d33334ec62e7c1429052972d4ad9fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BreadGround.fbx using Guid(5d33334ec62e7c1429052972d4ad9fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe7f1a90cb779895f4833cac5377a5f') in 0.019246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/B_Object/MediumSpoon3D.fbx
+  artifactKey: Guid(642b43d15b5f02344a984a1f8ab73d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/MediumSpoon3D.fbx using Guid(642b43d15b5f02344a984a1f8ab73d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9024c521a8b1d190dcb1576cfae621ea') in 0.015092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/B_Object/Mark.fbx
+  artifactKey: Guid(a5aadd3f9548cec47acf5c61f4fc8a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Mark.fbx using Guid(a5aadd3f9548cec47acf5c61f4fc8a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2831e2efdf9d7a89a64b10e7322c54b3') in 0.027297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/B_Object/PuddingTree.fbx
+  artifactKey: Guid(bc496ef0b047cbd4199d033024703933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/PuddingTree.fbx using Guid(bc496ef0b047cbd4199d033024703933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a02742553b2ceee6ffbeedb602d2ec5') in 0.024605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/B_Object/SmallGround.png
+  artifactKey: Guid(ccbf069bc381da243ac40a8b20a82d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/SmallGround.png using Guid(ccbf069bc381da243ac40a8b20a82d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d16e6c310a30ad7cdd7aedcad760b2') in 0.008836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/B_Object/SmallGround.fbx
+  artifactKey: Guid(14773acf7a2a54344906e09e7101bc03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/SmallGround.fbx using Guid(14773acf7a2a54344906e09e7101bc03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd2ba655103b8ebe0a89f690892621c') in 0.014242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/B_Object/Grass.png
+  artifactKey: Guid(1b3c9057a3d724e4ea8a539606c2c2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Grass.png using Guid(1b3c9057a3d724e4ea8a539606c2c2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c785461fb396a64a78bbb0a5474f2f38') in 0.008838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/B_Object/cottoncandyLOW.png
+  artifactKey: Guid(27246632a9887094780a5af3afba7045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/cottoncandyLOW.png using Guid(27246632a9887094780a5af3afba7045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265dd0c2c1691a44dd079695363fcb2c') in 0.009363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/B_Object/Pudding2house.png
+  artifactKey: Guid(c4ed6d2f2cbaa3446ad3c3d11ed69dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding2house.png using Guid(c4ed6d2f2cbaa3446ad3c3d11ed69dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ce2ae6bf7bca1a6eeebfba903119e5') in 0.015669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/B_Object/BreadWall.fbx
+  artifactKey: Guid(e08c4ac27f134584abb203efa5af7b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BreadWall.fbx using Guid(e08c4ac27f134584abb203efa5af7b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52f4bc45752933bf253d7199f0d8534') in 0.016145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/B_Object/Ground3.png
+  artifactKey: Guid(e25445ff68d39e0408b9875d3b5140af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground3.png using Guid(e25445ff68d39e0408b9875d3b5140af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4a6990099598a78295d133b69220d7') in 0.009719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/B_Object/circle.png
+  artifactKey: Guid(be798acfb9e3be24fac7c6bfe1a38ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/circle.png using Guid(be798acfb9e3be24fac7c6bfe1a38ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbf46f23d4d133e30438c3e056677d6') in 0.010565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/B_Object/Popsicle.fbx
+  artifactKey: Guid(7203e2ac43fd52545bf15587fb052892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Popsicle.fbx using Guid(7203e2ac43fd52545bf15587fb052892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed529ab43723a4a8d84011b51537f81') in 0.023988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/B_Object/Cheese2House.png
+  artifactKey: Guid(979122b1e1f535d4b8882f60feeb7273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Cheese2House.png using Guid(979122b1e1f535d4b8882f60feeb7273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b098949c55ace78b9d6cbab606c06fa') in 0.011473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/B_Object/Pudding.png
+  artifactKey: Guid(2b2b9d9854208ab4fa8f49b8a23f9821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding.png using Guid(2b2b9d9854208ab4fa8f49b8a23f9821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc357dd105d4525c11dfe3b962edfaa2') in 0.008727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/B_Object/LollipopTree.fbx
+  artifactKey: Guid(8e7268768dbc0034e97cd8ee6fca8498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/LollipopTree.fbx using Guid(8e7268768dbc0034e97cd8ee6fca8498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca566052f15559d8e02b9c6b1be5589') in 0.023752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/B_Object/LollipopYel.png
+  artifactKey: Guid(a9f83e3a62ac4464ba509a1c23ad75da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/LollipopYel.png using Guid(a9f83e3a62ac4464ba509a1c23ad75da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aae501d1c77c6cb7cf5fc44d9f4fc52') in 0.009400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/B_Object/MediumSpoon.png
+  artifactKey: Guid(0931f8bcc0102da40a591f532cda11ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/MediumSpoon.png using Guid(0931f8bcc0102da40a591f532cda11ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a8bba71f3970ff19446ab4744a96fb') in 0.011696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/B_Object/Pudding.fbx
+  artifactKey: Guid(1eff081d57c5e6d4ba3b087a1f4fdb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding.fbx using Guid(1eff081d57c5e6d4ba3b087a1f4fdb66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83aa27ea08898fae3fb9c28be3d53aa3') in 0.037291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/B_Object/PuddingGround.fbx
+  artifactKey: Guid(4b69664c677cbc24ab6e54f783d5a0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/PuddingGround.fbx using Guid(4b69664c677cbc24ab6e54f783d5a0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a60579aae3e9da628c10eae282a03f') in 0.016404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/B_Object/Mark.png
+  artifactKey: Guid(6cf9b059c5d0c494695090cee688b134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Mark.png using Guid(6cf9b059c5d0c494695090cee688b134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fead588dc4de51e86936f089d44b43bd') in 0.007472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/B_Object/Lollipop.png
+  artifactKey: Guid(5d7720c2aceb74440a964e07ac33ba5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Lollipop.png using Guid(5d7720c2aceb74440a964e07ac33ba5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274ba454f69678ddc39437cec366706e') in 0.009065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/B_Object/MediumSpoon3D.png
+  artifactKey: Guid(fe6943020970e24488f3fba8eaf5e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/MediumSpoon3D.png using Guid(fe6943020970e24488f3fba8eaf5e94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d7ad041c2baf105e6ab96c5961b8ea5') in 0.007119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/B_Object/SmallSpoon.png
+  artifactKey: Guid(a4038fde1a7efe248a63d8d72ddb952f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/SmallSpoon.png using Guid(a4038fde1a7efe248a63d8d72ddb952f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a5a50d5c8517426837982cce8d3971') in 0.009764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/B_Object/Grass.fbx
+  artifactKey: Guid(f7e267d2c339b2c47bdf6ed583681fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Grass.fbx using Guid(f7e267d2c339b2c47bdf6ed583681fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9226c62a247c688e863020643f3b5413') in 0.038099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/B_Object/House3.png
+  artifactKey: Guid(3318902f1c66c6b4e8f32586193fc33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/House3.png using Guid(3318902f1c66c6b4e8f32586193fc33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706af3922580d4e4f18cc8245b0bde88') in 0.011806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/B_Object/House3.fbx
+  artifactKey: Guid(73874e6b742da46458058acd7ae5476b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/House3.fbx using Guid(73874e6b742da46458058acd7ae5476b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513dd205e32d6c05e0e6de6f4d1e95fa') in 0.018534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/B_Object/icecreamSleep_Choco.png
+  artifactKey: Guid(ba57a9e1fab939f44afc8b975eafdf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/icecreamSleep_Choco.png using Guid(ba57a9e1fab939f44afc8b975eafdf84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671000bc6d82bc730058facfa3d6a971') in 0.009071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/B_Object/IceCreamSleep.FBX
+  artifactKey: Guid(f9d396f8e5f699940a55bfcc1b278ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/IceCreamSleep.FBX using Guid(f9d396f8e5f699940a55bfcc1b278ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddd50a23bb643043d5c9e638f54bf91') in 0.019346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/B_Object/PuddingGround.png
+  artifactKey: Guid(e8066dde9a431b14f84a19c7d66fc239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/PuddingGround.png using Guid(e8066dde9a431b14f84a19c7d66fc239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8faaa38cb3f72f565c20ab81890b71') in 0.007819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/B_Object/House4.png
+  artifactKey: Guid(0f267bd44f663fd4db14f1330a222a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/House4.png using Guid(0f267bd44f663fd4db14f1330a222a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19394f493e791f78811a47792eb9a594') in 0.011311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/B_Object/CheeseHouse2.png
+  artifactKey: Guid(07603d338c703064895b57847d85c986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CheeseHouse2.png using Guid(07603d338c703064895b57847d85c986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de73ba29e46b771d18f317d152accb7f') in 0.010889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/B_Object/Wood 1.png
+  artifactKey: Guid(d210959917de0a54ea7d95b533a67bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Wood 1.png using Guid(d210959917de0a54ea7d95b533a67bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9823d82f5c016785e54247d93c4bfca0') in 0.008195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/B_Object/SmallSpoon3D.fbx
+  artifactKey: Guid(f46534508b4273d46a8c25cadb60b8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/SmallSpoon3D.fbx using Guid(f46534508b4273d46a8c25cadb60b8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a2a8e689a64c0473850da7a280ba8b') in 0.014451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/B_Object/SmallSpoon3D.png
+  artifactKey: Guid(23d3ac65dd99c7147897b12ef8f84b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/SmallSpoon3D.png using Guid(23d3ac65dd99c7147897b12ef8f84b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b387eb405fefe404c60b7a8ba67ccdb') in 0.007438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/B_Object/Stone.fbx
+  artifactKey: Guid(8321c60ae8efcb14aae1f7b69d85472f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Stone.fbx using Guid(8321c60ae8efcb14aae1f7b69d85472f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'effe1d0bb71a5a1cb8f5e7e52e1a4825') in 0.015099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/B_Object/Stone.png
+  artifactKey: Guid(ea356c4d1432a054bbbd196fecca54ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Stone.png using Guid(ea356c4d1432a054bbbd196fecca54ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd85f4faeafd1b0ab2e164b6ac6301e9') in 0.009479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/B_Object/Wood.fbx
+  artifactKey: Guid(c52740d7f757f104986742395446d9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Wood.fbx using Guid(c52740d7f757f104986742395446d9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e65c58f73db0e609fd366fe2bb72751') in 0.015606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/B_Object/Stone 1.png
+  artifactKey: Guid(c0c2cf63f6f9bae4196cfcafc9e6b86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Stone 1.png using Guid(c0c2cf63f6f9bae4196cfcafc9e6b86d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b0dcee1f26ce8fbb055b0917f2d93d') in 0.009184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/B_Object/WeaponCreator.fbx
+  artifactKey: Guid(ef9598f14d7b5a948a1111fbfcd1340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/WeaponCreator.fbx using Guid(ef9598f14d7b5a948a1111fbfcd1340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e928bb4effc6b40e15679a5984fa876') in 0.020700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/B_Object/Popsicle.png
+  artifactKey: Guid(0ab582c776fd5ae41bb37e4f79e46535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Popsicle.png using Guid(0ab582c776fd5ae41bb37e4f79e46535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2729327788365d639211e7365267ffa0') in 0.008323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/B_Object/Pudding3house.png
+  artifactKey: Guid(dd47796f571b3644a859b8a0a6e81915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding3house.png using Guid(dd47796f571b3644a859b8a0a6e81915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f46ba76f45cadd62d1fdb6214e5d784') in 0.014418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/B_Object/CreateWeapon.png
+  artifactKey: Guid(56010a3092d36fd4f85c59d7fdb92717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CreateWeapon.png using Guid(56010a3092d36fd4f85c59d7fdb92717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f066c7bfb983765015f33346c872f582') in 0.008347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/B_Object/cheese.fbx
+  artifactKey: Guid(7d51d7fa3cfa71f42906b9915549c02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/cheese.fbx using Guid(7d51d7fa3cfa71f42906b9915549c02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd3f7ad27916382b1b1d4d56f4511ca') in 0.015541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/B_Object/Ground2.fbx
+  artifactKey: Guid(d2e8cd198a998ab43ad935d83ff2ab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground2.fbx using Guid(d2e8cd198a998ab43ad935d83ff2ab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc1669c4c775f3477b5d88a4e8c0c52') in 0.014044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/B_Object/Pudding1house.png
+  artifactKey: Guid(223fb77425e1b6c47a0499a064440394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding1house.png using Guid(223fb77425e1b6c47a0499a064440394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54cf516bae91d706fc5c15e73246a0f') in 0.013148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/B_Object/Pudding3.fbx
+  artifactKey: Guid(84e2076254d0a3d4baf81a2e9fb0ee27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding3.fbx using Guid(84e2076254d0a3d4baf81a2e9fb0ee27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d123563cf68fcad8b0a50a377516a2e') in 0.015351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/B_Object/Bread.png
+  artifactKey: Guid(4d4bbe95380c2e345bd5a7a272b48bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread.png using Guid(4d4bbe95380c2e345bd5a7a272b48bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d79d5aa3f1271f9e4009de0737a3d4') in 0.009188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/B_Object/Ground5.png
+  artifactKey: Guid(04f234bcd7bc4f545b2fed37441e828f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground5.png using Guid(04f234bcd7bc4f545b2fed37441e828f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a0fe1c511c3d9fb87b270b7c14b565') in 0.009077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/B_Object/LollipopRed.png
+  artifactKey: Guid(154578dc050744241a672cb02dd558f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/LollipopRed.png using Guid(154578dc050744241a672cb02dd558f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a24f3c0714c855d7342f08bbca2af7') in 0.008156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/B_Object/BreadPudding.png
+  artifactKey: Guid(197197e3407393243ab1c83f98407481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BreadPudding.png using Guid(197197e3407393243ab1c83f98407481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ab5875320d6b0cc694c7134a82cbf5') in 0.008334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/B_Object/Knife.fbx
+  artifactKey: Guid(5bc7040fae1e64644af609e38ea22de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Knife.fbx using Guid(5bc7040fae1e64644af609e38ea22de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5e300de9c3619386fda447a07ca380') in 0.015272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/B_Object/House5.png
+  artifactKey: Guid(8bccd8e87dd3165439bab0e4797be95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/House5.png using Guid(8bccd8e87dd3165439bab0e4797be95f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '608b799d5d7734eec40bb638dc54ff6e') in 0.010471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/B_Object/Wood.png
+  artifactKey: Guid(c7ec9ae62a8c32947bcb6deffcf82be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Wood.png using Guid(c7ec9ae62a8c32947bcb6deffcf82be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c48492c61c811fa7bd8c2a2204288e') in 0.008835 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000191 seconds.
-  path: Assets/Script/B_Script/CheeseEnter.playable
-  artifactKey: Guid(1584582fd5be4b14793ed20646694ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/CheeseEnter.playable using Guid(1584582fd5be4b14793ed20646694ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9337412096c7766ee4da01ff2a37bc') in 0.010087 seconds 
+  path: Assets/B_Object/Ground3.fbx
+  artifactKey: Guid(32e165622ee995440a08214619cf8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground3.fbx using Guid(32e165622ee995440a08214619cf8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd5a11c74faa509fd51ac7b992cdfe5') in 0.016104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/B_Object/PuddingTree.png
+  artifactKey: Guid(43f196f8f42e0e749b6d8ea08c4fd414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/PuddingTree.png using Guid(43f196f8f42e0e749b6d8ea08c4fd414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b592fbbf6b30faf3ac45f58a9c41282') in 0.007697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/B_Object/Bread.fbx
+  artifactKey: Guid(21190f006fffad94f993b424afb041b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Bread.fbx using Guid(21190f006fffad94f993b424afb041b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4345ff1f2ab510543b60f358793725ab') in 0.015853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/B_Object/House4.fbx
+  artifactKey: Guid(50c10e42ee4d82744a3ece986e2667b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/House4.fbx using Guid(50c10e42ee4d82744a3ece986e2667b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7052cd9b5978763748d31d0657254a53') in 0.023578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/B_Object/BreadTree.png
+  artifactKey: Guid(68861f1a7bb74f94ca43b53ff3ea8e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BreadTree.png using Guid(68861f1a7bb74f94ca43b53ff3ea8e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8890db386258801b929e4f7ef2c08c00') in 0.008827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/B_Object/SmallGround2.fbx
+  artifactKey: Guid(8358523bed63a0847890e50ffb402d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/SmallGround2.fbx using Guid(8358523bed63a0847890e50ffb402d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702467e6cbdbb812cdbac35f7ee74dab') in 0.016477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/B_Object/icecream_Choco.png
+  artifactKey: Guid(5070c88f6bcd54c4bb3491f3eca01ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/icecream_Choco.png using Guid(5070c88f6bcd54c4bb3491f3eca01ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169263c3ea56489da857f5c2af4c01b6') in 0.010536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/B_Object/puddingMinimapRenTex 1.renderTexture
+  artifactKey: Guid(f1e73949e94826244b43f485eaf0c001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/puddingMinimapRenTex 1.renderTexture using Guid(f1e73949e94826244b43f485eaf0c001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d54e00d5503e4654b1d60273f94a01') in 0.008121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/B_Object/BreadMinimapRenTex 2.renderTexture
+  artifactKey: Guid(21d906b62f93cfb429358b48e7368be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/BreadMinimapRenTex 2.renderTexture using Guid(21d906b62f93cfb429358b48e7368be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e22ab59aea622d382da3c1e191e4b4') in 0.008544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/B_Object/Fork.fbx
+  artifactKey: Guid(1da36a0fcd277e84487c4e4e86cdd23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Fork.fbx using Guid(1da36a0fcd277e84487c4e4e86cdd23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196c32b40d73d32a5fadc88d114b10da') in 0.015819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/B_Object/CottonCandy.png
+  artifactKey: Guid(318cce3dc4248ed4fac4ca4a1f0fba6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CottonCandy.png using Guid(318cce3dc4248ed4fac4ca4a1f0fba6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cabf83835e78cf6d44c6335226ce12d') in 0.008002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/B_Object/Pudding2.fbx
+  artifactKey: Guid(38be231b99d07ac4788c5502797bb96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Pudding2.fbx using Guid(38be231b99d07ac4788c5502797bb96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '839e2757a7ac424f1c9e1b2fe222ee81') in 0.022057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/B_Object/CheeseHouse3.png
+  artifactKey: Guid(9b27d9a7859e88a45be9466e0ba274ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/CheeseHouse3.png using Guid(9b27d9a7859e88a45be9466e0ba274ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1087748fa82313c83aff04b2eba133b0') in 0.011120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/B_Object/Fork.png
+  artifactKey: Guid(f8af1163cf53a6942b17d2cbeb4a17f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Fork.png using Guid(f8af1163cf53a6942b17d2cbeb4a17f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ded5481c656d86a394f1a39cbe9fbe') in 0.007724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/B_Object/Ground.fbx
+  artifactKey: Guid(b82d4028a1a56874ab7bd660addef1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Ground.fbx using Guid(b82d4028a1a56874ab7bd660addef1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7721c987f40a7d64cd3aba39345fa552') in 0.016174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.685833 seconds.
+  path: Assets/B_Object/Mint_Portrait.png
+  artifactKey: Guid(21ee64d93d692224cb461cef9698fb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Mint_Portrait.png using Guid(21ee64d93d692224cb461cef9698fb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ded1e399164689feab74da0d7dd276') in 0.009032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/B_Object/Mint_Portrait_1.png
+  artifactKey: Guid(7b214e484e2d0574e9657670410e5a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Mint_Portrait_1.png using Guid(7b214e484e2d0574e9657670410e5a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb0a546f11edd5e6b16fcd7b16850b5') in 0.009770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.324258 seconds.
+  path: Assets/B_Object/Choco_Portrait_1.png
+  artifactKey: Guid(8f8a4df40f6b6894181e0f922fd044d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Choco_Portrait_1.png using Guid(8f8a4df40f6b6894181e0f922fd044d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746e8c4029b61b50a33977fed3fa1223') in 0.010443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.107047 seconds.
+  path: Assets/B_Object/Choco_Portrait.png
+  artifactKey: Guid(c7e8c7a21f446ee4c9753fd1f025b885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Choco_Portrait.png using Guid(c7e8c7a21f446ee4c9753fd1f025b885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcddf6bd9621a3310c96f0c706bbaece') in 0.010255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.354080 seconds.
+  path: Assets/B_Object/Choco_Portrait.png
+  artifactKey: Guid(c7e8c7a21f446ee4c9753fd1f025b885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Choco_Portrait.png using Guid(c7e8c7a21f446ee4c9753fd1f025b885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5278cbf3c7ea774497b4c3828438841') in 0.011528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/B_Object/Choco_Portrait_1.png
+  artifactKey: Guid(8f8a4df40f6b6894181e0f922fd044d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Choco_Portrait_1.png using Guid(8f8a4df40f6b6894181e0f922fd044d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6199cce16a1067f9b8b4696413ad62d') in 0.012963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/B_Object/Mint_Portrait_1.png
+  artifactKey: Guid(7b214e484e2d0574e9657670410e5a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Mint_Portrait_1.png using Guid(7b214e484e2d0574e9657670410e5a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85754c4ed1d7fc432c98f99cb10d1843') in 0.012040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.735347 seconds.
+  path: Assets/B_Object/Mint_Portrait.png
+  artifactKey: Guid(21ee64d93d692224cb461cef9698fb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Mint_Portrait.png using Guid(21ee64d93d692224cb461cef9698fb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f913f952d74b9c8bff218e6c041827') in 0.009844 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002483 seconds.
+Registered in 0.002479 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
 Mono: successfully reloaded assembly
-- Completed reload, in  0.748 seconds
+- Completed reload, in  0.822 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.7 MB.
-System memory in use after: 150.8 MB.
+Unloading 1306 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 243.8 MB.
+System memory in use after: 244.0 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1805.
-Total: 1.522500 ms (FindLiveObjects: 0.121300 ms CreateObjectMapping: 0.037300 ms MarkObjects: 1.350600 ms  DeleteObjects: 0.012400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002528 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.753 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1248 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.7 MB.
-System memory in use after: 150.8 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1808.
-Total: 1.598100 ms (FindLiveObjects: 0.120900 ms CreateObjectMapping: 0.037600 ms MarkObjects: 1.425200 ms  DeleteObjects: 0.013600 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2730.
+Total: 1.805100 ms (FindLiveObjects: 0.213700 ms CreateObjectMapping: 0.056800 ms MarkObjects: 1.520800 ms  DeleteObjects: 0.013100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 658.941238 seconds.
-  path: Assets/Script/B_Script/Save/StateChange.cs
-  artifactKey: Guid(099e77c931c702c41b894760c0d29916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/B_Script/Save/StateChange.cs using Guid(099e77c931c702c41b894760c0d29916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bfee69781debd9ea325e5007001391') in 0.010375 seconds 
+  Time since last request: 1182.427691 seconds.
+  path: Assets/B_Object/Hoodie_full.PNG
+  artifactKey: Guid(6c8f3b18d0f5b0f47bdd2209b1f251b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Hoodie_full.PNG using Guid(6c8f3b18d0f5b0f47bdd2209b1f251b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'fe42db500e1232fdbc5aceb11bc20c13') in 0.041599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.737511 seconds.
+  path: Assets/B_Object/Hoodie_full.PNG
+  artifactKey: Guid(6c8f3b18d0f5b0f47bdd2209b1f251b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/B_Object/Hoodie_full.PNG using Guid(6c8f3b18d0f5b0f47bdd2209b1f251b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'da652577e5fa9e63c8aa5edb63a0de3f') in 0.023920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 163.752835 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/Bubble.png
+  artifactKey: Guid(60838594ef8f5524fae2f918c2fb7097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/Bubble.png using Guid(60838594ef8f5524fae2f918c2fb7097) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'e9b9beea110de6cebc15b4e1931af6e1') in 0.013838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CircleFlatSmall@4x.png
+  artifactKey: Guid(bbda0a9bd8265d54e9f43ddfe1f9800b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CircleFlatSmall@4x.png using Guid(bbda0a9bd8265d54e9f43ddfe1f9800b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '7a966f87edd3e5fcfb0dcd899d4580ec') in 0.012076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/CircleFlatSmall.png
+  artifactKey: Guid(e5d3f9ab70a0b4f4ba8901437d9953fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/CircleFlatSmall.png using Guid(e5d3f9ab70a0b4f4ba8901437d9953fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '1ad64cf788b2552824a56f8df1bc6b16') in 0.011459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/CircleFlat.png
+  artifactKey: Guid(44b4c06a3e5cb92469e54ab3298b4f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/CircleFlat.png using Guid(44b4c06a3e5cb92469e54ab3298b4f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '780cca36746670b545bbee8c9c9ac4e6') in 0.011713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/CircleFlatSmall@2x.png
+  artifactKey: Guid(1ed2f64f6b243ef4fab78cb32744133f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/CircleFlatSmall@2x.png using Guid(1ed2f64f6b243ef4fab78cb32744133f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '6e5c16ca03f12053a93776a6322732d2') in 0.012847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Start_Objects/Bzzz.png
+  artifactKey: Guid(17bd70532136c1541a7823cda183b37a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Start_Objects/Bzzz.png using Guid(17bd70532136c1541a7823cda183b37a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '38e7dc50ee2d3e96a24dc173611c5094') in 0.011640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/Circle@2x.png
+  artifactKey: Guid(7432ae83addfec942bc296a705c5bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/Circle@2x.png using Guid(7432ae83addfec942bc296a705c5bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '92d2bea45c15026cfc8c58414c9268c8') in 0.012968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Circle@4x.png
+  artifactKey: Guid(abbf2830e660f0f40867993f00ce7b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Circle@4x.png using Guid(abbf2830e660f0f40867993f00ce7b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'f2f698c676e7ec302196cce6a4b4306d') in 0.012388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/Circle.png
+  artifactKey: Guid(d3249830c27045b4382a18ed87c3c0ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/Circle.png using Guid(d3249830c27045b4382a18ed87c3c0ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'dbe0ed15498c2bd8087455e0fa01ec17') in 0.010987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Bubble@4x.png
+  artifactKey: Guid(48c9e00d43dd18a4b82aa7979df9dc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Bubble@4x.png using Guid(48c9e00d43dd18a4b82aa7979df9dc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '858116f5d478d8cbfc80bc6cbf42757c') in 0.012539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/Bubble@2x.png
+  artifactKey: Guid(8f83bbef550be744798b09c27919bd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/Bubble@2x.png using Guid(8f83bbef550be744798b09c27919bd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '2682d93ed96e02418b02ad2751557ff1') in 0.011295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Start_Objects/Bzzzz.png
+  artifactKey: Guid(b06ded6af99051c4bab8808eabcfba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Start_Objects/Bzzzz.png using Guid(b06ded6af99051c4bab8808eabcfba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '2ad42f13c5c910436be5bcb9c2ee71f8') in 0.012718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CircleFlat@4x.png
+  artifactKey: Guid(c393b74a8c0163d46928cf2a97f1bbd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CircleFlat@4x.png using Guid(c393b74a8c0163d46928cf2a97f1bbd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '982fc8d5c29d093c1e7895b82271fce8') in 0.012720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/CircleFlat@2x.png
+  artifactKey: Guid(ce5b10823768f084d8ea501f7a551cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/CircleFlat@2x.png using Guid(ce5b10823768f084d8ea501f7a551cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'f3cf79d43d801d5cb978318fa5c59418') in 0.010901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.314747 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CirclePressed@4x.png
+  artifactKey: Guid(2a893d93c68f7e14bb6e083e657475a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CirclePressed@4x.png using Guid(2a893d93c68f7e14bb6e083e657475a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '86c08a50416ed7b8243befa047bd7e1d') in 0.011509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/OneMinuteGui/Extras/companylogo.png
+  artifactKey: Guid(8da875bdd8c9bc347896d1207ad29d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/Extras/companylogo.png using Guid(8da875bdd8c9bc347896d1207ad29d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '066a1fc9a28d282191d54981901c0cfe') in 0.012166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/CircleSmall@2x.png
+  artifactKey: Guid(cabe052beac0c264bb4b4da0f32c8e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@2xPanels/CircleSmall@2x.png using Guid(cabe052beac0c264bb4b4da0f32c8e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'd2f226c7b8f8af669af8bf14898bff11') in 0.011210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CircleSmall@4x.png
+  artifactKey: Guid(cfad4f1c0bf57bf418bc72bbe094b836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/CircleSmall@4x.png using Guid(cfad4f1c0bf57bf418bc72bbe094b836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '75bf9cf5246d208c9dfb4abe24396de8') in 0.011156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/ddaompyo.png
+  artifactKey: Guid(73d58bed4e2017a4fa3017c2e5812ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ddaompyo.png using Guid(73d58bed4e2017a4fa3017c2e5812ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'b7db5ffee1abe595d545451e35963ebb') in 0.012715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Decline.png
+  artifactKey: Guid(1c03b08b33be3de44a4403c6ad7f693b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Decline.png using Guid(1c03b08b33be3de44a4403c6ad7f693b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'ec4c983aa69fca39b68f541d0006d556') in 0.011878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Cup.png
+  artifactKey: Guid(c48e36868ea707e4197846967f784081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Cup.png using Guid(c48e36868ea707e4197846967f784081) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '218c31c17a85db9feb92be625fa86eb6') in 0.011486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/CircleSmall.png
+  artifactKey: Guid(2e0c1663b1b8df94e9d959cc962d6b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Panels/@1xPanels/CircleSmall.png using Guid(2e0c1663b1b8df94e9d959cc962d6b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '916da3251efd56cc5dd975b038870407') in 0.011245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Cup@2x.png
+  artifactKey: Guid(38dc1f2160298714da1976a2b301c0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Cup@2x.png using Guid(38dc1f2160298714da1976a2b301c0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'c0db08df3e73f876010cf92568c8b455') in 0.010844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Cup@4x.png
+  artifactKey: Guid(297a44943c41c094d8aa3fff27623d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Cup@4x.png using Guid(297a44943c41c094d8aa3fff27623d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '86b8b20dedfafd379b85cde1e0f047a3') in 0.012381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.340685 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Decline@2x.png
+  artifactKey: Guid(cee0ff8b0f7196e4984fc7a713fc96a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Decline@2x.png using Guid(cee0ff8b0f7196e4984fc7a713fc96a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '3294112880446483e0cbd0683fc62b9e') in 0.010412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Dolar@4x.png
+  artifactKey: Guid(1160cb3a61e32eb499ce539ba92d2e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Dolar@4x.png using Guid(1160cb3a61e32eb499ce539ba92d2e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '3fa9d5680371af2f17a2ec556eb14840') in 0.012058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Dolar@2x.png
+  artifactKey: Guid(43b3e7f4af0a713409ccaea4b0135763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Dolar@2x.png using Guid(43b3e7f4af0a713409ccaea4b0135763) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '7b494dec6d33efe61359b74612da52b5') in 0.010697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Decline@4x.png
+  artifactKey: Guid(40dcb0b605bd2f04ca8fb83800780179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@4xIcons/Decline@4x.png using Guid(40dcb0b605bd2f04ca8fb83800780179) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '080133b4c8719f7b63ccc1e150a64393') in 0.011588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/UI/Epressed.png
+  artifactKey: Guid(371bb55862d1ba041b1d48d693eb65a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Epressed.png using Guid(371bb55862d1ba041b1d48d693eb65a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'f0a63c21acad30c75f4a6ada8768966f') in 0.011461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/UI/DominicHead.PNG
+  artifactKey: Guid(e6bc42127716666438091d0921af8513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/DominicHead.PNG using Guid(e6bc42127716666438091d0921af8513) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '646f6554d94f8a335c799708655ea841') in 0.014565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Facebook@2x.png
+  artifactKey: Guid(8d79c9f5935592f4286a327a48dc3538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@2xIcons/Facebook@2x.png using Guid(8d79c9f5935592f4286a327a48dc3538) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'bca488c293ff4814c594275b825dec78') in 0.011819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Facebook.png
+  artifactKey: Guid(98fdd5dbe98024343bc0584d6b017a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Facebook.png using Guid(98fdd5dbe98024343bc0584d6b017a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '795613418a0098efcef8c85f4b06e71e') in 0.011094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Dolar.png
+  artifactKey: Guid(0616288a5a1de2e4cb7eceee3625d8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/OneMinuteGui/RawSprites/Icons/@1xIcons/Dolar.png using Guid(0616288a5a1de2e4cb7eceee3625d8eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: '2f7f3cf14c1e27a64a5e4c1ef0965251') in 0.011344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/UI/Ebtn.png
+  artifactKey: Guid(cef977159ca25d048b54600f9a844c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Ebtn.png using Guid(cef977159ca25d048b54600f9a844c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor/Src/SceneManager/EditorSceneManager.cpp line 672]
+
+ -> (artifact id: 'd609320061c9d7df0b2b2fc33e36b387') in 0.010709 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
