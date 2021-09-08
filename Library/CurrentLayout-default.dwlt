@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -116,8 +116,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 707, y: 492}
-  m_MaxSize: {x: 18002, y: 14042}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 68
 --- !u!114 &6
@@ -141,8 +141,8 @@ MonoBehaviour:
     y: 0
     width: 1285
     height: 947
-  m_MinSize: {x: 432, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 433, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
   controlID: 69
 --- !u!114 &7
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 1285
     height: 516
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 21
 --- !u!114 &8
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 603
     height: 516
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 516
     width: 1285
     height: 431
-  m_MinSize: {x: 432, y: 271}
-  m_MaxSize: {x: 14002, y: 10021}
+  m_MinSize: {x: 433, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
   controlID: 70
 --- !u!114 &11
@@ -268,8 +268,8 @@ MonoBehaviour:
     y: 0
     width: 429
     height: 431
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -323,8 +323,8 @@ MonoBehaviour:
     y: 0
     width: 635
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -1100,10 +1100,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 443}
-      m_SelectedIDs: ce5b0000
-      m_LastClickedID: 23502
-      m_ExpandedIDs: d6e1ffff54fbffff7054000026560000605b0000
+      scrollPos: {x: 0, y: 300}
+      m_SelectedIDs: 903a0100
+      m_LastClickedID: 80528
+      m_ExpandedIDs: 9a99feff34a6feff44ddfeff6efefeffec16ffffe833ffffe06affffda88ffff68a6ffff5eddffff54fbfffff4ffffffd09f00000adb00000adf000044e000009a400100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1119,7 +1119,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 11}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1166,22 +1166,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script/A_Script/Talk
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script/A_Script/Talk
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity\Journey of Hoodie
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 90}
-    m_SelectedIDs: d2530000
-    m_LastClickedID: 21458
-    m_ExpandedIDs: 000000003c5300003e5300004053000042530000445300004653000048530000da53000000ca9a3b
+    scrollPos: {x: 0, y: 234}
+    m_SelectedIDs: 82560000
+    m_LastClickedID: 22146
+    m_ExpandedIDs: 0000000080560000825600008456000086560000885600008a5600008c5600002857000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1209,7 +1209,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003c5300003e5300004053000042530000445300004653000048530000
+    m_ExpandedIDs: 0000000080560000825600008456000086560000885600008a5600008c560000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 57390
+  m_LastSelectedObjectID: 55868
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52

@@ -52,7 +52,7 @@ public class MapIcePlayer : MonoBehaviour
             percent = 47;
         }
 
-        Allpercent = GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent;
+        Allpercent = GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercentmid;
         controller = GetComponent<CharacterController>();
         //percent = 34;
         //percentTxt.text = percent.ToString() + "%";
