@@ -22,7 +22,7 @@ public class EnterTown : MonoBehaviour
         puddingpercent = GameObject.Find("puddingpercent");
         breadpercent = GameObject.Find("breadpercent");
         cheesepercent = GameObject.Find("cheesepercent");
-        percentManager = GameObject.Find("percentManager");
+        percentManager = GameObject.Find("SaveManager");
     }
 
     // Start is called before the first frame update

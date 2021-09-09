@@ -17,8 +17,8 @@ public class Textpercent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercentmid != 0){
-            Allpercenttext.text = GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercentmid + "%";
+        if (GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid != 0){
+            Allpercenttext.text = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid + "%";
         }
     }
 }

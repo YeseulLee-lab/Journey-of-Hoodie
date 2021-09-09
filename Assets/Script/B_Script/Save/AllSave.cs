@@ -15,7 +15,7 @@ public class AllSave : MonoBehaviour
     {
         //B = GetComponent<Bpercent>();
 
-        B = GameObject.Find("percentManager").GetComponent<Bpercent>();
+        B = GameObject.Find("SaveManager").GetComponent<Bpercent>();
 
         percentName.Add("percent1");
         percentName.Add("percent2");

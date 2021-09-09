@@ -57,7 +57,7 @@ public class Bpercent : MonoBehaviour
 
         if(state == true){
             //if (percent1 != 0 && percent2 != 0 && percent3 != 0){
-                Allpercentmid = Mathf.Round(GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent/3);
+                Allpercentmid = Mathf.Round(GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent/3);
                 //if (Allpercentmid >= 50){
                 //    print("세뇌 풀래 말래");
                // }

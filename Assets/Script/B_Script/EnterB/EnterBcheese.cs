@@ -15,9 +15,9 @@ public class EnterBcheese : MonoBehaviour
             // PlayerPrefs.DeleteKey("TimeToLoad");
             SceneManager.LoadScene("B");
             DontDestroyOnLoad(DeleteTimeline);
-            GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent - GameObject.Find("percentManager").GetComponent<Bpercent>().percent3 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
-            GameObject.Find("percentManager").GetComponent<Bpercent>().percent3 = GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
-            GameObject.Find("percentManager").GetComponent<Bpercent>().state = true;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 = GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().state = true;
         }
     }
 }

@@ -16,7 +16,7 @@ public class puddingTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player"){
            // percent1 = GameObject.Find("percentManager").GetComponent<Bpercent>().percent1;
-            puddingText.text = GameObject.Find("percentManager").GetComponent<Bpercent>().percent1 + "퍼센트";
+            puddingText.text = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 + "퍼센트";
         }
     }
 }

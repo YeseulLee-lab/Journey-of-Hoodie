@@ -7,10 +7,17 @@ public class StateSave : MonoBehaviour
 {
     public List<GameObject> pudding = new List<GameObject>();
     public int[] statenumber = new int[6];
+    public GameObject SaveManager;
     //List<int> statenumber = new List<int>();
     // Start is called before the first frame update
     void Start()
     {
+        SaveManager = GameObject.Find("SaveManager");
+
+        for (int i = 0; i < 6; i++){
+            statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];
+        }
+
         pudding.Add(GameObject.Find("Puddingfork1"));
         pudding.Add(GameObject.Find("Puddingfork2"));
         pudding.Add(GameObject.Find("Puddingspoon1"));
@@ -24,18 +31,26 @@ public class StateSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < 6; i++){
-            if(null == pudding[i]){
-                return;
+       /* if (null != SaveManager){
+            for (int i = 0; i < 6; i++){
+                statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];
             }
-            else{
-                if (pudding[i].activeSelf == false){
-                    statenumber[i] = 1;
+        }
+        else
+        {*/
+            for (int i = 0; i < 6; i++){
+                if(null == pudding[i]){
+                    return;
                 }
                 else{
-                    statenumber[i] = 0;
+                    if (pudding[i].activeSelf == false){
+                        statenumber[i] = 1;
+                    }
+                    else{
+                        statenumber[i] = 0;
+                    }
                 }
-           }
-       }
+            }
+     //  }
     }
 }

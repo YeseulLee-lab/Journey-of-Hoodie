@@ -40,19 +40,19 @@ public class MapIcePlayer : MonoBehaviour
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "Pudding"){
-            percent = GameObject.Find("percentManager").GetComponent<Bpercent>().percent1;
+            percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
            // percent = 40;
         }
         else if (SceneManager.GetActiveScene().name == "Bread"){
-            percent = GameObject.Find("percentManager").GetComponent<Bpercent>().percent2;
+            percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2;
             percent = 15;
         }
         else if (SceneManager.GetActiveScene().name == "Cheese"){
-            percent = GameObject.Find("percentManager").GetComponent<Bpercent>().percent3;
+            percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3;
             percent = 47;
         }
 
-        Allpercent = GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercentmid;
+        Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
         controller = GetComponent<CharacterController>();
         //percent = 34;
         //percentTxt.text = percent.ToString() + "%";
