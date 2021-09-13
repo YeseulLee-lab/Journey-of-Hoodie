@@ -322,6 +322,7 @@
 "Assets/Script/A_Script/Central/nicknameObject.cs"
 "Assets/Script/A_Script/Central/Redbutton.cs"
 "Assets/Script/A_Script/Diary.cs"
+"Assets/Script/A_Script/Diaryawake.cs"
 "Assets/Script/A_Script/GameManager.cs"
 "Assets/Script/A_Script/NPC/NPCSave.cs"
 "Assets/Script/A_Script/NPC/NPCSaveLast.cs"

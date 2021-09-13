@@ -16,6 +16,7 @@ public class RestoreFirst : MonoBehaviour
     //public GameObject house;
     // Start is called before the first frame update
     public bool isSaved;
+    public float dis;
     void Start()
     {
         PlayerTrans = GameObject.FindGameObjectWithTag("Player").transform;
@@ -45,7 +46,7 @@ public class RestoreFirst : MonoBehaviour
                     }
                 }
             }
-            if(Vector3.Distance(PlayerTrans.position, transform.position) <= 20.0f){
+            if(Vector3.Distance(PlayerTrans.position, transform.position) <= dis){
                 //Instantiate(PressSpace);
                 PressSpace.SetActive(true);
             }else{

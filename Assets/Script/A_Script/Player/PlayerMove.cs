@@ -37,6 +37,8 @@ public class PlayerMove : MonoBehaviour
     public GameObject[] trigger;
     int i;
     public int a;
+
+    public GameObject Diary;
     // Start is called before the first frame update
     
     void Start()
@@ -91,7 +93,10 @@ public class PlayerMove : MonoBehaviour
             isAlive = true;
         }
 
-        if(isAlive){
+        if(Diary.activeSelf == true)
+        {
+
+        }else if(isAlive){
             moveSpeed = 12;
             Move();
         }
