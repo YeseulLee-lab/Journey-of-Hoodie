@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class nicknameObject : MonoBehaviour
 {
@@ -10,18 +11,10 @@ public class nicknameObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  GameObject.Find("Canvas").transform.FindChild("Nickname").gameObject.SetActive(true);
-        Nickname = GameObject.Find("Canvas").transform.Find("Nickname").gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Nickname.activeSelf == false){
-            return;
-        }
-        else{
-            icenickname = GameObject.Find("Nickname").GetComponent<nicknameAdd>().icenickname;
-        }
     }
 }

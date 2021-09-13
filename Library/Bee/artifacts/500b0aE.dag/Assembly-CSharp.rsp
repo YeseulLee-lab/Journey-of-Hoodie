@@ -382,6 +382,7 @@
 "Assets/Script/B_Script/Save/StateSave.cs"
 "Assets/Script/B_Script/SaveData.cs"
 "Assets/Script/B_Script/SavePlayerPos.cs"
+"Assets/Script/B_Script/Select/SelectMod.cs"
 "Assets/Script/B_Script/WeaponSlot/Recipe.cs"
 "Assets/Script/B_Script/WeaponSlot/WeaponCreate.cs"
 "Assets/Script/B_Script/WeaponSlot/WeaponInven.cs"

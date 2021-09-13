@@ -4967,6 +4967,7 @@ GameObject:
   - component: {fileID: 312524232}
   - component: {fileID: 312524234}
   - component: {fileID: 312524233}
+  - component: {fileID: 312524235}
   m_Layer: 5
   m_Name: Select
   m_TagString: Untagged
@@ -5032,6 +5033,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312524231}
   m_CullTransparentMesh: 1
+--- !u!114 &312524235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312524231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a86e057c69dde4aa23b5bb15357bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &313010892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10533,6 +10546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pudding: []
   statenumber: 000000000000000000000000000000000000000000000000
+  SaveManager: {fileID: 0}
 --- !u!4 &642044777
 Transform:
   m_ObjectHideFlags: 0
@@ -11460,7 +11474,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 685363292}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 312524235}
+        m_TargetAssemblyTypeName: SelectMod, Assembly-CSharp
+        m_MethodName: OnClickDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &687592566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2123501327301461216, guid: ae2aa823fdec36346b284eb9c2e62de1,

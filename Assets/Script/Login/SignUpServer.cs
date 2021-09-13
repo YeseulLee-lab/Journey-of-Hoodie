@@ -15,10 +15,12 @@ public class SignUpServer : MonoBehaviour
     public GameObject beforeData;
     public GameObject afterData;
     public string path;
+    public IMongoCollection<BsonDocument> collection;
 
     void Start() 
     {
         usernames = GameObject.Find("SignupbeforeData").GetComponent<FindData>().allinfo;
+        collection = GameObject.Find("SignupbeforeData").GetComponent<FindData>().collection;
     }
 
     public void OnClickConfirmButton(){
@@ -30,6 +32,18 @@ public class SignUpServer : MonoBehaviour
 
         var document = new BsonDocument { { "username", username },
         { "password", password }, { "nickname", nickname }, { "path", path }, { "icenickname", icenickname } };
+
+ //var filter = new BsonDocument().Project(BsonDocument.Parse("{username}"));
+        //Builders<BsonDocument>.Filter.Eq("username", username);
+     //   print(filter);
+
+     //var documents = Builders<BsonDocument>.Projection.Include("username");
+    // var projection = collection.Find(new BsonDocument()).Project(documents).ToListAsync();
+
+        //var documents = collection.Find(new BsonDocument()).Project(BsonDocument.Parse("{ username:1 }")).ToListAsync();
+
+      //  var studentDocument = collection.Find(filter).FirstOrDefault();
+      //  print(projection.ToString());
 
         if (username == "")
         {
@@ -49,7 +63,14 @@ public class SignUpServer : MonoBehaviour
         }
         else
         {
-            for(int i = 0; i < usernames.Count; i++)
+
+           // if (filter.Equals(nickname)){
+              //  print("아이디가 중복");
+              //  usernameIF.text = "ID가 이미 존재합니다.";
+               // return;
+            }
+            // new Bsonda
+           for(int i = 0; i < usernames.Count; i++)
             {
                 if (username == usernames[i].username)
                 {
@@ -61,7 +82,6 @@ public class SignUpServer : MonoBehaviour
             GameObject.Find("SignupbeforeData").GetComponent<FindData>().collection.InsertOne(document);
             SignUp.SetActive(false);
             beforeData.SetActive(false);
-            afterData.SetActive(true);
+          //  afterData.SetActive(true);
         }
     }
-}

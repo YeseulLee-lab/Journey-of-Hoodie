@@ -26,6 +26,10 @@ public class FindData : MonoBehaviour
     {
         database = client.GetDatabase("testdb");
         collection = database.GetCollection<BsonDocument>("users");
+     //   usernameData();
+    }
+
+    void Update(){
         usernameData();
     }
 

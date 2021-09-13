@@ -19,16 +19,17 @@ public class nicknameAdd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        database = client.GetDatabase("testdb");
-        collection = database.GetCollection<BsonDocument>("users");
+       // database = client.GetDatabase("testdb");
+        //collection = database.GetCollection<BsonDocument>("users");
 
-        DataObject = GameObject.Find("DataObject");
+      DataObject = GameObject.Find("DataObject");
 
         //if (DataObject != null){
-            nickname = DataObject.GetComponent<TransData>().nickname;
+      nickname = DataObject.GetComponent<TransData>().nickname;
         //}
 
-        icenicknameObject = GameObject.Find("icenicknameObject");
+      //  icenicknameObject = GameObject.Find("ice").transform.Find("icenicknameObject").gameObject;
+      icenicknameObject = GameObject.Find("icenicknameObject");
     }
 
     // Update is called once per frame
@@ -39,6 +40,7 @@ public class nicknameAdd : MonoBehaviour
         var filter = Builders<BsonDocument>.Filter.Eq("nickname", nickname);
         var update = Builders<BsonDocument>.Update.Set("icenickname", icenickname);
         collection.UpdateOne(filter, update);
+        icenicknameObject.GetComponent<nicknameObject>().icenickname = icenickname;
         DontDestroyOnLoad(icenicknameObject);
         SceneManager.LoadScene("B");
       }
