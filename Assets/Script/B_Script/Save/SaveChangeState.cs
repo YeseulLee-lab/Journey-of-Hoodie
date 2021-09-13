@@ -11,7 +11,7 @@ public class SaveChangeState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        changeState = GameObject.Find("StateSave").GetComponent<ChangeState>();
+        changeState = GameObject.Find("SaveManager").GetComponent<ChangeState>();
     }
 
     // Update is called once per frame

@@ -57,6 +57,7 @@
      <Compile Include="Assets\Script\A_Script\Central\nicknameObject.cs" />
      <Compile Include="Assets\Script\B_Script\NewCamera.cs" />
      <Compile Include="Assets\Script\Login\TransData.cs" />
+     <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSave.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\Recipe.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponCreate.cs" />
@@ -124,7 +125,6 @@
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
-     <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
