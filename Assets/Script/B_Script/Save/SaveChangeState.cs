@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveChangeState : MonoBehaviour
 {
@@ -17,11 +18,13 @@ public class SaveChangeState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.S))
-        {
-            Save();
-        }else if(Input.GetKeyDown(KeyCode.L)){
-            Load();
+        if(SceneManager.GetActiveScene().name == "Pudding"){
+            if(Input.GetKeyDown(KeyCode.S))
+            {
+                Save();
+            }else if(Input.GetKeyDown(KeyCode.L)){
+                Load();
+            }
         }
     }
 
