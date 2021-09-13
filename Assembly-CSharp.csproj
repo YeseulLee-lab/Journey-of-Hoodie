@@ -49,6 +49,7 @@
      <Compile Include="Assets\Script\B_Script\Inventory\customJSON.cs" />
      <Compile Include="Assets\Script\A_Script\Diary.cs" />
      <Compile Include="Assets\Script\B_Script\Save\AllSave.cs" />
+     <Compile Include="Assets\Script\A_Script\Diaryawake.cs" />
      <Compile Include="Assets\Script\Start_Script\PlayButton.cs" />
      <Compile Include="Assets\Script\B_Script\NPC\NPC2.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\DropItem.cs" />
@@ -125,7 +126,6 @@
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
-     <Compile Include="Assets\Script\A_Script\Diaryawake.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

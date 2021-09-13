@@ -40,6 +40,9 @@ public class SaveAndLoad : MonoBehaviour
                 ItemLoad h = new ItemLoad(z.id, i);
                 itemsToLoad.Add(h);
                 Debug.Log(h.id);
+            }else if(z == null)
+            {
+                
             }
         }
 
@@ -51,6 +54,10 @@ public class SaveAndLoad : MonoBehaviour
                 ItemLoad h = new ItemLoad(z.id, i);
                 weaponsToLoad.Add(h);
                 Debug.Log(h.id);
+            }
+            else if(z == null)
+            {
+
             }
         }
 
@@ -66,63 +73,69 @@ public class SaveAndLoad : MonoBehaviour
     void Load()
     {
         Debug.Log("Loading...");
+        
         List<ItemLoad> itemsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + transform.name));
         List<ItemLoad> weaponsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "weapon"));
         //Debug.Log(Application.persistentDataPath);
         //Debug.Log(InventoryUI.instance.slots.Length);
         //Debug.Log(WeaponInvenUI.instance.slots.Length);
-
-        for(int i = itemsToLoad[0].slotIndex; i < InventoryUI.instance.slots.Length; i++)
+        if(itemsToLoad.Count == 0 || weaponsToLoad.Count == 0)
         {
-            foreach(ItemLoad z in itemsToLoad)
+
+        }else{
+            for(int i = itemsToLoad[0].slotIndex; i < InventoryUI.instance.slots.Length; i++)
             {
-                //Debug.Log(z.id);
-                if(i == z.slotIndex)
+                foreach(ItemLoad z in itemsToLoad)
                 {
-                    Item b = Instantiate(items[z.id]);
-                    if(itemsToLoad.Count == Inventory.instance.items.Count)
+                    //Debug.Log(z.id);
+                    if(i == z.slotIndex)
                     {
-                        Inventory.instance.items.Remove(b);
-                        break;
+                        Item b = Instantiate(items[z.id]);
+                        if(itemsToLoad.Count == Inventory.instance.items.Count)
+                        {
+                            Inventory.instance.items.Remove(b);
+                            break;
+                        }
+                        
+                        //InventorySlot.instance.ClearSlot();
+                        Inventory.instance.items.Add(b);
+                        InventoryUI.instance.UpdateUI();
+                        //Debug.Log("넣는중,...");
+                        //Debug.Log("itemsToLoad.Count: " + itemsToLoad.Count);
+                        //Debug.Log("items.Length: " + Inventory.instance.items.Count);
+                        //break;
+                        
                     }
-                    
-                    //InventorySlot.instance.ClearSlot();
-                    Inventory.instance.items.Add(b);
-                    InventoryUI.instance.UpdateUI();
-                    //Debug.Log("넣는중,...");
-                    //Debug.Log("itemsToLoad.Count: " + itemsToLoad.Count);
-                    //Debug.Log("items.Length: " + Inventory.instance.items.Count);
-                    //break;
-                    
                 }
             }
-        }
 
-        for(int i = weaponsToLoad[0].slotIndex; i < WeaponInvenUI.instance.slots.Length; i++)
-        {
-            foreach(ItemLoad z in weaponsToLoad)
+            for(int i = weaponsToLoad[0].slotIndex; i < WeaponInvenUI.instance.slots.Length; i++)
             {
-                //Debug.Log(z.id);
-                if(i == z.slotIndex)
+                foreach(ItemLoad z in weaponsToLoad)
                 {
-                    Item c = Instantiate(weapons[(z.id/100)-1]);
-                    if(weaponsToLoad.Count == WeaponInven.instance.weapons.Count)
+                    //Debug.Log(z.id);
+                    if(i == z.slotIndex)
                     {
-                        WeaponInven.instance.weapons.Remove(c);
-                        break;
+                        Item c = Instantiate(weapons[(z.id/100)-1]);
+                        if(weaponsToLoad.Count == WeaponInven.instance.weapons.Count)
+                        {
+                            WeaponInven.instance.weapons.Remove(c);
+                            break;
+                        }
+                        
+                        //InventorySlot.instance.ClearSlot();
+                        WeaponInven.instance.weapons.Add(c);
+                        WeaponInvenUI.instance.UpdateUI();
+                        //Debug.Log("넣는중,...");
+                        //Debug.Log("weaponsToLoad.Count: " + weaponsToLoad.Count);
+                        //Debug.Log("items.Length: " + WeaponInven.instance.weapons.Count);
+                        //break;
+                        
                     }
-                    
-                    //InventorySlot.instance.ClearSlot();
-                    WeaponInven.instance.weapons.Add(c);
-                    WeaponInvenUI.instance.UpdateUI();
-                    //Debug.Log("넣는중,...");
-                    //Debug.Log("weaponsToLoad.Count: " + weaponsToLoad.Count);
-                    //Debug.Log("items.Length: " + WeaponInven.instance.weapons.Count);
-                    //break;
-                    
                 }
-            }
+            } 
         }
+        
     }
 }
 
