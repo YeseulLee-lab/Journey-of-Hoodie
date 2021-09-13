@@ -27,7 +27,7 @@ public class SaveAndLoad : MonoBehaviour
         }
         
     }
-    void Save()
+    public void Save()
     {
         List<ItemLoad> itemsToLoad = new List<ItemLoad>();
         List<ItemLoad> weaponsToLoad = new List<ItemLoad>();
@@ -70,7 +70,7 @@ public class SaveAndLoad : MonoBehaviour
         Debug.Log("Saving...");
     }
 
-    void Load()
+    public void Load()
     {
         Debug.Log("Loading...");
         

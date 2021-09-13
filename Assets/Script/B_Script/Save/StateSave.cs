@@ -12,11 +12,7 @@ public class StateSave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SaveManager = GameObject.Find("SaveManager");
-
-        for (int i = 0; i < 6; i++){
-            statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];
-        }
+      //  SaveManager = GameObject.Find("SaveManager");
 
         pudding.Add(GameObject.Find("Puddingfork1"));
         pudding.Add(GameObject.Find("Puddingfork2"));
@@ -24,6 +20,10 @@ public class StateSave : MonoBehaviour
         pudding.Add(GameObject.Find("Puddingspoon2"));
         pudding.Add(GameObject.Find("PuddingLS1"));
         pudding.Add(GameObject.Find("PuddingLS2"));
+
+       // for (int i = 0; i < 6; i++){
+      //      statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];
+     //   }
         //pudding = GameObject.FindGameObjectsWithTag("Building2");
         //pudding = GameObject.FindGameObjectsWithTag("Building3");
     }
@@ -31,6 +31,14 @@ public class StateSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        for (int i = 0; i < 6; i++){
+            if(statenumber[i] == 1){
+                pudding[i].SetActive(false);
+            }
+            else{
+                pudding[i].SetActive(true);
+            }
+    }
        /* if (null != SaveManager){
             for (int i = 0; i < 6; i++){
                 statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];
@@ -38,8 +46,11 @@ public class StateSave : MonoBehaviour
         }
         else
         {*/
-            for (int i = 0; i < 6; i++){
+           /* for (int i = 0; i < 6; i++){
                 if(null == pudding[i]){
+                    return;
+                }
+                else if(statenumber[i] == 1){
                     return;
                 }
                 else{
@@ -51,6 +62,6 @@ public class StateSave : MonoBehaviour
                     }
                 }
             }
-     //  }
+     //  }*/
     }
 }

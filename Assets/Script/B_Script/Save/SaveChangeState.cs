@@ -6,29 +6,29 @@ using UnityEngine.SceneManagement;
 
 public class SaveChangeState : MonoBehaviour
 {
-    ChangeState changeState;
+   public StateSave changeState;
     //public List<int> stateNum = new List<int>();
 
     // Start is called before the first frame update
     void Start()
     {
-        changeState = GameObject.Find("SaveManager").GetComponent<ChangeState>();
+        changeState = GameObject.Find("StateSave").GetComponent<StateSave>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Pudding"){
+      //  if(SceneManager.GetActiveScene().name == "Pudding"){
             if(Input.GetKeyDown(KeyCode.S))
             {
                 Save();
             }else if(Input.GetKeyDown(KeyCode.L)){
                 Load();
             }
-        }
+     //   }
     }
 
-    void Save()
+    public void Save()
     {
         List<StateLoad> StateToLoad = new List<StateLoad>();
 
@@ -45,7 +45,7 @@ public class SaveChangeState : MonoBehaviour
         Debug.Log("State Saving..");
     }
 
-    void Load()
+    public void Load()
     {
         Debug.Log("State Loading..");
         
@@ -53,6 +53,7 @@ public class SaveChangeState : MonoBehaviour
 
         for(int i = 0; i < StateToLoad.Count; i++)
         {
+            print(StateToLoad[i].stateNum);
             //Debug.Log(StateToLoad[i].stateNum);
             changeState.statenumber[i] = StateToLoad[i].stateNum;
             //Debug.Log(changeState.statenumber[i]);
