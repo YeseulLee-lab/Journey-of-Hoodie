@@ -21,6 +21,7 @@ public class FindData : MonoBehaviour
     IMongoDatabase database;
     public IMongoCollection<BsonDocument> collection;
     public List<users> allinfo;
+    public List<string> usernameinfo;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class FindData : MonoBehaviour
      //   usernameData();
     }
 
-    void Update(){
+   /* void Update(){
         usernameData();
     }
 
@@ -37,11 +38,17 @@ public class FindData : MonoBehaviour
         var allInfoTask = collection.FindAsync(new BsonDocument());
         var allInfoAwaited = await allInfoTask;
 
+        //var filter = await collection.Find(new BsonDocument()).Project(BsonDocument.Parse("{username:1, _id:0}")).ToListAsync();
+      //  var filter = Builders<BsonDocument>.Filter.Eq("username", "young1");
+
         allinfo = new List<users>();
+        usernameinfo = new List<string>();
+
         foreach (var username in allInfoAwaited.ToList())
         {
             allinfo.Add(Deserialize(username.ToString()));
         }
+
         return allinfo;
     }
     
@@ -70,5 +77,5 @@ public class FindData : MonoBehaviour
         testdb.nickname = nickname;
         testdb.path = path;
         return testdb;
-    }
+    }*/
 }

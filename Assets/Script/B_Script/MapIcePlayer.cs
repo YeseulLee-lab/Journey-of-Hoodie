@@ -155,6 +155,12 @@ public class MapIcePlayer : MonoBehaviour
                                 if(hit.collider.GetComponent<BreakBuilding>().count == 0)
                                 {
                                     hit.transform.gameObject.SetActive(false);
+                                    if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[2]){
+                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
+                                    }
+                                    else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[3]){
+                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
+                                    }
                                     Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                     ButtonAlert.SetActive(false);
                                     percent += 14;
@@ -187,6 +193,12 @@ public class MapIcePlayer : MonoBehaviour
                                 if(hit.collider.GetComponent<BreakBuilding>().count == 0)
                                 {
                                     hit.transform.gameObject.SetActive(false);
+                                    if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[4]){
+                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
+                                    }
+                                    else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[5]){
+                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
+                                    }
                                     Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                     ButtonAlert.SetActive(false);
                                     percent += 14;

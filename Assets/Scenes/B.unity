@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028359, g: 0.2257147, b: 0.3069215, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802841, g: 0.22571552, b: 0.30692253, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4426,14 +4426,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460872949}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63eddf795bf1d4448b5ccda82cffc476, type: 3}
+  m_Script: {fileID: 11500000, guid: 96277c57d73ae64439bd86571f7ce12d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateSave: {fileID: 0}
-  pudding: []
-  statenumber: 000000000000000000000000000000000000000000000000
+  icecolorChoco: {fileID: 2100000, guid: aee5c32c4f928364ca9868a066e3fbab, type: 2}
+  icecolorMint: {fileID: 8830196273332348141, guid: 62f73b70acc1dc74c8d125be7b9e80eb,
+    type: 3}
+  icekind: 
 --- !u!4 &477091475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86867478039833235, guid: f6ca4c1dced543b4babf1ba61b224a87,

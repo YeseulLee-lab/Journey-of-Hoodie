@@ -19,5 +19,6 @@ public class LoadTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         GameObject.Find("Player").GetComponent<SaveAndLoad>().Load();
         GameObject.Find("Player").GetComponent<SaveChangeState>().Load();
+        gameObject.SetActive(false);
     }
 }

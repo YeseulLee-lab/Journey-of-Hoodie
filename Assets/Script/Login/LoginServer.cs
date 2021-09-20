@@ -9,19 +9,20 @@ public class LoginServer : MonoBehaviour
 {
     public InputField usernameIF;
     public InputField passwordIF;
-    List<users> Data;
-    public GameObject beforeData;
+    public IMongoCollection<BsonDocument> collection;
 
-    public void OnClickConfirmButton()
-    {
-        if (beforeData.activeSelf == true){
-            Data = GameObject.Find("SignupbeforeData").GetComponent<FindData>().allinfo;
-        }
-        else{
-            Data = GameObject.Find("SignupafterData").GetComponent<FindData>().allinfo;
-        }
+    void Start() {
+        collection = GameObject.Find("Data").GetComponent<FindData>().collection;
+    }
+
+    public async void OnClickConfirmButton()
+    {       
         string password = passwordIF.text;
         string username = usernameIF.text;
+
+        var usernamefilter = Builders<BsonDocument>.Filter.Eq("username", username);
+        var passwordfilter = Builders<BsonDocument>.Filter.Eq("username", username) & Builders<BsonDocument>.Filter.Eq("password", password);
+        var nicknamefilter = Builders<BsonDocument>.Projection.Include("nickname").Exclude("_id");
 
         if (username == "")
         {
@@ -35,7 +36,31 @@ public class LoginServer : MonoBehaviour
         }
         else
         {
-            for(int i = 0; i < Data.Count; i++)
+            var userlist = collection.Find(usernamefilter);
+            var passwordlist = collection.Find(passwordfilter);
+
+            if(null == await userlist.FirstOrDefaultAsync()){
+                print("아이디가 없어");
+                usernameIF.text = "ID가 존재하지 않습니다.";
+            }
+            else{
+                if(null == await passwordlist.FirstOrDefaultAsync()){
+                    print("비번이 틀려");
+                    usernameIF.text = "비밀번호가 틀렸습니다.";
+                }
+                else{
+                    var list = await passwordlist.Project(nicknamefilter).ToListAsync();
+                    foreach(var doc in list){
+                        GameObject.Find("DataObject").GetComponent<TransData>().nickname = 
+                        doc.ToString().Substring(doc.ToString().IndexOf(":") + 3, doc.ToString().IndexOf("}") - 2 - doc.ToString().IndexOf(":") - 3);
+                    }
+                   // print(nicknamelist.FirstOrDefaultAsync());
+                   // GameObject.Find("DataObject").GetComponent<TransData>().nickname = nicknamelist.FirstOrDefaultAsync().ToString();
+                   GameObject.Find("DataObject").GetComponent<TransData>().call();
+                }
+            }
+
+            /*for(int i = 0; i < Data.Count; i++)
             {
                 if (username == Data[i].username)
                 {
@@ -55,7 +80,7 @@ public class LoginServer : MonoBehaviour
             }
             print("아이디가 없어");
             usernameIF.text = "ID가 존재하지 않습니다.";
-            return;            
+            return;      */      
         }
     }
 }

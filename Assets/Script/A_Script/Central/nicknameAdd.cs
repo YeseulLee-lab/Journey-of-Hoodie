@@ -19,8 +19,8 @@ public class nicknameAdd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // database = client.GetDatabase("testdb");
-        //collection = database.GetCollection<BsonDocument>("users");
+        database = client.GetDatabase("testdb");
+        collection = database.GetCollection<BsonDocument>("users");
 
       DataObject = GameObject.Find("DataObject");
 

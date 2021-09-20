@@ -7,6 +7,7 @@ public class nicknameObject : MonoBehaviour
 {
     public string icenickname;
     public string icekind;
+  //  public Material icecolor;
     public GameObject Nickname;
     // Start is called before the first frame update
     void Start()
@@ -16,5 +17,11 @@ public class nicknameObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      /*  if(icekind == "Mint"){
+            icecolor = GameObject.Find("iceCreamMint").transform.Find("OilTank001").gameObject.GetComponent<MeshRenderer>().material;
+        }
+        else if(icekind == "Choco"){
+            icecolor = GameObject.Find("iceCreamChoco").transform.Find("OilTank001").gameObject.GetComponent<MeshRenderer>().material;
+        }*/
     }
 }

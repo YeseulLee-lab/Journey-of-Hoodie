@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{559a7acb-135a-f999-9a2b-d332cc3b347a}</ProjectGuid>
+    <ProjectGuid>{d71397bb-a840-0aef-552a-76ebb2778580}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -127,6 +127,9 @@
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
+     <Compile Include="Assets\Script\A_Script\Central\colorchange.cs" />
+     <Compile Include="Assets\Script\B_Script\ColorChange.cs" />
+     <Compile Include="Assets\Script\B_Script\nameChange.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -382,19 +385,19 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Assets/Database/Plugin/System.Buffers.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="DnsClient">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Assets/Database/Plugin/DnsClient.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/DnsClient.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Assets/Database/Plugin/MongoDB.Driver.Core.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.Core.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Assets/Database/Plugin/MongoDB.Bson.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Driver">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -742,34 +745,34 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Unity/Journey of Hoodie - 복사본/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

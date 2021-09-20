@@ -1417,7 +1417,17 @@ PrefabInstance:
     - target: {fileID: 2912518775795395601, guid: ed9082ec1e3f6c1408a364e9ee29a994,
         type: 3}
       propertyPath: m_Name
-      value: IceCreamSleep (1)
+      value: iceCreamChoco
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912518775795395601, guid: ed9082ec1e3f6c1408a364e9ee29a994,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812873123382932254, guid: ed9082ec1e3f6c1408a364e9ee29a994,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6812873123382932254, guid: ed9082ec1e3f6c1408a364e9ee29a994,
         type: 3}
@@ -8141,7 +8151,7 @@ PrefabInstance:
     - target: {fileID: 2912518775795395601, guid: ed9082ec1e3f6c1408a364e9ee29a994,
         type: 3}
       propertyPath: m_Name
-      value: IceCreamSleep
+      value: IceCreamMint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9082ec1e3f6c1408a364e9ee29a994, type: 3}
