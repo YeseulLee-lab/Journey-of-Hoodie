@@ -57,6 +57,7 @@
      <Compile Include="Assets\Script\B_Script\percent\apearPercent.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameObject.cs" />
      <Compile Include="Assets\Script\B_Script\NewCamera.cs" />
+     <Compile Include="Assets\Script\B_Script\ColorChange.cs" />
      <Compile Include="Assets\Script\Login\TransData.cs" />
      <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSave.cs" />
@@ -121,15 +122,14 @@
      <Compile Include="Assets\Script\B_Script\percent\Textpercent.cs" />
      <Compile Include="Assets\Timelime\SubtitleTrack.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\ScriptTrigger.cs" />
+     <Compile Include="Assets\Script\A_Script\Central\colorchange.cs" />
      <Compile Include="Assets\Script\B_Script\BGameManage.cs" />
      <Compile Include="Assets\Timelime\SubtitleBehaviour.cs" />
      <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
-     <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
-     <Compile Include="Assets\Script\A_Script\Central\colorchange.cs" />
-     <Compile Include="Assets\Script\B_Script\ColorChange.cs" />
      <Compile Include="Assets\Script\B_Script\nameChange.cs" />
+     <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
