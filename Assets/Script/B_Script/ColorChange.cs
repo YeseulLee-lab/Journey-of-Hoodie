@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ColorChange : MonoBehaviour
 {
@@ -11,18 +12,26 @@ public class ColorChange : MonoBehaviour
     void Start()
     {
         icekind = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind;
-
-        if(icekind == "Mint"){
-            GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
-        }
-        else if(icekind == "Choco"){
-            GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(SceneManager.GetActiveScene().name == "B"){
+            if(icekind == "Mint"){
+                GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
+            }
+            else if(icekind == "Choco"){
+                GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
+            }
+        }
+        else{
+            if(icekind == "Mint"){
+                GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
+            }
+            else if(icekind == "Choco"){
+                GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
+            }
+        }
     }
 }

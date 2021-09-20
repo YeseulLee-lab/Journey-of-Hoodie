@@ -128,11 +128,7 @@
      <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Script\B_Script\textChange.cs" />
-=======
-     <Compile Include="Assets\Script\B_Script\nameChange.cs" />
->>>>>>> 226d8e86e0a126639961b0899d4aed0f54a27eb4
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

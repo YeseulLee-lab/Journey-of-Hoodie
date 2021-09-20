@@ -8,7 +8,7 @@ public class nicknameObject : MonoBehaviour
     public string icenickname;
     public string icekind;
   //  public Material icecolor;
-    public GameObject Nickname;
+    GameObject Nickname;
     // Start is called before the first frame update
     void Start()
     {

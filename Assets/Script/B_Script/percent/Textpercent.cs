@@ -11,14 +11,14 @@ public class Textpercent : MonoBehaviour
     void Start()
     {
         Allpercenttext = GameObject.Find("percentText").GetComponent<Text>();
-        Allpercenttext.text = 0 + "%";
+        Allpercenttext.text = "B행성 침략 중 " + 0 + "%";
     }
 
     // Update is called once per frame
     void Update()
     {
         if (GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid != 0){
-            Allpercenttext.text = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid + "%";
+            Allpercenttext.text = "B행성 침략 중 " + GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid + "%";
         }
     }
 }
