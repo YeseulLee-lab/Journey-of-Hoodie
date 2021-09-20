@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class icecreamButton : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class icecreamButton : MonoBehaviour
     public string iceKind;
     public GameObject Mint;
     public GameObject Choco;
+    public GameObject icenicknameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +18,26 @@ public class icecreamButton : MonoBehaviour
         Mint = GameObject.Find("mintIcecream");
         Choco = GameObject.Find("ChocoIcecream");
         iceKind = gameObject.GetComponentInChildren<Text>().text;
+
+        icenicknameObject = GameObject.Find("icenicknameObject");
     }
 
     // Update is called once per frame
     public void OnClickConfirmButton(){
-        Mint.SetActive(false);
-        Choco.SetActive(false);
-        nickname.SetActive(true);
-        GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind = iceKind;
+        if(null != GameObject.Find("DataObject")){
+            Mint.SetActive(false);
+            Choco.SetActive(false);
+            nickname.SetActive(true);
+            GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind = iceKind;
+        }
+        else{
+            Mint.SetActive(false);
+            Choco.SetActive(false);
+            //nickname.SetActive(true);
+            icenicknameObject.GetComponent<nicknameObject>().icekind = iceKind;
+            icenicknameObject.GetComponent<nicknameObject>().icenickname = "아이스";
+            DontDestroyOnLoad(icenicknameObject);
+            SceneManager.LoadScene("B");
+        }
     }
 }

@@ -367,7 +367,6 @@
 "Assets/Script/B_Script/Inventory/ItemPickup.cs"
 "Assets/Script/B_Script/Inventory/SaveAndLoad.cs"
 "Assets/Script/B_Script/MapIcePlayer.cs"
-"Assets/Script/B_Script/nameChange.cs"
 "Assets/Script/B_Script/NewCamera.cs"
 "Assets/Script/B_Script/NPC.cs"
 "Assets/Script/B_Script/NPC/NPC2.cs"
@@ -388,6 +387,10 @@
 "Assets/Script/B_Script/SaveData.cs"
 "Assets/Script/B_Script/SavePlayerPos.cs"
 "Assets/Script/B_Script/Select/SelectMod.cs"
+"Assets/Script/B_Script/textChange.cs"
+"Assets/Script/B_Script/Timeline/SubtitleBehaviour.cs"
+"Assets/Script/B_Script/Timeline/SubtitleClip.cs"
+"Assets/Script/B_Script/Timeline/SubtitleTrack.cs"
 "Assets/Script/B_Script/WeaponSlot/Recipe.cs"
 "Assets/Script/B_Script/WeaponSlot/WeaponCreate.cs"
 "Assets/Script/B_Script/WeaponSlot/WeaponInven.cs"
@@ -405,9 +408,6 @@
 "Assets/Script/Start_Script/Login.cs"
 "Assets/Script/Start_Script/PlayButton.cs"
 "Assets/Script/Start_Script/StartScreen.cs"
-"Assets/Timelime/SubtitleBehaviour.cs"
-"Assets/Timelime/SubtitleClip.cs"
-"Assets/Timelime/SubtitleTrack.cs"
 -langversion:8.0
 
 /deterministic
