@@ -21,8 +21,10 @@ public class MapIcePlayer : MonoBehaviour
     public Interactable focus;
     public GameObject inventoryUI;
     public GameObject weaponCreator;
+    public GameObject buildingCreator;
     public GameObject ButtonAlert;
     public GameObject BuildingParticle;
+    public GameObject BuildingWreck;
     public GameObject small;
     public GameObject medium;
     public GameObject fork;
@@ -31,6 +33,10 @@ public class MapIcePlayer : MonoBehaviour
     public Text percentTxt;
     public Text AllpercentTxt;
     public GameObject RythmGame;
+    public GameObject select;
+    public GameObject Building1;
+    public GameObject Building2;
+    public GameObject Building3;
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -39,7 +45,7 @@ public class MapIcePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Pudding"){
+        if (SceneManager.GetActiveScene().name == "Building"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
            // percent = 40;
         }
@@ -100,116 +106,169 @@ public class MapIcePlayer : MonoBehaviour
                         SetFocus(interactable);
                     }
                 }
-                else if(fork.activeSelf == true)
+                if(select.GetComponent<SelectMod>().destroying == true)
                 {
-                    if(hit.transform.gameObject.tag == "WeaponCreator"){
-                        EnterWeaponCreator();
-                    }
-                    else if(hit.transform.gameObject.tag == "Building")
+                    if(fork.activeSelf == true)
                     {
-                        anim.SetBool("isFix", moveVec != Vector3.zero);
-                       //Debug.Log("왜안돼");
-                        ButtonAlert.SetActive(true);
-                        ButtonAlert.GetComponentInChildren<Text>().text = "B";
-                        if(Input.GetButtonDown("Break"))
-                            RythmGame.SetActive(true);
-                            //Debug.Log("건물 부수기");
-                            Interactable interactable = hit.collider.GetComponent<Interactable>();
-                           
-                                if(hit.collider.GetComponent<BreakBuilding>().count == 0)
-                                {
-                                    hit.transform.gameObject.SetActive(false);
-                                    if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[0]){
-                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 1;
-                                    }
-                                    else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[1]){
-                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
-                                    }
-                                    Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-                                    ButtonAlert.SetActive(false);
-                                    percent += 14;
-                                    RythmGame.SetActive(false);
-                                    Allpercent = Mathf.Round((Allpercent + percent)/3);
-                                }                         
+                        if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterWeaponCreator();
+                        }
+                        else if(hit.transform.gameObject.tag == "Building")
+                        {
+                            anim.SetBool("isFix", moveVec != Vector3.zero);
+                            
+                            ButtonAlert.SetActive(true);
+                            //Debug.Log("왜안돼");
+                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            if(Input.GetButtonDown("Break"))
+                                RythmGame.SetActive(true);
+                                //Debug.Log("건물 부수기");
+                                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                            
+                                    if(hit.collider.GetComponent<BreakBuilding>().count == 0)
+                                    {
+                                        hit.transform.gameObject.SetActive(false);
+                                        if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 1;
+                                        }
+                                        else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
+                                        }
+                                        Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+                                        //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        ButtonAlert.SetActive(false);
+                                        percent += 14;
+                                        RythmGame.SetActive(false);
+                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                    }                         
+                        }
+                        else{
+                            ButtonAlert.SetActive(false);
+                        }
                     }
-                    else{
+                    else if(small.activeSelf == true)
+                    {
+                        if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterWeaponCreator();
+                        }
+                        else if(hit.transform.gameObject.tag == "Building2")
+                        {
+                            anim.SetBool("isFix", moveVec != Vector3.zero);
+                            
+                            ButtonAlert.SetActive(true);
+                            //Debug.Log("왜안돼");
+                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            if(Input.GetButtonDown("Break"))
+                                RythmGame.SetActive(true);
+                                //Debug.Log("건물 부수기");
+                                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                            
+                                    if(hit.collider.GetComponent<BreakBuilding>().count == 0)
+                                    {
+                                        hit.transform.gameObject.SetActive(false);
+                                        if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
+                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
+                                        }
+                                        else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[3]){
+                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
+                                        }
+                                        Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+                                        //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        ButtonAlert.SetActive(false);
+                                        percent += 14;
+                                        RythmGame.SetActive(false);
+                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                    }                         
+                        }
+                        else{
+                            ButtonAlert.SetActive(false);
+                        }
+                    }
+                    else if(medium.activeSelf == true)
+                    {   
+                        if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterWeaponCreator();
+                        }
+                        else if(hit.transform.gameObject.tag == "Building3")
+                        {
+                            anim.SetBool("isFix", moveVec != Vector3.zero);
+                        //Debug.Log("왜안돼");
+                            ButtonAlert.SetActive(true);
+                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            if(Input.GetButtonDown("Break"))
+                                RythmGame.SetActive(true);
+                                //Debug.Log("건물 부수기");
+                                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                                
+                                    if(hit.collider.GetComponent<BreakBuilding>().count == 0)
+                                    {
+                                        hit.transform.gameObject.SetActive(false);
+                                        if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[4]){
+                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
+                                        }
+                                        else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[5]){
+                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
+                                        }
+                                        Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+                                        //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        ButtonAlert.SetActive(false);
+                                        percent += 14;
+                                        RythmGame.SetActive(false);
+                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                    }
+                                
+                            
+                        }
+                        else{
+                            ButtonAlert.SetActive(false); 
+                        }
+                    }
+                    else if(hit.transform.gameObject.tag == "WeaponCreator"){
+                    ButtonAlert.SetActive(true);
+                    ButtonAlert.GetComponentInChildren<Text>().text = "C";
+                    if(Input.GetButtonDown("Enter")){
+                        weaponCreator.SetActive(true);
+                        inventoryUI.SetActive(true);
+                    }   
+                    }else{
                         ButtonAlert.SetActive(false);
                     }
                 }
-                else if(small.activeSelf == true)
+                else if(select.GetComponent<SelectMod>().destroying == false)
                 {
-                    if(hit.transform.gameObject.tag == "WeaponCreator"){
-                        EnterWeaponCreator();
-                    }
-                    else if(hit.transform.gameObject.tag == "Building2")
+                    Debug.Log("복구선택");
+                    if(Building1.activeSelf == true)
                     {
-                        anim.SetBool("isFix", moveVec != Vector3.zero);
-                       //Debug.Log("왜안돼");
-                        ButtonAlert.SetActive(true);
-                        ButtonAlert.GetComponentInChildren<Text>().text = "B";
-                        if(Input.GetButtonDown("Break"))
-                            RythmGame.SetActive(true);
-                            //Debug.Log("건물 부수기");
-                            Interactable interactable = hit.collider.GetComponent<Interactable>();
-                            
-                                if(hit.collider.GetComponent<BreakBuilding>().count == 0)
-                                {
-                                    hit.transform.gameObject.SetActive(false);
-                                    if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[2]){
-                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
+                        if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterBuildingCreator();
+                        }
+                        else if(hit.transform.gameObject.tag == "Building")
+                        {
+                            anim.SetBool("isFix", moveVec != Vector3.zero);
+                        //Debug.Log("왜안돼");
+                            ButtonAlert.SetActive(true);
+                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            if(Input.GetButtonDown("Break"))
+                                RythmGame.SetActive(true);
+                                //Debug.Log("건물 부수기");
+                                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                                
+                                    if(hit.collider.GetComponent<BreakBuilding>().count == 0)
+                                    {
+                                        hit.transform.gameObject.SetActive(false);
+                                        //Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+                                        Instantiate(Building1, hit.transform.position, hit.transform.rotation);
+                                        ButtonAlert.SetActive(false);
+                                        percent += 14;
+                                        RythmGame.SetActive(false);
+                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
                                     }
-                                    else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[3]){
-                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
-                                    }
-                                    Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-                                    ButtonAlert.SetActive(false);
-                                    percent += 14;
-                                    RythmGame.SetActive(false);
-                                    Allpercent = Mathf.Round((Allpercent + percent)/3);
-                                }
+                                
                             
-                        
-                    }
-                    else{
-                        ButtonAlert.SetActive(false);
-                    }
-                }
-                else if(medium.activeSelf == true)
-                {   
-                    if(hit.transform.gameObject.tag == "WeaponCreator"){
-                        EnterWeaponCreator();
-                    }
-                    else if(hit.transform.gameObject.tag == "Building3")
-                    {
-                        anim.SetBool("isFix", moveVec != Vector3.zero);
-                       //Debug.Log("왜안돼");
-                        ButtonAlert.SetActive(true);
-                        ButtonAlert.GetComponentInChildren<Text>().text = "B";
-                        if(Input.GetButtonDown("Break"))
-                            RythmGame.SetActive(true);
-                            //Debug.Log("건물 부수기");
-                            Interactable interactable = hit.collider.GetComponent<Interactable>();
-                            
-                                if(hit.collider.GetComponent<BreakBuilding>().count == 0)
-                                {
-                                    hit.transform.gameObject.SetActive(false);
-                                    if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[4]){
-                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
-                                    }
-                                    else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().pudding[5]){
-                                        GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
-                                    }
-                                    Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-                                    ButtonAlert.SetActive(false);
-                                    percent += 14;
-                                    RythmGame.SetActive(false);
-                                    Allpercent = Mathf.Round((Allpercent + percent)/3);
-                                }
-                            
-                        
-                    }
-                    else{
-                        ButtonAlert.SetActive(false); 
+                        }
+                        else{
+                            ButtonAlert.SetActive(false); 
+                        }
                     }
                 }
                 else if(hit.transform.gameObject.tag == "WeaponCreator"){
@@ -228,7 +287,7 @@ public class MapIcePlayer : MonoBehaviour
         percentTxt.text = percent.ToString() + "%";
         AllpercentTxt.text = Allpercent.ToString() + "%";
         if(Allpercent >= 50){
-            print("세뇌푸나요?");
+            //print("세뇌푸나요?");
         }
     }
 
@@ -257,6 +316,16 @@ public class MapIcePlayer : MonoBehaviour
         ButtonAlert.GetComponentInChildren<Text>().text = "C";
         if(Input.GetButtonDown("Enter")){
             weaponCreator.SetActive(true);
+            inventoryUI.SetActive(true);
+        }
+    }
+
+    void EnterBuildingCreator()
+    {
+        ButtonAlert.SetActive(true);
+        ButtonAlert.GetComponentInChildren<Text>().text = "C";
+        if(Input.GetButtonDown("Enter")){
+            buildingCreator.SetActive(true);
             inventoryUI.SetActive(true);
         }
     }

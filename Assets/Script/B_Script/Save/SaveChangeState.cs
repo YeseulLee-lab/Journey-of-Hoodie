@@ -53,7 +53,6 @@ public class SaveChangeState : MonoBehaviour
 
         for(int i = 0; i < StateToLoad.Count; i++)
         {
-            print(StateToLoad[i].stateNum);
             //Debug.Log(StateToLoad[i].stateNum);
             changeState.statenumber[i] = StateToLoad[i].stateNum;
             //Debug.Log(changeState.statenumber[i]);
