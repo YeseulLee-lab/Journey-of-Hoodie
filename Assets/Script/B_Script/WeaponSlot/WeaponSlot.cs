@@ -14,7 +14,10 @@ public class WeaponSlot : MonoBehaviour
     public GameObject small;
     public GameObject medium;
     public GameObject fork;
-    
+    public GameObject Building1;
+    public GameObject Building2;
+    public GameObject Building3;
+    public GameObject select;
     public void AddItem (Item newItem)
     {
         item = newItem;
@@ -40,24 +43,49 @@ public class WeaponSlot : MonoBehaviour
         if(item != null)
         {
             item.Use();
-            if(item.id == 100)
+            if(select.GetComponent<SelectMod>().destroying == true)
             {
-                small.SetActive(true);
-                medium.SetActive(false);
-                fork.SetActive(false);
+                if(item.id == 100)
+                {
+                    small.SetActive(true);
+                    medium.SetActive(false);
+                    fork.SetActive(false);
+                }
+                else if(item.id == 200)
+                {
+                    small.SetActive(false);
+                    medium.SetActive(true);
+                    fork.SetActive(false);
+                }
+                else if(item.id == 300)
+                {
+                    small.SetActive(false);
+                    medium.SetActive(false);
+                    fork.SetActive(true);
+                }
             }
-            else if(item.id == 200)
+            else if(select.GetComponent<SelectMod>().destroying == false)
             {
-                small.SetActive(false);
-                medium.SetActive(true);
-                fork.SetActive(false);
+                if(item.id == 1000)
+                {
+                    Building1.SetActive(true);
+                    Building2.SetActive(false);
+                    Building3.SetActive(false);
+                }
+                else if(item.id == 2000)
+                {
+                    Building1.SetActive(false);
+                    Building2.SetActive(true);
+                    Building3.SetActive(false);
+                }
+                else if(item.id == 3000)
+                {
+                    Building1.SetActive(false);
+                    Building2.SetActive(false);
+                    Building3.SetActive(true);
+                }
             }
-            else if(item.id == 300)
-            {
-                small.SetActive(false);
-                medium.SetActive(false);
-                fork.SetActive(true);
-            }
+            
         }
     }
 }

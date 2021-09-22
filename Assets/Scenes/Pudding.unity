@@ -2328,7 +2328,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 20, y: 4.999939}
+=======
+  m_AnchoredPosition: {x: 20, y: 4.9999084}
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &107752418
@@ -7433,6 +7437,26 @@ PrefabInstance:
       propertyPath: medium
       value: 
       objectReference: {fileID: 1835796498}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 312524231}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building1
+      value: 
+      objectReference: {fileID: 1611402127}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building2
+      value: 
+      objectReference: {fileID: 659605926}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building3
+      value: 
+      objectReference: {fileID: 954913795}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!1 &447277197
@@ -10856,6 +10880,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &642044775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642044774}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63eddf795bf1d4448b5ccda82cffc476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StateSave: {fileID: 0}
+  statenumber: 000000000000000000000000000000000000000000000000
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
 --- !u!114 &642044776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10875,7 +10916,11 @@ MonoBehaviour:
   - {fileID: 954087948}
   - {fileID: 92865746}
   - {fileID: 995501921}
+<<<<<<< HEAD
   statenumber: 000000000000000000000000000000000000000000000000
+=======
+  statenumber: 0a0000000a0000000a0000000a0000000a0000000a000000
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
   SaveManager: {fileID: 0}
 --- !u!4 &642044777
 Transform:
@@ -15338,6 +15383,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.71, y: 2.28, z: 1.9}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &954913795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8259082635244564844, guid: 86c0ae398272902419099c3c8005057b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1713129395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &955187207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3201404039006790005, guid: 6d54f9935d84cad499647830578cc68b,
@@ -23692,6 +23743,26 @@ PrefabInstance:
       propertyPath: medium
       value: 
       objectReference: {fileID: 1835796498}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 312524231}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building1
+      value: 
+      objectReference: {fileID: 1611402127}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building2
+      value: 
+      objectReference: {fileID: 659605926}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building3
+      value: 
+      objectReference: {fileID: 954913795}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!4 &1547895910 stripped
@@ -26424,7 +26495,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 60, y: 5}
+=======
+  m_AnchoredPosition: {x: 60, y: 4.9999695}
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1678670121
@@ -26699,11 +26774,20 @@ MonoBehaviour:
   focus: {fileID: 0}
   inventoryUI: {fileID: 2140316895}
   weaponCreator: {fileID: 1342264224}
+<<<<<<< HEAD
   buildingCreator: {fileID: 0}
   ButtonAlert: {fileID: 367451929}
   BuildingParticle: {fileID: 3564836147854207917, guid: a7a690ca3a387a1429fceb86ca3bbc4a,
     type: 3}
   BuildingWreck: {fileID: 0}
+=======
+  buildingCreator: {fileID: 3147897}
+  ButtonAlert: {fileID: 367451929}
+  BuildingParticle: {fileID: 3564836147854207917, guid: a7a690ca3a387a1429fceb86ca3bbc4a,
+    type: 3}
+  BuildingWreck: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+    type: 3}
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
   small: {fileID: 1376687930}
   medium: {fileID: 1835796498}
   fork: {fileID: 105131360}
@@ -26713,9 +26797,15 @@ MonoBehaviour:
   AllpercentTxt: {fileID: 395366801}
   RythmGame: {fileID: 1736576671}
   select: {fileID: 312524231}
+<<<<<<< HEAD
   Building1: {fileID: 0}
   Building2: {fileID: 0}
   Building3: {fileID: 0}
+=======
+  Building1: {fileID: 1611402127}
+  Building2: {fileID: 659605926}
+  Building3: {fileID: 954913795}
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
 --- !u!114 &1694353193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29988,6 +30078,26 @@ PrefabInstance:
       propertyPath: medium
       value: 
       objectReference: {fileID: 1835796498}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 312524231}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building1
+      value: 
+      objectReference: {fileID: 1611402127}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building2
+      value: 
+      objectReference: {fileID: 659605926}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building3
+      value: 
+      objectReference: {fileID: 954913795}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!1 &1923908440
@@ -32278,6 +32388,26 @@ PrefabInstance:
       propertyPath: medium
       value: 
       objectReference: {fileID: 1835796498}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 312524231}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building1
+      value: 
+      objectReference: {fileID: 1611402127}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building2
+      value: 
+      objectReference: {fileID: 659605926}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building3
+      value: 
+      objectReference: {fileID: 954913795}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!4 &2081263782 stripped
@@ -33654,6 +33784,26 @@ PrefabInstance:
       propertyPath: medium
       value: 
       objectReference: {fileID: 1835796498}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 312524231}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building1
+      value: 
+      objectReference: {fileID: 1611402127}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building2
+      value: 
+      objectReference: {fileID: 659605926}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Building3
+      value: 
+      objectReference: {fileID: 954913795}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!1 &7269571173875879616 stripped

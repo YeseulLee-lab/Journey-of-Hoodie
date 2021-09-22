@@ -135,7 +135,11 @@ public class MapIcePlayer : MonoBehaviour
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+<<<<<<< HEAD
                                         //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+=======
+                                        Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
@@ -173,7 +177,11 @@ public class MapIcePlayer : MonoBehaviour
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+<<<<<<< HEAD
                                         //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+=======
+                                        Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
@@ -210,7 +218,11 @@ public class MapIcePlayer : MonoBehaviour
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+<<<<<<< HEAD
                                         //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+=======
+                                        Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);

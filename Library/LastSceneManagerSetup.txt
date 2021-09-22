@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Cheese.unity
+=======
+- path: Assets/Scenes/Pudding.unity
+>>>>>>> de980a724647d3f42bfd19b423a578baf669626b
   isLoaded: 1
   isActive: 1
   isSubScene: 0
