@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Pudding3
   id: 3000
   icon: {fileID: 21300000, guid: dd47796f571b3644a859b8a0a6e81915, type: 3}
-  amount: 0
+  amount: 1
   isDefaultItem: 0
   isStackable: 1
   ItemPrefab: {fileID: 8259082635244564844, guid: 86c0ae398272902419099c3c8005057b,

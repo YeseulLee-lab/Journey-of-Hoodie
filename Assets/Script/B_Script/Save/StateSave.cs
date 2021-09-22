@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StateSave : MonoBehaviour
 {
-    public List<GameObject> pudding = new List<GameObject>();
+   // [SerializeField]
+    public GameObject[] Building;
+    //public GameObject[][] Building;
+   // public List<GameObject> Building = new List<GameObject>();
     public int[] statenumber = new int[6];
     public GameObject SaveManager;
     //List<int> statenumber = new List<int>();
@@ -14,29 +17,32 @@ public class StateSave : MonoBehaviour
     {
       //  SaveManager = GameObject.Find("SaveManager");
 
-        pudding.Add(GameObject.Find("Puddingfork1"));
-        pudding.Add(GameObject.Find("Puddingfork2"));
-        pudding.Add(GameObject.Find("Puddingspoon1"));
-        pudding.Add(GameObject.Find("Puddingspoon2"));
-        pudding.Add(GameObject.Find("PuddingLS1"));
-        pudding.Add(GameObject.Find("PuddingLS2"));
+        /*Building.Add(GameObject.Find("Puddingfork1"));
+        Building.Add(GameObject.Find("Puddingfork2"));
+        Building.Add(GameObject.Find("Puddingspoon1"));
+        Building.Add(GameObject.Find("Puddingspoon2"));
+        Building.Add(GameObject.Find("PuddingLS1"));
+        Building.Add(GameObject.Find("PuddingLS2"));*/
+        //Building.Add(GameObject.FindGameObjectsWithTag("Building"));
 
        // for (int i = 0; i < 6; i++){
       //      statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];
      //   }
-        //pudding = GameObject.FindGameObjectsWithTag("Building2");
-        //pudding = GameObject.FindGameObjectsWithTag("Building3");
+     //   Building[0] = GameObject.FindGameObjectsWithTag("Building");
+     //   Building[1] = GameObject.FindGameObjectsWithTag("Building2");
+      //  Building[2] = GameObject.FindGameObjectsWithTag("Building3");
     }
 
     // Update is called once per frame
     void Update()
     {
+       // print(Building[0][1]);
         for (int i = 0; i < 6; i++){
             if(statenumber[i] == 1){
-                pudding[i].SetActive(false);
+                Building[i].SetActive(false);
             }
             else{
-                pudding[i].SetActive(true);
+                Building[i].SetActive(true);
             }
     }
        /* if (null != SaveManager){
@@ -47,14 +53,14 @@ public class StateSave : MonoBehaviour
         else
         {*/
            /* for (int i = 0; i < 6; i++){
-                if(null == pudding[i]){
+                if(null == Building[i]){
                     return;
                 }
                 else if(statenumber[i] == 1){
                     return;
                 }
                 else{
-                    if (pudding[i].activeSelf == false){
+                    if (Building[i].activeSelf == false){
                         statenumber[i] = 1;
                     }
                     else{

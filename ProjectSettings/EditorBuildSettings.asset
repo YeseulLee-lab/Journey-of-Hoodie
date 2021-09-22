@@ -22,7 +22,7 @@ EditorBuildSettings:
     guid: 6e042a6fd9c8eee44b9ac4ae140b4989
   - enabled: 1
     path: Assets/Scenes/Pudding.unity
-    guid: de7441ec374d32a4b83e63b76975862a
+    guid: 6ffc377073da1ae49aa13b38decc6c15
   - enabled: 1
     path: Assets/Scenes/Bread.unity
     guid: 324a92f2475f7eb4ebbff3f3c1150a9b
