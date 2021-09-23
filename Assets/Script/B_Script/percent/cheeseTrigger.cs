@@ -16,7 +16,7 @@ public class cheeseTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player"){
             //percent3 = GameObject.Find("percentManager").GetComponent<Bpercent>().percent3;
-            cheeseText.text = GameObject.Find("percentManager").GetComponent<Bpercent>().percent3 + "퍼센트";
+            cheeseText.text = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 + "퍼센트";
         }        
     }
 }

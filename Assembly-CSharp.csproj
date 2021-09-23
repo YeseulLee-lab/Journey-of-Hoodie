@@ -36,75 +36,43 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\B_Script\WeaponSwitching.cs" />
-     <Compile Include="Assets\Script\A_Script\Quest\QuestGiver.cs" />
-     <Compile Include="Assets\Script\B_Script\Save\ChangeState.cs" />
-     <Compile Include="Assets\Script\A_Script\Central\icecreamButton.cs" />
-     <Compile Include="Assets\Script\B_Script\BreakBuilding.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet2.cs" />
      <Compile Include="Assets\Script\B_Script\SaveData.cs" />
-     <Compile Include="Assets\Script\B_Script\percent\breadTrigger.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameAdd.cs" />
      <Compile Include="Assets\Script\Login\FindData.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\customJSON.cs" />
      <Compile Include="Assets\Script\A_Script\Diary.cs" />
-     <Compile Include="Assets\Script\B_Script\Save\AllSave.cs" />
      <Compile Include="Assets\Script\A_Script\Diaryawake.cs" />
-     <Compile Include="Assets\Script\Start_Script\PlayButton.cs" />
-     <Compile Include="Assets\Script\B_Script\NPC\NPC2.cs" />
-     <Compile Include="Assets\Script\B_Script\Inventory\DropItem.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\ItemPickup.cs" />
      <Compile Include="Assets\Script\B_Script\percent\apearPercent.cs" />
-     <Compile Include="Assets\Script\A_Script\Central\nicknameObject.cs" />
-     <Compile Include="Assets\Script\B_Script\NewCamera.cs" />
      <Compile Include="Assets\Script\B_Script\ColorChange.cs" />
-     <Compile Include="Assets\Script\Login\TransData.cs" />
      <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSave.cs" />
-     <Compile Include="Assets\Script\B_Script\WeaponSlot\Recipe.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponCreate.cs" />
-     <Compile Include="Assets\Script\A_Script\Restore\RestoreFirst.cs" />
      <Compile Include="Assets\Script\B_Script\MapIcePlayer.cs" />
      <Compile Include="Assets\Script\A_Script\Restore\RestoreHouse.cs" />
      <Compile Include="Assets\Script\A_Script\Player\Camera.cs" />
      <Compile Include="Assets\Script\Login\LoginServer.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInven.cs" />
-     <Compile Include="Assets\Script\A_Script\Talk\TalkManager.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestionFollowCube.cs" />
-     <Compile Include="Assets\Script\B_Script\percent\puddingTrigger.cs" />
-     <Compile Include="Assets\Script\B_Script\Inventory\Inventory.cs" />
-     <Compile Include="Assets\Script\B_Script\CameraBoundary.cs" />
-     <Compile Include="Assets\Script\A_Script\TriggerEnter\TriggerManager.cs" />
      <Compile Include="Assets\Script\A_Script\TimelineScript\Timeline.cs" />
      <Compile Include="Assets\Script\B_Script\SavePlayerPos.cs" />
-     <Compile Include="Assets\Script\B_Script\percent\cheeseTrigger.cs" />
      <Compile Include="Assets\Script\Start_Script\Login.cs" />
      <Compile Include="Assets\Script\A_Script\GameManager.cs" />
-     <Compile Include="Assets\Script\B_Script\Timeline\SubtitleClip.cs" />
-     <Compile Include="Assets\Script\Login\SignUpServer.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\SaveAndLoad.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet.cs" />
-     <Compile Include="Assets\Script\B_Script\percent\Bpercent.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\InventorySlot.cs" />
      <Compile Include="Assets\Script\B_Script\EnterB\EnterBbread.cs" />
-     <Compile Include="Assets\Script\B_Script\PlayerData.cs" />
      <Compile Include="Assets\Script\A_Script\Central\Redbutton.cs" />
      <Compile Include="Assets\Script\B_Script\EnterB\EnterBcheese.cs" />
      <Compile Include="Assets\OneMinuteGui\Scripts\MenuManager.cs" />
-     <Compile Include="Assets\Script\B_Script\NPC.cs" />
-     <Compile Include="Assets\Script\Login\GuestLogin.cs" />
      <Compile Include="Assets\Script\B_Script\Save\StateSave.cs" />
-     <Compile Include="Assets\Script\B_Script\DeleteTimeline\TimelineManager.cs" />
      <Compile Include="Assets\Script\Start_Script\BackButton.cs" />
      <Compile Include="Assets\Script\Loading\LevelLoader.cs" />
-     <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInvenUI.cs" />
      <Compile Include="Assets\Script\Start_Script\CameraControl.cs" />
      <Compile Include="Assets\Script\B_Script\Save\SaveChangeState.cs" />
-     <Compile Include="Assets\Script\Start_Script\StartScreen.cs" />
-     <Compile Include="Assets\Script\A_Script\Talk\ObjData.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestLog.cs" />
      <Compile Include="Assets\Script\B_Script\Save\StateChange.cs" />
-     <Compile Include="Assets\Script\A_Script\NPC\NPCSaveLast.cs" />
      <Compile Include="Assets\Script\A_Script\Player\PlayerMove.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestScript.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\InventoryUI.cs" />
@@ -113,23 +81,57 @@
      <Compile Include="Assets\Script\A_Script\Quest\Quest.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponSlot.cs" />
      <Compile Include="Assets\Script\A_Script\Central\CentralEnter.cs" />
-     <Compile Include="Assets\Script\B_Script\EnterB\EnterBpudding.cs" />
      <Compile Include="Assets\Script\B_Script\EnterTown.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Item.cs" />
+     <Compile Include="Assets\Script\B_Script\FSM.cs" />
+     <Compile Include="Assets\Script\B_Script\Timeline\SubtitleTrack.cs" />
+     <Compile Include="Assets\Script\B_Script\BGameManage.cs" />
+     <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
+     <Compile Include="Assets\Script\B_Script\Building.cs" />
+     <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
+     <Compile Include="Assets\Script\B_Script\WeaponSwitching.cs" />
+     <Compile Include="Assets\Script\A_Script\Quest\QuestGiver.cs" />
+     <Compile Include="Assets\Script\B_Script\Save\ChangeState.cs" />
+     <Compile Include="Assets\Script\A_Script\Central\icecreamButton.cs" />
+     <Compile Include="Assets\Script\B_Script\BreakBuilding.cs" />
+     <Compile Include="Assets\Script\multi\HelloWorldPlayer.cs" />
+     <Compile Include="Assets\Script\B_Script\percent\breadTrigger.cs" />
+     <Compile Include="Assets\Script\B_Script\Save\AllSave.cs" />
+     <Compile Include="Assets\Script\multi\HelloWorldManager.cs" />
+     <Compile Include="Assets\Script\Start_Script\PlayButton.cs" />
+     <Compile Include="Assets\Script\B_Script\NPC\NPC2.cs" />
+     <Compile Include="Assets\Script\B_Script\Inventory\DropItem.cs" />
+     <Compile Include="Assets\Script\B_Script\NewCamera.cs" />
+     <Compile Include="Assets\Script\A_Script\Central\nicknameObject.cs" />
+     <Compile Include="Assets\Script\Login\TransData.cs" />
+     <Compile Include="Assets\Script\B_Script\WeaponSlot\Recipe.cs" />
+     <Compile Include="Assets\Script\A_Script\Restore\RestoreFirst.cs" />
+     <Compile Include="Assets\Script\A_Script\Talk\TalkManager.cs" />
+     <Compile Include="Assets\Script\B_Script\percent\puddingTrigger.cs" />
+     <Compile Include="Assets\Script\B_Script\Inventory\Inventory.cs" />
+     <Compile Include="Assets\Script\B_Script\CameraBoundary.cs" />
+     <Compile Include="Assets\Script\A_Script\TriggerEnter\TriggerManager.cs" />
+     <Compile Include="Assets\Script\B_Script\percent\cheeseTrigger.cs" />
+     <Compile Include="Assets\Script\B_Script\Timeline\SubtitleClip.cs" />
+     <Compile Include="Assets\Script\Login\SignUpServer.cs" />
+     <Compile Include="Assets\Script\B_Script\percent\Bpercent.cs" />
+     <Compile Include="Assets\Script\B_Script\PlayerData.cs" />
+     <Compile Include="Assets\Script\B_Script\NPC.cs" />
+     <Compile Include="Assets\Script\Login\GuestLogin.cs" />
+     <Compile Include="Assets\Script\B_Script\DeleteTimeline\TimelineManager.cs" />
+     <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInvenUI.cs" />
+     <Compile Include="Assets\Script\Start_Script\StartScreen.cs" />
+     <Compile Include="Assets\Script\A_Script\Talk\ObjData.cs" />
+     <Compile Include="Assets\Script\A_Script\NPC\NPCSaveLast.cs" />
+     <Compile Include="Assets\Script\B_Script\EnterB\EnterBpudding.cs" />
      <Compile Include="Assets\Script\A_Script\Central\CentralGroundEnter.cs" />
      <Compile Include="Assets\Script\A_Script\TriggerEnter\TriggertoSave.cs" />
-     <Compile Include="Assets\Script\B_Script\FSM.cs" />
      <Compile Include="Assets\Script\B_Script\percent\Textpercent.cs" />
-     <Compile Include="Assets\Script\B_Script\Timeline\SubtitleTrack.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\ScriptTrigger.cs" />
      <Compile Include="Assets\Script\A_Script\Central\colorchange.cs" />
-     <Compile Include="Assets\Script\B_Script\BGameManage.cs" />
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleBehaviour.cs" />
-     <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
-     <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\textChange.cs" />
-     <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -398,6 +400,9 @@
     </Reference>
     <Reference Include="MongoDB.Driver">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -744,6 +749,9 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Multiplayer.MLAPI.Prototyping">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Multiplayer.MLAPI.Prototyping.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -770,6 +778,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.MLAPI.Runtime">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Multiplayer.MLAPI.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>

@@ -26,11 +26,11 @@ public class ChangeState : MonoBehaviour
         StateSave = GameObject.Find("StateSave");
 
         if (null != StateSave){
-            for(int i = 0; i < 6; i++){
+            for(int i = 0; i < 8; i++){
                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[i] = statenumber[i];
             }
 
-            for(int i = 0; i < 6; i++){
+            for(int i = 0; i < 8; i++){
                 if(null == GameObject.Find("StateSave").GetComponent<StateSave>().Building[i]){
                     return;
                 }

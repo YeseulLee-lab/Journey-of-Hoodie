@@ -10869,7 +10869,6 @@ GameObject:
   m_Component:
   - component: {fileID: 642044777}
   - component: {fileID: 642044776}
-  - component: {fileID: 642044775}
   m_Layer: 0
   m_Name: StateSave
   m_TagString: Untagged
@@ -10877,20 +10876,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &642044775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642044774}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63eddf795bf1d4448b5ccda82cffc476, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StateSave: {fileID: 0}
-  statenumber: 000000000000000000000000000000000000000000000000
 --- !u!114 &642044776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10910,7 +10895,7 @@ MonoBehaviour:
   - {fileID: 954087948}
   - {fileID: 92865746}
   - {fileID: 995501921}
-  statenumber: 0a0000000a0000000a0000000a0000000a0000000a000000
+  statenumber: 000000000000000000000000000000000000000000000000
   SaveManager: {fileID: 0}
 --- !u!4 &642044777
 Transform:

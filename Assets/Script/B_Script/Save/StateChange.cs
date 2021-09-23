@@ -15,7 +15,7 @@ public class StateChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < 6; i++){
+        for(int i = 0; i < 8; i++){
             statenumber[i] = GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[i];
         }
     }

@@ -10,7 +10,12 @@ public class textChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nick = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icenickname;
+        if (null == GameObject.Find("icenicknameObject")){
+            nick = "아이스";
+        }
+        else{
+            nick = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icenickname;
+        }
     }
 
     // Update is called once per frame

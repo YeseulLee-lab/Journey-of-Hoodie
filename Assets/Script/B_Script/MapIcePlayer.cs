@@ -45,17 +45,17 @@ public class MapIcePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Building"){
+        if (SceneManager.GetActiveScene().name == "Pudding"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
            // percent = 40;
         }
         else if (SceneManager.GetActiveScene().name == "Bread"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2;
-            percent = 15;
+         //   percent = 15;
         }
         else if (SceneManager.GetActiveScene().name == "Cheese"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3;
-            percent = 47;
+       //     percent = 47;
         }
 
         Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
@@ -128,11 +128,24 @@ public class MapIcePlayer : MonoBehaviour
                                     if(hit.collider.GetComponent<BreakBuilding>().count == 0)
                                     {
                                         hit.transform.gameObject.SetActive(false);
-                                        if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
-                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 1;
+                                        if(SceneManager.GetActiveScene().name == "Cheese"){
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
+                                            }
                                         }
-                                        else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
-                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
+                                        else{
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
+                                            }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
@@ -166,11 +179,24 @@ public class MapIcePlayer : MonoBehaviour
                                     if(hit.collider.GetComponent<BreakBuilding>().count == 0)
                                     {
                                         hit.transform.gameObject.SetActive(false);
-                                        if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
-                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
+                                        if(SceneManager.GetActiveScene().name == "Cheese"){
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[3]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[4]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[5]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
+                                            }
                                         }
-                                        else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[3]){
-                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
+                                        else{
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[3]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
+                                            }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
@@ -203,11 +229,21 @@ public class MapIcePlayer : MonoBehaviour
                                     if(hit.collider.GetComponent<BreakBuilding>().count == 0)
                                     {
                                         hit.transform.gameObject.SetActive(false);
-                                        if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[4]){
-                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
+                                        if(SceneManager.GetActiveScene().name == "Cheese"){
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[6]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[6] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[7]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[7] = 1;
+                                            }
                                         }
-                                        else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[5]){
-                                            GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
+                                        else{
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[4]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[5]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
+                                            }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);

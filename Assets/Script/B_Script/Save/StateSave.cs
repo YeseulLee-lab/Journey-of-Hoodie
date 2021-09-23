@@ -9,7 +9,7 @@ public class StateSave : MonoBehaviour
     public GameObject[] Building;
     //public GameObject[][] Building;
    // public List<GameObject> Building = new List<GameObject>();
-    public int[] statenumber = new int[6];
+    public int[] statenumber = new int[8];
     public GameObject SaveManager;
     //List<int> statenumber = new List<int>();
     // Start is called before the first frame update
@@ -37,7 +37,7 @@ public class StateSave : MonoBehaviour
     void Update()
     {
        // print(Building[0][1]);
-        for (int i = 0; i < 6; i++){
+        for (int i = 0; i < 8; i++){
             if(statenumber[i] == 1){
                 Building[i].SetActive(false);
             }

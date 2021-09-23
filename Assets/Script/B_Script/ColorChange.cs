@@ -11,7 +11,12 @@ public class ColorChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        icekind = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind;
+        if(null == GameObject.Find("icenicknameObject")){
+            return;
+        }
+        else{
+            icekind = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind;
+        }
     }
 
     // Update is called once per frame

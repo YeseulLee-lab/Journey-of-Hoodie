@@ -16,7 +16,7 @@ public class breadTrigger : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.tag == "Player"){
             //percent2 = GameObject.Find("percentManager").GetComponent<Bpercent>().percent2;
-            breadText.text = GameObject.Find("percentManager").GetComponent<Bpercent>().percent2 + "퍼센트";
+            breadText.text = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 + "퍼센트";
         }        
     }
 }
