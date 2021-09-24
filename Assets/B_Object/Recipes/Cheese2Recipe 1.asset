@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a8daed238ebc76458b57a63a3f2fb4f, type: 3}
+  m_Name: Cheese2Recipe 1
+  m_EditorClassIdentifier: 
+  Materials:
+  - Item: {fileID: 11400000, guid: 7dcb57a866e1fe64cad9410452b01e12, type: 2}
+    Amount: 2
+  - Item: {fileID: 11400000, guid: 6f3bd4856edb0524097a583b6f3186b4, type: 2}
+    Amount: 2
+  Results:
+  - Item: {fileID: 11400000, guid: aed113ca4ee72ef40a4d492a7ea14c25, type: 2}
+    Amount: 1
