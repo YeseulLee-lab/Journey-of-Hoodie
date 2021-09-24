@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/release' branch; Version is '2021.1.4f1 (4cd64a618c1b) revision 5035594'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1237; Version 2009; 64bit' Language: 'ko' Physical Memory: 16247 MB
+OS: 'Windows 10 Home; OS build 19043.1237; Version 2009; 64bit' Language: 'ko' Physical Memory: 16300 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Unity/Journey of Hoodie
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-5572
+7619
 Successfully changed project path to: C:/Unity/Journey of Hoodie
 C:/Unity/Journey of Hoodie
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.65 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 36.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Resources/UnitySubsystems
@@ -27,74 +27,177 @@ Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   NVIDIA
-    VRAM:     8079 MB
-    Driver:   27.21.14.5671
+    VRAM:     5991 MB
+    Driver:   30.0.14.7212
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003059 seconds.
+Registered in 0.008749 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.91 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 71.53 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
+- Completed reload, in  1.461 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006691 seconds.
+Registered in 0.004268 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.806 seconds
+- Completed reload, in  0.872 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1391 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 155.8 MB.
 System memory in use after: 155.9 MB.
 
 Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1865.
-Total: 1.711200 ms (FindLiveObjects: 0.131500 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.471600 ms  DeleteObjects: 0.073500 ms)
+Total: 1.729600 ms (FindLiveObjects: 0.145900 ms CreateObjectMapping: 0.063200 ms MarkObjects: 1.436200 ms  DeleteObjects: 0.083300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Bread.unity
-  artifactKey: Guid(324a92f2475f7eb4ebbff3f3c1150a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Bread.unity using Guid(324a92f2475f7eb4ebbff3f3c1150a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038796ed342a65251312bdb991f921e3') in 0.147726 seconds 
+  path: Assets/Scenes/Bread - 복사본.unity
+  artifactKey: Guid(d33706218ea4b0f4d9b8c46609a2334b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bread - 복사본.unity using Guid(d33706218ea4b0f4d9b8c46609a2334b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd6ad8de4760d222563eb7f012894bc') in 0.013693 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.483136 seconds.
-  path: Assets/B_Object/B_ObjectPrefab
-  artifactKey: Guid(37dd0566837aa694384eb9a1932eb1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/B_Object/B_ObjectPrefab using Guid(37dd0566837aa694384eb9a1932eb1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7b675ec058fc0a321740679df13589') in 0.009583 seconds 
+  Time since last request: 5.506190 seconds.
+  path: Assets/Scenes/Bread22.unity
+  artifactKey: Guid(d33706218ea4b0f4d9b8c46609a2334b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bread22.unity using Guid(d33706218ea4b0f4d9b8c46609a2334b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba1361278a0e3495978602ac2aa374c3') in 0.006960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.783218 seconds.
+  path: Assets/Scenes/Pudding.unity
+  artifactKey: Guid(6ffc377073da1ae49aa13b38decc6c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding.unity using Guid(6ffc377073da1ae49aa13b38decc6c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6d65ea03ac373c1c59cd7bf94ff6b4') in 0.007440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.417098 seconds.
+  path: Assets/Scenes/Cheese.unity
+  artifactKey: Guid(497cacde60dc61a4a9ec90706a11534a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cheese.unity using Guid(497cacde60dc61a4a9ec90706a11534a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1cd56b2c0718f6afe2f0ca373609be') in 0.007130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.140594 seconds.
+  path: Assets/Scenes/B.unity
+  artifactKey: Guid(6e042a6fd9c8eee44b9ac4ae140b4989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/B.unity using Guid(6e042a6fd9c8eee44b9ac4ae140b4989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d86d7d50a8aa2a2224c292038f5116e') in 0.006922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.315483 seconds.
+  path: Assets/Scenes/Bagain.unity
+  artifactKey: Guid(7429e6356036b5e4aafb5e55056f1e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bagain.unity using Guid(7429e6356036b5e4aafb5e55056f1e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2077a6a4edc6ce87b22ff25e0fbedd8') in 0.005142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.820011 seconds.
+  path: Assets/Scenes/Start.unity
+  artifactKey: Guid(293ab8ce768d968459901e7900214f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Start.unity using Guid(293ab8ce768d968459901e7900214f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3cb1daaece9960b1479148847bbfa8e') in 0.008217 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009996 seconds.
+Registered in 0.004036 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.822 seconds
+- Completed reload, in  0.909 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1372 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 154.4 MB.
 System memory in use after: 154.5 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1868.
-Total: 1.655400 ms (FindLiveObjects: 0.106600 ms CreateObjectMapping: 0.036000 ms MarkObjects: 1.498800 ms  DeleteObjects: 0.013300 ms)
+Total: 1.724100 ms (FindLiveObjects: 0.143000 ms CreateObjectMapping: 0.038100 ms MarkObjects: 1.523500 ms  DeleteObjects: 0.018400 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 55.948066 seconds.
+  path: Assets/Scenes/Bread.unity
+  artifactKey: Guid(d33706218ea4b0f4d9b8c46609a2334b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Bread.unity using Guid(d33706218ea4b0f4d9b8c46609a2334b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befafafbc7e3242fc812f3d391eb7ff6') in 0.014465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.701007 seconds.
+  path: Assets/Scenes/Pudding3.unity
+  artifactKey: Guid(de7441ec374d32a4b83e63b76975862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding3.unity using Guid(de7441ec374d32a4b83e63b76975862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696df0f93ad440e809348476e6f188c0') in 0.006637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.983778 seconds.
+  path: Assets/Scenes/Pudding - 복사본.unity
+  artifactKey: Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding - 복사본.unity using Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4364355b86fb6713b758843e109059') in 0.005685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.015566 seconds.
+  path: Assets/Scenes/Pudding2.unity
+  artifactKey: Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding2.unity using Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4e24ca504f784cbb2bd6dafd877bfc') in 0.005402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 120.473661 seconds.
+  path: Assets/Scenes/Pudding.unity
+  artifactKey: Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding.unity using Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6134671786649bcb1291756e6fae03') in 0.002729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.481233 seconds.
+  path: Assets/Scenes/Pudding.unity
+  artifactKey: Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding.unity using Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e4dd418f089fe835092545782fedc0') in 0.001935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.947643 seconds.
+  path: Assets/Scenes/Pudding - 복사본.unity
+  artifactKey: Guid(f12769b687eed744db81bd77328d9759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding - 복사본.unity using Guid(f12769b687eed744db81bd77328d9759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da96a36aa6c16817143777a06db41498') in 0.001878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.500284 seconds.
+  path: Assets/Scenes/Pudding2.unity
+  artifactKey: Guid(f12769b687eed744db81bd77328d9759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding2.unity using Guid(f12769b687eed744db81bd77328d9759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e818b68615fb55d229b3c0efaa7d88') in 0.002142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.663310 seconds.
+  path: Assets/Scenes/Pudding3.unity
+  artifactKey: Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding3.unity using Guid(800d4917e9df3f945b8f1a68dfdaa006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ebd0eb7789fa258f374e5a019eaa23') in 0.001957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.321664 seconds.
+  path: Assets/Scenes/Pudding.unity
+  artifactKey: Guid(f12769b687eed744db81bd77328d9759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Pudding.unity using Guid(f12769b687eed744db81bd77328d9759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d14d489e1cbfa6459a9dc16d5abafb') in 0.002010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.107412 seconds.
+  path: Assets/Scenes/Cheese 1.unity
+  artifactKey: Guid(25d4e84d031001945a2b0f862b447637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cheese 1.unity using Guid(25d4e84d031001945a2b0f862b447637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccdd3324e48c5fd98ace414ad06b1062') in 0.007800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.246310 seconds.
+  path: Assets/Scenes/Cheese.unity
+  artifactKey: Guid(25d4e84d031001945a2b0f862b447637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cheese.unity using Guid(25d4e84d031001945a2b0f862b447637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59691b889753b2ab57299744bd4d8a50') in 0.002205 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

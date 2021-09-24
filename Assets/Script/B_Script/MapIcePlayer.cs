@@ -148,7 +148,9 @@ public class MapIcePlayer : MonoBehaviour
                                             }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+
                                         Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
@@ -199,7 +201,9 @@ public class MapIcePlayer : MonoBehaviour
                                             }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+
                                         Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
@@ -246,7 +250,9 @@ public class MapIcePlayer : MonoBehaviour
                                             }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+
                                         Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
