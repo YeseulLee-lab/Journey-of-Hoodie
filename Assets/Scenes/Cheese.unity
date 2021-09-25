@@ -3959,8 +3959,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1771367497}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &73584558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17389,8 +17390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1096941210}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &348223820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25790,8 +25792,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1563519648}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &552118598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27695,8 +27698,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 422281192}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &575752849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29521,8 +29525,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 948015192}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &606651662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33784,8 +33789,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 948015192}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &696081281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47733,8 +47739,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1096941210}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &976247389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70645,8 +70652,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 2113552591}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1445596300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72905,8 +72913,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 2056472442}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1502247590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77405,8 +77414,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 422281192}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1585352923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78054,8 +78064,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 308189826}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1597228186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79400,8 +79411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1563519648}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1621553087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83490,6 +83502,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4645402649511075249, guid: d55375c3663764044b268499404a5ca6,
     type: 3}
   m_PrefabInstance: {fileID: 1680104691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1681036457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1923908444}
+    m_Modifications:
+    - target: {fileID: 104108, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_Name
+      value: BubbleWhiteSmall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 104108, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 56.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
+--- !u!224 &1681036458 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681036457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1681036459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 104108, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681036457}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1681339119
 PrefabInstance:
@@ -89045,8 +89170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 2113552591}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1805708043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94443,8 +94569,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1771367497}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1920889162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94484,8 +94611,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 2056472442}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1921514672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94852,6 +94980,7 @@ RectTransform:
   - {fileID: 833393174}
   - {fileID: 2140316896}
   - {fileID: 348384029}
+  - {fileID: 1681036458}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95480,8 +95609,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 308189826}
-  PressC: {fileID: 367451929}
+  PressC: {fileID: 1681036459}
   talkPanel: {fileID: 811547723}
+  Particle: {fileID: 0}
 --- !u!114 &1934169768
 MonoBehaviour:
   m_ObjectHideFlags: 0

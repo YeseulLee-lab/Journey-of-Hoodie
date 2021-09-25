@@ -11,6 +11,7 @@ public class NPC2 : MonoBehaviour
     private Transform PlayerTrans;
     public GameObject PressC;
     public GameObject talkPanel;
+    public GameObject Particle;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +31,11 @@ public class NPC2 : MonoBehaviour
 		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * curRotSpeed);
         if(Building.activeSelf == true){
             anim.SetBool("isFix", true);
+            //Particle.SetActive(true);
         }
         else{
             anim.SetBool("isFix", false);
+            //Particle.SetActive(false);
         }
 
         if(GameManager.MyGameManager.SelectPanel.activeSelf == true)
