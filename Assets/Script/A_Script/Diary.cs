@@ -45,13 +45,13 @@ public class Diary : MonoBehaviour
             updatee.SetActive(true);
         }else if(GameManager.MyGameManager.SavedNPC == 4)
         {
-            content[3] = "쉬드를 찾아야 한다. 쉬드 석상의 남동쪽 쯤에 있다. \n\n\n쉬드를 찾았다! \n쉬드는 ";
+            content[3] = "쉬드를 찾아야 한다. 쉬드는 석상의 남동쪽 쯤에 있다. \n\n\n쉬드를 찾았다! \n쉬드는 물을 길으러 왔다가 우물에 깔려 있었다고 한다. 무뚝뚝하지만 참 다정한 친구다.";
             content.Add("올뤼뷔아를 찾아야 한다. 올뤼뷔아는 석상의 북동쪽의 도미닉을 구한 집 근처 큰 바위 뒤에 있다.");
             updatee.SetActive(true);
         }else if(GameManager.MyGameManager.SavedNPC == 5)
         {
-            content[4] = "올뤼뷔아를 찾아야 한다. 올뤼뷔아는 석상의 북동쪽의 도미닉을 구한 집 근처 큰 바위 뒤에 있다. \n\n\n올뤼뷔아를 찾았다!";
-            content.Add("동료를 모두 구했다. ");
+            content[4] = "올뤼뷔아를 찾아야 한다. 올뤼뷔아는 석상의 북동쪽의 도미닉을 구한 집 근처 큰 바위 뒤에 있다. \n\n\n올뤼뷔아를 찾았다! 올뤼뷔아는 평소처럼 돌을 주우러 왔다가 떨어진 바위에 의해 오도가도 못하게 되었다고 한다. 제쉬카가 맨날 시비를 걸지만 웃으며 받아주는 착한 친구다.";
+            content.Add("동료를 모두 구했다. 마을 중앙의 계단을 지나 다리를 고쳐 본부로 ");
         }
         
         content = content.Distinct().ToList();
@@ -62,6 +62,7 @@ public class Diary : MonoBehaviour
             if(num > content.Count)
             {
                 num = content.Count + 1;
+                print(num);
                 
             }
             else
