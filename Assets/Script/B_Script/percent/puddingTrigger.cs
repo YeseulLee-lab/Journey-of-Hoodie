@@ -9,7 +9,7 @@ public class puddingTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        puddingText.text = 0 + " 퍼센트";
+        puddingText.text = 42 + " 퍼센트";
     }
 
     // Update is called once per frame

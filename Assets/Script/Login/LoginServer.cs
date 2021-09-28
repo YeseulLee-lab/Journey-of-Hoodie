@@ -22,7 +22,7 @@ public class LoginServer : MonoBehaviour
 
         var usernamefilter = Builders<BsonDocument>.Filter.Eq("username", username);
         var passwordfilter = Builders<BsonDocument>.Filter.Eq("username", username) & Builders<BsonDocument>.Filter.Eq("password", password);
-        var nicknamefilter = Builders<BsonDocument>.Projection.Include("nickname").Exclude("_id");
+        var nicknamefilter = Builders<BsonDocument>.Projection.Include("nickname").Include("icenickname").Exclude("_id");
 
         if (username == "")
         {
@@ -52,11 +52,15 @@ public class LoginServer : MonoBehaviour
                     var list = await passwordlist.Project(nicknamefilter).ToListAsync();
                     foreach(var doc in list){
                         GameObject.Find("DataObject").GetComponent<TransData>().nickname = 
-                        doc.ToString().Substring(doc.ToString().IndexOf(":") + 3, doc.ToString().IndexOf("}") - 2 - doc.ToString().IndexOf(":") - 3);
+                        doc.ToString().Substring(doc.ToString().IndexOf(":") + 3, doc.ToString().IndexOf(",") - 2 - doc.ToString().IndexOf(":") - 2);
+                        GameObject.Find("DataObject").GetComponent<TransData>().icenickname = 
+                        doc.ToString().Substring(doc.ToString().IndexOf(",") + 19, doc.ToString().IndexOf("}") - doc.ToString().LastIndexOf(":") - 5);
                     }
                    // print(nicknamelist.FirstOrDefaultAsync());
                    // GameObject.Find("DataObject").GetComponent<TransData>().nickname = nicknamelist.FirstOrDefaultAsync().ToString();
                    GameObject.Find("DataObject").GetComponent<TransData>().call();
+                   GameObject.Find("CustomFormMenu").SetActive(false);
+                   GameObject.Find("LoginButton").SetActive(false);
                 }
             }
 

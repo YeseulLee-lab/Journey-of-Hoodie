@@ -23,7 +23,7 @@ public class Bpercent : MonoBehaviour
        // percent1 = 0;
        // percent2 = 0;
         //percent3 = 0;
-        Allpercent = 0;
+      //  Allpercent = 0;
         //puddingText.text = percent1 + " 퍼센트";
        // breadText.text = percent2 + " 퍼센트";
         //cheeseText.text = percent3 + " 퍼센트";

@@ -58,7 +58,7 @@ public class MapIcePlayer : MonoBehaviour
        //     percent = 47;
         }
 
-        Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
+        Allpercent = 60;//GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
         controller = GetComponent<CharacterController>();
         //percent = 34;
         //percentTxt.text = percent.ToString() + "%";
@@ -278,6 +278,9 @@ public class MapIcePlayer : MonoBehaviour
                 }
                 else if(select.GetComponent<SelectMod>().destroying == false)
                 {
+                    if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterBuildingCreator();
+                    }
                     Debug.Log("복구선택");
                     if(Building1.activeSelf == true)
                     {

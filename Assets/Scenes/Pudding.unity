@@ -25120,6 +25120,12 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5645544815321525073, guid: 473639aa34e584b4abb45d4561fd6ee8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 8830196273332348141, guid: 62f73b70acc1dc74c8d125be7b9e80eb,
+        type: 3}
     - target: {fileID: 6267550251057703018, guid: 473639aa34e584b4abb45d4561fd6ee8,
         type: 3}
       propertyPath: m_Layer
@@ -33081,7 +33087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nickname: 
   portraitArr:
-  - {fileID: 21300000, guid: e6bc42127716666438091d0921af8513, type: 3}
+  - {fileID: 21300000, guid: c901a08db258d3d4c812aab41713d19a, type: 3}
   - {fileID: 21300000, guid: 0a9db1f73873a4c4b80f99b974b67b25, type: 3}
   - {fileID: 21300000, guid: 3c0aec722b79ceb4199414a383bb4310, type: 3}
   - {fileID: 21300000, guid: c901a08db258d3d4c812aab41713d19a, type: 3}
@@ -34843,6 +34849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Puddingspoon2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689416329215675538, guid: 2fe33d20bca2dd54e9adb7bb644178e1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6689416329215675538, guid: 2fe33d20bca2dd54e9adb7bb644178e1,
         type: 3}
