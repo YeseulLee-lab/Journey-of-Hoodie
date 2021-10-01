@@ -16,6 +16,9 @@ TagManager:
   - WeaponCreator
   - breakable
   - WanderPoint
+  - BuildingWreck1
+  - BuildingWreck2
+  - BuildingWreck3
   layers:
   - Default
   - TransparentFX

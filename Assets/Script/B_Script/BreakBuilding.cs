@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class BreakBuilding : Interactable
 {
     public Building building;
+    public GameObject BuildingWreck;
     public int count;
 
     public override void Interact()
@@ -12,9 +13,10 @@ public class BreakBuilding : Interactable
         Break();
         if(Input.GetButtonDown("Break")){
             Debug.Log("부시기");
-            count--;
+            //count--;
             if(count == 0){
                 gameObject.SetActive(false);
+                BuildingWreck.SetActive(true);
             }
         }
     }

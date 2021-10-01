@@ -24,7 +24,7 @@ public class MapIcePlayer : MonoBehaviour
     public GameObject buildingCreator;
     public GameObject ButtonAlert;
     public GameObject BuildingParticle;
-    public GameObject BuildingWreck;
+    //public GameObject BuildingWreck;
     public GameObject small;
     public GameObject medium;
     public GameObject fork;
@@ -148,9 +148,10 @@ public class MapIcePlayer : MonoBehaviour
                                             }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-
-                                        Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
-
+                                        //BuildingWreck.SetActive(true);
+                                        //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+                                        
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
@@ -201,8 +202,9 @@ public class MapIcePlayer : MonoBehaviour
                                             }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-
-                                        Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        //BuildingWreck.SetActive(true);
+                                        //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
@@ -250,8 +252,9 @@ public class MapIcePlayer : MonoBehaviour
                                             }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-
-                                        Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        //BuildingWreck.SetActive(true);
+                                        //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
@@ -276,8 +279,9 @@ public class MapIcePlayer : MonoBehaviour
                         ButtonAlert.SetActive(false);
                     }
                 }
-                else if(select.GetComponent<SelectMod>().destroying == false)
+                if(select.GetComponent<SelectMod>().destroying == false)
                 {
+                    Destroy(weaponCreator);
                     if(hit.transform.gameObject.tag == "WeaponCreator"){
                             EnterBuildingCreator();
                     }
@@ -287,10 +291,10 @@ public class MapIcePlayer : MonoBehaviour
                         if(hit.transform.gameObject.tag == "WeaponCreator"){
                             EnterBuildingCreator();
                         }
-                        else if(hit.transform.gameObject.tag == "Building")
+                        else if(hit.transform.gameObject.tag == "BuildingWreck1")
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
-                        //Debug.Log("왜안돼");
+                            //Debug.Log("왜안돼");
                             ButtonAlert.SetActive(true);
                             ButtonAlert.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
@@ -302,7 +306,9 @@ public class MapIcePlayer : MonoBehaviour
                                     {
                                         hit.transform.gameObject.SetActive(false);
                                         //Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
-                                        Instantiate(Building1, hit.transform.position, hit.transform.rotation);
+                                        //Instantiate(Building1, hit.transform.position, hit.transform.rotation);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
