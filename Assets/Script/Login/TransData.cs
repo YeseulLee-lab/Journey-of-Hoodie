@@ -7,6 +7,7 @@ public class TransData : MonoBehaviour
 {
     public string nickname;
     public string icenickname;
+    public string icekind;
     public GameObject DataObject;
     public GameObject New;
     public GameObject Load;

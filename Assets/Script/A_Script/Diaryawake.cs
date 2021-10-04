@@ -8,7 +8,9 @@ public class Diaryawake : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      //  GameObject.Find("diary").GetComponent<Diary>().state = true;
+        gameObject.transform.Find("diary").GetComponent<Diary>().num = 1;
+        gameObject.transform.Find("diary").GetComponent<Diary>().state = true;
     }
 
     // Update is called once per frame

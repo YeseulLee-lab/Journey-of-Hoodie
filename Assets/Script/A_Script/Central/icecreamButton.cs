@@ -19,7 +19,7 @@ public class icecreamButton : MonoBehaviour
         Choco = GameObject.Find("ChocoIcecream");
         iceKind = gameObject.GetComponentInChildren<Text>().text;
 
-        icenicknameObject = GameObject.Find("icenicknameObject");
+        icenicknameObject = GameObject.Find("DataObject");
     }
 
     // Update is called once per frame
@@ -28,14 +28,14 @@ public class icecreamButton : MonoBehaviour
             Mint.SetActive(false);
             Choco.SetActive(false);
             nickname.SetActive(true);
-            GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind = iceKind;
+            icenicknameObject.GetComponent<TransData>().icekind = iceKind;
         }
         else{
             Mint.SetActive(false);
             Choco.SetActive(false);
             //nickname.SetActive(true);
-            icenicknameObject.GetComponent<nicknameObject>().icekind = iceKind;
-            icenicknameObject.GetComponent<nicknameObject>().icenickname = "아이스";
+            icenicknameObject.GetComponent<TransData>().icekind = iceKind;
+            icenicknameObject.GetComponent<TransData>().icenickname = "아이스";
             DontDestroyOnLoad(icenicknameObject);
             SceneManager.LoadScene("B");
         }

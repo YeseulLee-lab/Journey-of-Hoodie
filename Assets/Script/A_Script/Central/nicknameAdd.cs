@@ -29,7 +29,7 @@ public class nicknameAdd : MonoBehaviour
         //}
 
       //  icenicknameObject = GameObject.Find("ice").transform.Find("icenicknameObject").gameObject;
-      icenicknameObject = GameObject.Find("icenicknameObject");
+      icenicknameObject = GameObject.Find("DataObject");
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class nicknameAdd : MonoBehaviour
         var filter = Builders<BsonDocument>.Filter.Eq("nickname", nickname);
         var update = Builders<BsonDocument>.Update.Set("icenickname", icenickname);
         collection.UpdateOne(filter, update);
-        icenicknameObject.GetComponent<nicknameObject>().icenickname = icenickname;
+        icenicknameObject.GetComponent<TransData>().icenickname = icenickname;
         DontDestroyOnLoad(icenicknameObject);
         SceneManager.LoadScene("B");
       }
