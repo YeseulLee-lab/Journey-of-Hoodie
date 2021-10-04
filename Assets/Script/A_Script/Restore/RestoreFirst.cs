@@ -36,7 +36,6 @@ public class RestoreFirst : MonoBehaviour
                         gameObject.SetActive(false);
                         Restored.SetActive(true);
                         isSaved = true;
-                        gameManager.SavedNPC ++;
                         if(scanObject.name == "Rock"){
                             gameManager.SavedNPC --;
                         }

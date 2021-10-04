@@ -22,6 +22,12 @@ public class NPCSaveLast : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation (PlayerTrans.position - transform.position);
 			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * curRotSpeed);	
             if(Input.GetKeyDown(KeyCode.E)){
+                if (GameObject.Find("GameManager").GetComponent<GameManager>().SavedNPC == 1){
+                    GameObject.Find("GameManager").GetComponent<GameManager>().SavedNPC = 2;
+                }
+                else{
+                    GameObject.Find("GameManager").GetComponent<GameManager>().SavedNPC = 5;
+                }
                 Destroy(PressE);
             }
         }
