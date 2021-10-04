@@ -17,15 +17,13 @@ public class NPCSaveLast : MonoBehaviour
     void Update()
     {
         if(Vector3.Distance(PlayerTrans.position, transform.position) <= 5.0f){
-            PressE.SetActive(true);
+            if(PressE != null)
+                PressE.SetActive(true);
             Quaternion targetRotation = Quaternion.LookRotation (PlayerTrans.position - transform.position);
 			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * curRotSpeed);	
             if(Input.GetKeyDown(KeyCode.E)){
-                PressE.SetActive(false);
+                Destroy(PressE);
             }
-        }
-        else{
-            PressE.SetActive(false);
         }
     }
 }

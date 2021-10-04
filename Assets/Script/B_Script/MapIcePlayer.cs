@@ -151,6 +151,7 @@ public class MapIcePlayer : MonoBehaviour
                                         //BuildingWreck.SetActive(true);
                                         //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
                                         
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
@@ -205,6 +206,7 @@ public class MapIcePlayer : MonoBehaviour
                                         //BuildingWreck.SetActive(true);
                                         //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
 
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
@@ -255,6 +257,7 @@ public class MapIcePlayer : MonoBehaviour
                                         //BuildingWreck.SetActive(true);
                                         //Instantiate(BuildingWreck, hit.transform.position, hit.transform.rotation);
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
 
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
@@ -305,8 +308,140 @@ public class MapIcePlayer : MonoBehaviour
                                     if(hit.collider.GetComponent<BreakBuilding>().count == 0)
                                     {
                                         hit.transform.gameObject.SetActive(false);
+                                        
                                         //Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         //Instantiate(Building1, hit.transform.position, hit.transform.rotation);
+                                        if(SceneManager.GetActiveScene().name == "Cheese"){
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 0;
+                                            }
+                                        }
+                                        else{
+                                            print("???");
+                                            print(hit.transform.gameObject.name);
+                                            if (hit.transform.gameObject.name == "BulidingWreckfork1"){
+                                                print("엉??");
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 0;
+                                            }
+                                            else if(hit.transform.gameObject.name == "BulidingWreckfork2"){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 0;
+                                            }
+                                        }
+                                        
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+
+                                        ButtonAlert.SetActive(false);
+                                        percent += 14;
+                                        RythmGame.SetActive(false);
+                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                    }
+                                
+                            
+                        }
+                        else{
+                            ButtonAlert.SetActive(false); 
+                        }
+                    }
+                    else if(Building2.activeSelf == true)
+                    {
+                        if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterBuildingCreator();
+                        }
+                        else if(hit.transform.gameObject.tag == "BuildingWreck2")
+                        {
+                            anim.SetBool("isFix", moveVec != Vector3.zero);
+                            //Debug.Log("왜안돼");
+                            ButtonAlert.SetActive(true);
+                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            if(Input.GetButtonDown("Break"))
+                                RythmGame.SetActive(true);
+                                //Debug.Log("건물 부수기");
+                                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                                
+                                    if(hit.collider.GetComponent<BreakBuilding>().count == 0)
+                                    {
+                                        hit.transform.gameObject.SetActive(false);
+                                        //Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+                                        //Instantiate(Building1, hit.transform.position, hit.transform.rotation);
+                                        if(SceneManager.GetActiveScene().name == "Cheese"){
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 0;
+                                            }
+                                        }
+                                        else{
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 0;
+                                            }
+                                        }
+                                        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
+
+                                        ButtonAlert.SetActive(false);
+                                        percent += 14;
+                                        RythmGame.SetActive(false);
+                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                    }
+                                
+                            
+                        }
+                        else{
+                            ButtonAlert.SetActive(false); 
+                        }
+                    }
+                    if(Building3.activeSelf == true)
+                    {
+                        if(hit.transform.gameObject.tag == "WeaponCreator"){
+                            EnterBuildingCreator();
+                        }
+                        else if(hit.transform.gameObject.tag == "BuildingWreck3")
+                        {
+                            anim.SetBool("isFix", moveVec != Vector3.zero);
+                            //Debug.Log("왜안돼");
+                            ButtonAlert.SetActive(true);
+                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            if(Input.GetButtonDown("Break"))
+                                RythmGame.SetActive(true);
+                                //Debug.Log("건물 부수기");
+                                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                                
+                                    if(hit.collider.GetComponent<BreakBuilding>().count == 0)
+                                    {
+                                        hit.transform.gameObject.SetActive(false);
+                                        //Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
+                                        //Instantiate(Building1, hit.transform.position, hit.transform.rotation);
+                                        if(SceneManager.GetActiveScene().name == "Cheese"){
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[6] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[7] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[8] = 0;
+                                            }
+                                        }
+                                        else{
+                                            if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 0;
+                                            }
+                                            else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
+                                                GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 0;
+                                            }
+                                        }
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert.SetActive(false);

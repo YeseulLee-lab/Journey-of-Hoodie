@@ -17,7 +17,11 @@ public class QuestionFollowCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 questionPos = UnityEngine.Camera.main.WorldToScreenPoint(this.transform.position);
-        Question.transform.position = questionPos;
+        if(Question != null)
+        {
+            Vector3 questionPos = UnityEngine.Camera.main.WorldToScreenPoint(this.transform.position);
+            Question.transform.position = questionPos;
+        }
+        
     }
 }
