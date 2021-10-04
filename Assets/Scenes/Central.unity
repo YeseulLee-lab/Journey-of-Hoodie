@@ -2843,7 +2843,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icenickname: 
   icekind: 
-  Nickname: {fileID: 564495640}
 --- !u!1 &941964507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3462179230256903423, guid: 9596138b64803d44086367788728203a,

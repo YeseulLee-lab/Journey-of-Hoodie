@@ -69,8 +69,9 @@ public class GameManager : MonoBehaviour
     public void StartAction()       //퀘스트 창 뜨게 하는 함수
     {
         StartQuest.SetActive(true);
+      //  StartQuest.GetComponentsInChildren<Text>()[1].text = StartQuest.GetComponent<Diary>().content[StartQuest.GetComponent<Diary>().num];
         QuestButton.SetActive(false);
-        updatee.SetActive(false);
+        StartQuest.GetComponent<Diary>().state = false;
     }
 
     public void QuestionAction()        //말풍선 뜨게 하는 함수
@@ -82,7 +83,7 @@ public class GameManager : MonoBehaviour
     {
         StartQuest.SetActive(false);
         QuestButton.SetActive(true);
-        updatee.SetActive(false);
+        StartQuest.GetComponent<Diary>().state = false;
     }
 
     public void Action(GameObject scanObj)      //대화 시스템. 대화하면 퀘스트버튼과 말풍선 버튼이 사라짐. scanObj에 player 오브젝트를 넣어서 사라지게 함
