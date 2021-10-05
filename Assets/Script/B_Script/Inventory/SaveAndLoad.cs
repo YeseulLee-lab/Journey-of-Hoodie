@@ -79,6 +79,7 @@ public class SaveAndLoad : MonoBehaviour
         //Debug.Log(Application.persistentDataPath);
         //Debug.Log(InventoryUI.instance.slots.Length);
         //Debug.Log(WeaponInvenUI.instance.slots.Length);
+
         if(itemsToLoad.Count == 0)
         {
             //Debug.Log("뭐임?");
@@ -100,7 +101,9 @@ public class SaveAndLoad : MonoBehaviour
                         //InventorySlot.instance.ClearSlot();
                         Inventory.instance.items.Add(b);
                         InventoryUI.instance.UpdateUI();
-                        Debug.Log("넣는중,...");
+
+                        //Debug.Log("넣는중,...");
+
                         //Debug.Log("itemsToLoad.Count: " + itemsToLoad.Count);
                         //Debug.Log("items.Length: " + Inventory.instance.items.Count);
                         //break;
