@@ -125,7 +125,7 @@ public class PlayerMove : MonoBehaviour
 
         if(Portrait.sprite == playerSprite)         //독백시 스페이스 누르면 스프라이트 none으로 바꿔서 대화창 다시 못나오게
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.C))
             {
                 manager.Action(gameObject);     //대화 다 끝났을 경우의 코드 추가하기 if문 대화 인덱스가 끝인지
                 Portrait.sprite = null;
@@ -133,7 +133,7 @@ public class PlayerMove : MonoBehaviour
             }               
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if((null != trigger[a-1]) && (null != timeline[a-1])){
                 return;

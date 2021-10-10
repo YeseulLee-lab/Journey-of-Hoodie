@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         if(Input.GetButtonDown("Quest"))
         {
             StartQuest.SetActive(!StartQuest.activeSelf);
+            QuestButton.SetActive(!QuestButton.activeSelf);
         }
 
     }
