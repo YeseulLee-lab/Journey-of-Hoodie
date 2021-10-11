@@ -40,6 +40,7 @@
      <Compile Include="Assets\Script\B_Script\SaveData.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameAdd.cs" />
      <Compile Include="Assets\Script\Login\FindData.cs" />
+     <Compile Include="Assets\Script\multi\NetworkTransformTest.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\customJSON.cs" />
      <Compile Include="Assets\Script\A_Script\Diary.cs" />
      <Compile Include="Assets\Script\A_Script\Diaryawake.cs" />
@@ -49,8 +50,10 @@
      <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSave.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponCreate.cs" />
+     <Compile Include="Assets\Script\Net\Client.cs" />
      <Compile Include="Assets\Script\B_Script\MapIcePlayer.cs" />
      <Compile Include="Assets\Script\A_Script\Restore\RestoreHouse.cs" />
+     <Compile Include="Assets\Script\Net\NetUtility.cs" />
      <Compile Include="Assets\Script\A_Script\Player\Camera.cs" />
      <Compile Include="Assets\Script\Login\LoginServer.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInven.cs" />
@@ -59,6 +62,7 @@
      <Compile Include="Assets\Script\B_Script\SavePlayerPos.cs" />
      <Compile Include="Assets\Script\Start_Script\Login.cs" />
      <Compile Include="Assets\Script\A_Script\GameManager.cs" />
+     <Compile Include="Assets\Script\Net\Server.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\SaveAndLoad.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\InventorySlot.cs" />
@@ -71,17 +75,21 @@
      <Compile Include="Assets\Script\Loading\LevelLoader.cs" />
      <Compile Include="Assets\Script\Start_Script\CameraControl.cs" />
      <Compile Include="Assets\Script\B_Script\Save\SaveChangeState.cs" />
+     <Compile Include="Assets\Script\multi\CustomNetwork.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestLog.cs" />
      <Compile Include="Assets\Script\B_Script\Save\StateChange.cs" />
      <Compile Include="Assets\Script\A_Script\Player\PlayerMove.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestScript.cs" />
+     <Compile Include="Assets\Script\multi\RpcTest.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\InventoryUI.cs" />
      <Compile Include="Assets\Script\B_Script\IcePlayer.cs" />
      <Compile Include="Assets\Script\B_Script\Save\LoadTrigger.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\Quest.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponSlot.cs" />
      <Compile Include="Assets\Script\A_Script\Central\CentralEnter.cs" />
+     <Compile Include="Assets\Script\Net\GameUI.cs" />
      <Compile Include="Assets\Script\B_Script\EnterTown.cs" />
+     <Compile Include="Assets\Script\Net\NetMessage\NetKeepAlive.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Item.cs" />
      <Compile Include="Assets\Script\B_Script\FSM.cs" />
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleTrack.cs" />
@@ -89,6 +97,7 @@
      <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
+     <Compile Include="Assets\Script\multi\NetworkVariableTest.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSwitching.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestGiver.cs" />
      <Compile Include="Assets\Script\B_Script\Save\ChangeState.cs" />
@@ -104,6 +113,7 @@
      <Compile Include="Assets\Script\B_Script\NewCamera.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameObject.cs" />
      <Compile Include="Assets\Script\Login\TransData.cs" />
+     <Compile Include="Assets\Script\Net\NetMessage\NetMessage.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\Recipe.cs" />
      <Compile Include="Assets\Script\A_Script\Restore\RestoreFirst.cs" />
      <Compile Include="Assets\Script\A_Script\Talk\TalkManager.cs" />
@@ -120,6 +130,7 @@
      <Compile Include="Assets\Script\Login\GuestLogin.cs" />
      <Compile Include="Assets\Script\B_Script\DeleteTimeline\TimelineManager.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInvenUI.cs" />
+     <Compile Include="Assets\Script\multi\NetworkCommandLine.cs" />
      <Compile Include="Assets\Script\Start_Script\StartScreen.cs" />
      <Compile Include="Assets\Script\A_Script\Talk\ObjData.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSaveLast.cs" />
@@ -386,6 +397,9 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.collections@1.0.0-pre.5/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/System.Buffers.dll</HintPath>
     </Reference>
@@ -394,6 +408,21 @@
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="MongoDB.Bson">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Bson.dll</HintPath>
@@ -749,9 +778,6 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Multiplayer.MLAPI.Prototyping">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Multiplayer.MLAPI.Prototyping.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -761,14 +787,14 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
@@ -784,6 +810,27 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Networking.Transport">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Multiplayer.MLAPI.Prototyping">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Multiplayer.MLAPI.Prototyping.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

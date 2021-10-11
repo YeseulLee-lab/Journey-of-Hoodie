@@ -11,11 +11,14 @@ public class ColorChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(null == GameObject.Find("DataObject")){
-            return;
+        if(null != GameObject.Find("DataObject")){
+            icekind = GameObject.Find("DataObject").GetComponent<TransData>().icekind;
+        }
+        else if(null != GameObject.Find("icenicknameObject")){
+            icekind = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icekind;
         }
         else{
-            icekind = GameObject.Find("DataObject").GetComponent<TransData>().icekind;
+            return;
         }
     }
 

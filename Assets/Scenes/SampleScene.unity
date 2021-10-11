@@ -2836,7 +2836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &145736133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2876,8 +2876,6 @@ MonoBehaviour:
   content: []
   updatee: {fileID: 381603887}
   state: 1
-  arrowR: {fileID: 1244769884}
-  arrowL: {fileID: 737901336}
 --- !u!114 &145736136
 MonoBehaviour:
   m_ObjectHideFlags: 0

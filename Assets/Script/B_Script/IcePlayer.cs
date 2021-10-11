@@ -12,7 +12,7 @@ public class IcePlayer : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     public float gravityScale;
-    private Vector3 moveDirection;
+    public Vector3 moveDirection;
     Vector3 moveVec;
     Animator anim;
     public CharacterController controller;
@@ -25,6 +25,8 @@ public class IcePlayer : MonoBehaviour
     public GameObject textbread;
     public GameObject textcheese;
     public Text townName;
+    public Vector3 position;
+    PlayerData data;
 
     //SavePlayerPos playerPosData;
     void Awake()
@@ -52,11 +54,8 @@ public class IcePlayer : MonoBehaviour
         transform.position = position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        PlayerData data = SavePlayerPos.LoadPlayer();
-        Vector3 position;
+    public void Move(){
+        data = SavePlayerPos.LoadPlayer();
 
         moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
 
@@ -73,6 +72,15 @@ public class IcePlayer : MonoBehaviour
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
         }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Move();
+        
+//        Debug.Log(gameObject.name);
 
         controller.Move(moveDirection * Time.deltaTime);
 

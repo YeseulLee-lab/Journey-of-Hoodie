@@ -24,8 +24,8 @@ namespace HelloWorld
             if (NetworkManager.Singleton.IsServer)
             {
                 var randomPosition = GetRandomPositionOnPlane();
-                transform.position = randomPosition;
-                Position.Value = randomPosition;
+                transform.position = randomPosition; // 서버 
+                Position.Value = randomPosition; // 클라이언트
             }
             else
             {
