@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/B.unity
+=======
+- path: Assets/Scenes/Central.unity
+>>>>>>> 6e030a76eaa099fd7f73761d6d9808aa4bbf19df
   isLoaded: 1
   isActive: 1
   isSubScene: 0

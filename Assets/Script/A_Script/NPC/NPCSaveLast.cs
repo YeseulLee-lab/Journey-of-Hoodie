@@ -21,11 +21,11 @@ public class NPCSaveLast : MonoBehaviour
                 PressE.SetActive(true);
             Quaternion targetRotation = Quaternion.LookRotation (PlayerTrans.position - transform.position);
 			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * curRotSpeed);	
-            if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKeyDown(KeyCode.C)){
                 if (GameObject.Find("GameManager").GetComponent<GameManager>().SavedNPC == 1){
                     GameObject.Find("GameManager").GetComponent<GameManager>().SavedNPC = 2;
                 }
-                else{
+                else if(GameManager.MyGameManager.SavedNPC == 4){
                     GameObject.Find("GameManager").GetComponent<GameManager>().SavedNPC = 5;
                 }
                 Destroy(PressE);

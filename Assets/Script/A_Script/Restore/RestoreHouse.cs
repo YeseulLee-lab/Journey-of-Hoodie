@@ -31,7 +31,7 @@ public class RestoreHouse : MonoBehaviour
     void Update()
     {
         if(gameManager.isSavable == true){
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.B))
             {
                 if (Physics.Raycast(PlayerTrans.position + PlayerTrans.up * 0.75f, PlayerTrans.forward, out hit, MaxDistance))
                 {

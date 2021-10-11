@@ -27,7 +27,7 @@ public class RestoreFirst : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.B))
             {
                 if (Physics.Raycast(PlayerTrans.position + PlayerTrans.up * 0.75f, PlayerTrans.forward, out hit, MaxDistance))
                 {
@@ -36,9 +36,9 @@ public class RestoreFirst : MonoBehaviour
                         gameObject.SetActive(false);
                         Restored.SetActive(true);
                         isSaved = true;
-                        if(scanObject.name == "Rock"){
-                            gameManager.SavedNPC --;
-                        }
+                        // if(scanObject.name == "Rock"){
+                        //     gameManager.SavedNPC --;
+                        // }
                         Instantiate(DustExplosion, transform.position, transform.rotation);
                         Debug.Log("제발ㅃ더랑");
                         //QuestLog.MyInstance.ShowDescription(quest);
