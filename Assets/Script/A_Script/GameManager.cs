@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject StartQuest;
     public GameObject talkPanel;
     public GameObject Question;
+    public GameObject Image;
     public GameObject QuestButton;
     public Image portrait;
     public Text talkText;
@@ -78,6 +79,7 @@ public class GameManager : MonoBehaviour
     public void QuestionAction()        //말풍선 뜨게 하는 함수
     {
         Question.SetActive(true);
+        Image.SetActive(true);
     }
 
     public void ExitAction()

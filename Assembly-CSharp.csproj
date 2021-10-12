@@ -95,6 +95,7 @@
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleTrack.cs" />
      <Compile Include="Assets\Script\B_Script\BGameManage.cs" />
      <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
+     <Compile Include="Assets\Script\A_Script\Central\showEnding.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
      <Compile Include="Assets\Script\multi\NetworkVariableTest.cs" />

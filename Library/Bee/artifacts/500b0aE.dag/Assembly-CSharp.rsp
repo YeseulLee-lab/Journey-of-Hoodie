@@ -337,6 +337,7 @@
 "Assets/Script/A_Script/Central/nicknameAdd.cs"
 "Assets/Script/A_Script/Central/nicknameObject.cs"
 "Assets/Script/A_Script/Central/Redbutton.cs"
+"Assets/Script/A_Script/Central/showEnding.cs"
 "Assets/Script/A_Script/Diary.cs"
 "Assets/Script/A_Script/Diaryawake.cs"
 "Assets/Script/A_Script/GameManager.cs"
