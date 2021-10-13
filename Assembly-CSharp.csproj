@@ -36,18 +36,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet2.cs" />
      <Compile Include="Assets\Script\B_Script\SaveData.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameAdd.cs" />
+     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\Script\Login\FindData.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\customJSON.cs" />
      <Compile Include="Assets\Script\A_Script\Diary.cs" />
+     <Compile Include="Assets\Script\multi\RoomListItem.cs" />
      <Compile Include="Assets\Script\A_Script\Diaryawake.cs" />
+     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\ItemPickup.cs" />
      <Compile Include="Assets\Script\B_Script\percent\apearPercent.cs" />
      <Compile Include="Assets\Script\B_Script\ColorChange.cs" />
      <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSave.cs" />
+     <Compile Include="Assets\Script\multi\PlayerListItem.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponCreate.cs" />
      <Compile Include="Assets\Script\Net\Client.cs" />
      <Compile Include="Assets\Script\B_Script\MapIcePlayer.cs" />
@@ -57,6 +63,8 @@
      <Compile Include="Assets\Script\Login\LoginServer.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInven.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestionFollowCube.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
      <Compile Include="Assets\Script\A_Script\TimelineScript\Timeline.cs" />
      <Compile Include="Assets\Script\B_Script\SavePlayerPos.cs" />
      <Compile Include="Assets\Script\Start_Script\Login.cs" />
@@ -64,6 +72,7 @@
      <Compile Include="Assets\Script\Net\Server.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\SaveAndLoad.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\InventorySlot.cs" />
      <Compile Include="Assets\Script\B_Script\EnterB\EnterBbread.cs" />
      <Compile Include="Assets\Script\A_Script\Central\Redbutton.cs" />
@@ -85,6 +94,7 @@
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponSlot.cs" />
      <Compile Include="Assets\Script\A_Script\Central\CentralEnter.cs" />
      <Compile Include="Assets\Script\Net\GameUI.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
      <Compile Include="Assets\Script\B_Script\EnterTown.cs" />
      <Compile Include="Assets\Script\Net\NetMessage\NetKeepAlive.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Item.cs" />
@@ -94,16 +104,19 @@
      <Compile Include="Assets\Script\B_Script\RythmGame.cs" />
      <Compile Include="Assets\Script\A_Script\Central\showEnding.cs" />
      <Compile Include="Assets\Script\B_Script\Building.cs" />
+     <Compile Include="Assets\Script\multi\MenuButton.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Interactable.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSwitching.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\QuestGiver.cs" />
      <Compile Include="Assets\Script\B_Script\Save\ChangeState.cs" />
      <Compile Include="Assets\Script\A_Script\Central\icecreamButton.cs" />
      <Compile Include="Assets\Script\B_Script\BreakBuilding.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Script\B_Script\percent\breadTrigger.cs" />
      <Compile Include="Assets\Script\B_Script\Save\AllSave.cs" />
      <Compile Include="Assets\Script\Start_Script\PlayButton.cs" />
      <Compile Include="Assets\Script\B_Script\NPC\NPC2.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\DropItem.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameObject.cs" />
      <Compile Include="Assets\Script\B_Script\NewCamera.cs" />
@@ -111,7 +124,9 @@
      <Compile Include="Assets\Script\Net\NetMessage\NetMessage.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\Recipe.cs" />
      <Compile Include="Assets\Script\A_Script\Restore\RestoreFirst.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
      <Compile Include="Assets\Script\A_Script\Talk\TalkManager.cs" />
+     <Compile Include="Assets\Script\multi\Launcher.cs" />
      <Compile Include="Assets\Script\B_Script\percent\puddingTrigger.cs" />
      <Compile Include="Assets\Script\B_Script\Inventory\Inventory.cs" />
      <Compile Include="Assets\Script\B_Script\CameraBoundary.cs" />
@@ -121,41 +136,26 @@
      <Compile Include="Assets\Script\Login\SignUpServer.cs" />
      <Compile Include="Assets\Script\B_Script\percent\Bpercent.cs" />
      <Compile Include="Assets\Script\B_Script\PlayerData.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
      <Compile Include="Assets\Script\B_Script\NPC.cs" />
      <Compile Include="Assets\Script\Login\GuestLogin.cs" />
      <Compile Include="Assets\Script\B_Script\DeleteTimeline\TimelineManager.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponInvenUI.cs" />
      <Compile Include="Assets\Script\Start_Script\StartScreen.cs" />
      <Compile Include="Assets\Script\A_Script\Talk\ObjData.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSaveLast.cs" />
      <Compile Include="Assets\Script\B_Script\EnterB\EnterBpudding.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Script\A_Script\Central\CentralGroundEnter.cs" />
      <Compile Include="Assets\Script\A_Script\TriggerEnter\TriggertoSave.cs" />
      <Compile Include="Assets\Script\B_Script\percent\Textpercent.cs" />
+     <Compile Include="Assets\Script\multi\Multichoice.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\ScriptTrigger.cs" />
      <Compile Include="Assets\Script\A_Script\Central\colorchange.cs" />
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleBehaviour.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\textChange.cs" />
-     <Compile Include="Assets\Script\multi\Multichoice.cs" />
-     <Compile Include="Assets\Script\multi\MenuButton.cs" />
-     <Compile Include="Assets\Script\multi\PlayerListItem.cs" />
-     <Compile Include="Assets\Script\multi\Launcher.cs" />
-     <Compile Include="Assets\Script\multi\RoomListItem.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
-     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
-     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -428,6 +428,12 @@
     <Reference Include="MongoDB.Driver.Core">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.Core.dll</HintPath>
     </Reference>
+    <Reference Include="websocket-sharp">
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+        <HintPath>C:/Unity/Journey of Hoodie/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
         <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
@@ -448,12 +454,6 @@
     </Reference>
     <Reference Include="MongoDB.Driver">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-        <HintPath>C:/Unity/Journey of Hoodie/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-        <HintPath>C:/Unity/Journey of Hoodie/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -803,17 +803,11 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -821,14 +815,8 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Collections">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
@@ -848,39 +836,31 @@
     <Reference Include="Unity.Mathematics">
         <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+        <HintPath>C:/Unity/Journey of Hoodie/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{1f393475-2e8e-0eda-29de-610ae8334cb9}</Project>
-      <Name>PhotonUnityNetworking</Name>
-    </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{619e86df-1988-9740-e757-383191b3b115}</Project>
-      <Name>PunDemos.DemoSlotcarEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{471cd0f4-b673-bb05-f7c2-0de4ba0f3a5f}</Project>
-      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{7393bd2a-9633-6740-4ef5-442bbcf9300f}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{b1bb630d-c21a-c923-f232-e41a2a25633e}</Project>
-      <Name>PhotonUnityNetworking.Demos</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{1dc71f7a-111a-5642-ae5c-225a0df877ea}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{223c0002-8daa-1fa3-ee14-9666b835513a}</Project>
-      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
       <Project>{222f54dd-90cb-dd7e-7fd3-e986bdff2b73}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{223c0002-8daa-1fa3-ee14-9666b835513a}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
       <Project>{7d85ea5c-223d-c542-36cf-f8b32e39aa1b}</Project>
@@ -889,6 +869,26 @@
     <ProjectReference Include="PhotonRealtime.csproj">
       <Project>{c9e9e4e7-2368-13ee-1747-1a1293657566}</Project>
       <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{7393bd2a-9633-6740-4ef5-442bbcf9300f}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{1f393475-2e8e-0eda-29de-610ae8334cb9}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{b1bb630d-c21a-c923-f232-e41a2a25633e}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{619e86df-1988-9740-e757-383191b3b115}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{471cd0f4-b673-bb05-f7c2-0de4ba0f3a5f}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

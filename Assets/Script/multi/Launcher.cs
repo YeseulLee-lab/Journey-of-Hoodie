@@ -24,7 +24,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
         PhotonNetwork.ConnectUsingSettings();//설정한 포톤 서버에 때라 마스터 서버에 연결
 
         if(null != GameObject.Find("DataObject")){
-            icenickname = GameObject.Find("icenicknameObject").GetComponent<nicknameObject>().icenickname;
+            icenickname = GameObject.Find("DataObject").GetComponent<nicknameObject>().icenickname;
         }
         else{
             icenickname = "아이스";
