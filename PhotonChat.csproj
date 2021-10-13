@@ -321,9 +321,6 @@
     <Reference Include="MongoDB.Driver">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Database/Plugin/MongoDB.Driver.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-        <HintPath>C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.dll</HintPath>
-    </Reference>
     <Reference Include="Photon3Unity3D">
         <HintPath>C:/Unity/Journey of Hoodie/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>

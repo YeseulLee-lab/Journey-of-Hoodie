@@ -105,6 +105,10 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CROSS_PLATFORM_INPUT
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -302,10 +306,6 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
 -r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.dll"
--r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.Mdb.dll"
--r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.Pdb.dll"
--r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.Rocks.dll"
 -r:"Library/Bee/artifacts/StandaloneWindows_CodeGen/UnityEngine.TestRunner.ref.dll"
 "Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/Api/CallbacksDelegator.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/Api/CallbacksDelegatorListener.cs"
@@ -469,7 +469,7 @@
 -langversion:8.0
 
 /deterministic
-/optimize+
+/optimize-
 /debug:portable
 /nologo
 /RuntimeMetadataVersion:v4.0.30319

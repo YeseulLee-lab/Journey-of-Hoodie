@@ -105,6 +105,10 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CROSS_PLATFORM_INPUT
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
 -define:PACKAGE_PHYSICS
 -define:PACKAGE_PHYSICS2D
 -define:PACKAGE_ANIMATION
@@ -115,6 +119,8 @@
 -r:"Assets/Database/Plugin/MongoDB.Driver.Core.dll"
 -r:"Assets/Database/Plugin/MongoDB.Driver.dll"
 -r:"Assets/Database/Plugin/System.Buffers.dll"
+-r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
+-r:"Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -316,7 +322,6 @@
 -r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.burst@1.5.5/Unity.Burst.Unsafe.dll"
 -r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.collections@1.0.0-pre.5/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
 -r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"C:/Unity/Journey of Hoodie/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.1-preview.1/Mono.Cecil.dll"
 -r:"Library/Bee/artifacts/StandaloneWindows_CodeGen/UnityEditor.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/StandaloneWindows_CodeGen/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/StandaloneWindows_CodeGen/UnityEngine.UI.ref.dll"
@@ -360,7 +365,7 @@
 -langversion:8.0
 
 /deterministic
-/optimize+
+/optimize-
 /debug:portable
 /nologo
 /RuntimeMetadataVersion:v4.0.30319
