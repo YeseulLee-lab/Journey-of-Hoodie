@@ -451,6 +451,7 @@
 "Assets/Script/multi/Multichoice.cs"
 "Assets/Script/multi/PlayerListItem.cs"
 "Assets/Script/multi/RoomListItem.cs"
+"Assets/Script/multi/Test.cs"
 "Assets/Script/Net/Client.cs"
 "Assets/Script/Net/GameUI.cs"
 "Assets/Script/Net/NetMessage/NetKeepAlive.cs"
