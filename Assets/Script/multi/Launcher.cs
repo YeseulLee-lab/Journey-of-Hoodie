@@ -24,7 +24,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
         PhotonNetwork.ConnectUsingSettings();//설정한 포톤 서버에 때라 마스터 서버에 연결
 
         if(null != GameObject.Find("DataObject")){
-            icenickname = GameObject.Find("DataObject").GetComponent<nicknameObject>().icenickname;
+            icenickname = GameObject.Find("DataObject").GetComponent<TransData>().icenickname;
         }
         else{
             icenickname = "아이스";
@@ -75,10 +75,10 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
     public override void OnJoinedRoom()//방에 들어갔을때 작동
     {
         RoomName.text = PhotonNetwork.CurrentRoom.Name;//들어간 방 이름표시
-        print(PhotonNetwork.CurrentRoom.Name);
         Player[] players = PhotonNetwork.PlayerList;
         for (int i = 0; i < players.Count(); i++)
         {
+            print(players[i]);
             Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerListItem>().SetUp(players[i]);
             //내가 방에 들어가면 방에있는 사람 목록 만큼 이름표 뜨게 하기
         }

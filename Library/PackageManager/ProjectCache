@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637697180505340894
-    m_Hash: 2838565580
+      ticks: 637697265544693291
+    m_Hash: 14654477
   m_LockFileStatus:
     m_FilePath: C:/Unity/Journey of Hoodie/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637697180512441247
-    m_Hash: 3447341227
+      ticks: 637697265544703264
+    m_Hash: 1826189357
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

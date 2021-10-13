@@ -16,7 +16,7 @@ public class RoomListItem : MonoBehaviour
     }
 
     public void Onclick(){
-        GameObject.Find("Photon").GetComponent<Launcher>().JoinRoom(info);
+        GameObject.Find("MULTI").GetComponent<Launcher>().JoinRoom(info);
         Debug.Log("loading...");
     }
 

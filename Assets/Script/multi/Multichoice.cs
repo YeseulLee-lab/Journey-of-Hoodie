@@ -18,10 +18,10 @@ public class Multichoice : MonoBehaviour
     {
         if(null != GameObject.Find("DataObject")){
             DataObject = GameObject.Find("DataObject");
-            Multi.SetActive(true);
+            Multi.SetActive(false);
         }
         else{
-            Multi.SetActive(false);
+            Multi.SetActive(true);
             return;
         }
 
