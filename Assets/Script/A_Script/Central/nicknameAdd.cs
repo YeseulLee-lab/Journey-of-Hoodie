@@ -32,18 +32,18 @@ public class nicknameAdd : MonoBehaviour
       icenicknameObject = GameObject.Find("DataObject");
     }
 
+    public void ButtonClick(){
+      icenickname = icenicknameIF.text;
+      var filter = Builders<BsonDocument>.Filter.Eq("nickname", nickname);
+      var update = Builders<BsonDocument>.Update.Set("icenickname", icenickname);
+      collection.UpdateOne(filter, update);
+      icenicknameObject.GetComponent<TransData>().icenickname = icenickname;
+      DontDestroyOnLoad(icenicknameObject);
+      SceneManager.LoadScene("MultiChoice");
+    }
+
     // Update is called once per frame
-    void Update()
-    {
-      if (Input.GetKeyDown(KeyCode.Return)){
-        icenickname = icenicknameIF.text;
-        var filter = Builders<BsonDocument>.Filter.Eq("nickname", nickname);
-        var update = Builders<BsonDocument>.Update.Set("icenickname", icenickname);
-        collection.UpdateOne(filter, update);
-        icenicknameObject.GetComponent<TransData>().icenickname = icenickname;
-        DontDestroyOnLoad(icenicknameObject);
-        SceneManager.LoadScene("B");
-      }
+ 
         //var document = collection.Find(filter).FirstOrDefault();
        // print(studentDocument.ToString());
      //   print(document);
@@ -57,5 +57,6 @@ public class nicknameAdd : MonoBehaviour
         string icenickname = icenicknameIF.text;
 
         collection.ReplaceOneAsync("icenickname", document);*/
-    }
+
+    
 }

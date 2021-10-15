@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SaveChangeState : MonoBehaviour
 {
-   public StateSave changeState;
+    [SerializeField] public StateSave changeState;
     //public List<int> stateNum = new List<int>();
 
     // Start is called before the first frame update

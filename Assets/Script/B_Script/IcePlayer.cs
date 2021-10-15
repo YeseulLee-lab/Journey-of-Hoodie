@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class IcePlayer : MonoBehaviour
 {
@@ -24,14 +25,17 @@ public class IcePlayer : MonoBehaviour
     public GameObject textpudding;
     public GameObject textbread;
     public GameObject textcheese;
+    public GameObject Darker;
     public Text townName;
     public Vector3 position;
     PlayerData data;
-
+    PhotonView PV;
     //SavePlayerPos playerPosData;
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
+        PV = GetComponent<PhotonView>();
+        animator = GetComponent<Animator>();
         // playerPosData = FindObjectOfType<SavePlayerPos>();
 
         // playerPosData.PlayerPosLoad();
@@ -43,7 +47,18 @@ public class IcePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+        Darker = GameObject.Find("Darker");
+        EnterPanel = Darker.transform.Find("EnterPanel").gameObject;
+        textpudding = Darker.transform.Find("Textpudding").gameObject;
+        textbread = Darker.transform.Find("Textbread").gameObject;
+        textcheese = Darker.transform.Find("Textcheese").gameObject;
+        townName = Darker.transform.Find("TownName").gameObject.GetComponent<Text>();
+
+        if (!PV.IsMine){
+           // Destroy(GameObject.Find("Main Camera"));
+        }
+       /* controller = GetComponent<CharacterController>();
         PlayerData data = SavePlayerPos.LoadPlayer();
         Vector3 position;
 
@@ -51,7 +66,7 @@ public class IcePlayer : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         Debug.Log(position);
-        transform.position = position;
+        transform.position = position;*/
     }
 
     public void Move(){
@@ -78,6 +93,9 @@ public class IcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!PV.IsMine){
+            return;
+        }
         Move();
         
 //        Debug.Log(gameObject.name);
@@ -94,7 +112,9 @@ public class IcePlayer : MonoBehaviour
                 if(Input.GetButtonDown("Enter")){
                     if(Physics.Raycast(transform.position + transform.up * 3.0f, transform.forward, out Enterhit, MaxDistance)){
                         if(hit.transform.gameObject.tag == "Building"){
+                            Darker.SetActive(true);
                             EnterPanel.SetActive(true);
+                            townName.transform.gameObject.SetActive(true);
                             textpudding.SetActive(true);
                             textbread.SetActive(false);
                             textcheese.SetActive(false);
@@ -105,7 +125,9 @@ public class IcePlayer : MonoBehaviour
                             position.z = data.position[2];
                         }
                         else if(hit.transform.gameObject.tag == "Building2"){
+                            Darker.SetActive(true);
                             EnterPanel.SetActive(true);
+                            townName.transform.gameObject.SetActive(true);
                             textpudding.SetActive(false);
                             textbread.SetActive(true);
                             textcheese.SetActive(false);
@@ -116,7 +138,9 @@ public class IcePlayer : MonoBehaviour
                             position.z = data.position[2];
                         }
                         else if(hit.transform.gameObject.tag == "Building3"){
+                            Darker.SetActive(true);
                             EnterPanel.SetActive(true);
+                            townName.transform.gameObject.SetActive(true);
                             textpudding.SetActive(false);
                             textbread.SetActive(false);
                             textcheese.SetActive(true);

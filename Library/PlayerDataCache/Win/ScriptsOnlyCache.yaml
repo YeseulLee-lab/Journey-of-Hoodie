@@ -3,9 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - AllSave
     - Bpercent
-    - Camera
     - CameraBoundary
-    - Client
     - ColorChange
     - DropItem
     - EnterTown
@@ -18,13 +16,13 @@ ScriptsOnlyBuild:
     - ItemPickup
     - Launcher
     - Multichoice
-    - NewCamera
     - PlayerListItem
+    - PlayerManager
     - QuestionFollowCube
     - RoomListItem
+    - RoomManager
     - SaveAndLoad
     - SaveChangeState
-    - Server
     - SubtitleClip
     - SubtitleTrack
     - Textpercent
@@ -34,19 +32,9 @@ ScriptsOnlyBuild:
     - cheeseTrigger
     - puddingTrigger
     - textChange
-    PhotonUnityNetworking.Demos.dll:
-    - Photon.Pun.Demo.Asteroids.Asteroid
-    - Photon.Pun.Demo.Asteroids.Bullet
-    - Photon.Pun.Demo.Asteroids.Spaceship
-    - Photon.Pun.Demo.PunBasics.CameraWork
-    - Photon.Pun.Demo.PunBasics.PlayerAnimatorManager
-    - Photon.Pun.Demo.PunBasics.PlayerManager
-    - Photon.Pun.Demo.PunBasics.PlayerUI
-    - Photon.Pun.Demo.SlotRacer.PlayerControl
-    - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
-    - Photon.Pun.PhotonAnimatorView
-    - Photon.Pun.PhotonRigidbodyView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
@@ -72,8 +60,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -88,8 +78,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
-    - UnityEngine.UI.Shadow
-    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
@@ -111,10 +99,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
-    - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
@@ -143,144 +127,100 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1572}
-    - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 1786}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1842}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 2022}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 2028}
+      Script: {instanceID: 1994}
     - Class: 114
-      Script: {instanceID: 2096}
+      Script: {instanceID: 2010}
     - Class: 114
-      Script: {instanceID: 2106}
+      Script: {instanceID: 2062}
     - Class: 114
-      Script: {instanceID: 2158}
+      Script: {instanceID: 2178}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 2376}
     - Class: 114
-      Script: {instanceID: 2340}
+      Script: {instanceID: 2564}
     - Class: 114
-      Script: {instanceID: 2368}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2370}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 2412}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2466}
+      Script: {instanceID: 2862}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 3140}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 3150}
     - Class: 114
-      Script: {instanceID: 2820}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 3262}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 3270}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 3286}
     - Class: 114
-      Script: {instanceID: 3030}
+      Script: {instanceID: 3302}
     - Class: 114
-      Script: {instanceID: 3066}
+      Script: {instanceID: 3366}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 3710}
     - Class: 114
-      Script: {instanceID: 3300}
+      Script: {instanceID: 3752}
     - Class: 114
-      Script: {instanceID: 3310}
+      Script: {instanceID: 3820}
     - Class: 114
-      Script: {instanceID: 3416}
+      Script: {instanceID: 3886}
     - Class: 114
-      Script: {instanceID: 3422}
+      Script: {instanceID: 3918}
     - Class: 114
-      Script: {instanceID: 3424}
+      Script: {instanceID: 4152}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 4286}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 4326}
     - Class: 114
-      Script: {instanceID: 3462}
+      Script: {instanceID: 4338}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 4360}
     - Class: 114
-      Script: {instanceID: 3872}
+      Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 4430}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 4554}
     - Class: 114
-      Script: {instanceID: 4046}
+      Script: {instanceID: 4696}
     - Class: 114
-      Script: {instanceID: 4076}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 5336}
     - Class: 114
-      Script: {instanceID: 4120}
+      Script: {instanceID: 5338}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 5348}
     - Class: 114
-      Script: {instanceID: 4414}
-    - Class: 114
-      Script: {instanceID: 4418}
-    - Class: 114
-      Script: {instanceID: 4442}
-    - Class: 114
-      Script: {instanceID: 4482}
-    - Class: 114
-      Script: {instanceID: 4494}
-    - Class: 114
-      Script: {instanceID: 4516}
-    - Class: 114
-      Script: {instanceID: 4532}
-    - Class: 114
-      Script: {instanceID: 4586}
-    - Class: 114
-      Script: {instanceID: 4608}
-    - Class: 114
-      Script: {instanceID: 4664}
-    - Class: 114
-      Script: {instanceID: 4710}
-    - Class: 114
-      Script: {instanceID: 4762}
-    - Class: 114
-      Script: {instanceID: 4852}
-    - Class: 114
-      Script: {instanceID: 5084}
-    - Class: 114
-      Script: {instanceID: 5086}
-    - Class: 114
-      Script: {instanceID: 5260}
-    - Class: 114
-      Script: {instanceID: 5490}
+      Script: {instanceID: 5386}
     - Class: 114
       Script: {instanceID: 5492}
-    - Class: 114
-      Script: {instanceID: 5502}
-    - Class: 114
-      Script: {instanceID: 5538}
-    - Class: 114
-      Script: {instanceID: 5636}
-    - Class: 114
-      Script: {instanceID: 5644}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
-      Script: {instanceID: 0}
-    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -304,13 +244,110 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
     - Class: 320
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/MultiChoice.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1564}
+    - Class: 114
+      Script: {instanceID: 1566}
+    - Class: 114
+      Script: {instanceID: 1568}
+    - Class: 114
+      Script: {instanceID: 1574}
+    - Class: 114
+      Script: {instanceID: 1932}
+    - Class: 114
+      Script: {instanceID: 1942}
+    - Class: 114
+      Script: {instanceID: 2178}
+    - Class: 114
+      Script: {instanceID: 2252}
+    - Class: 114
+      Script: {instanceID: 2670}
+    - Class: 114
+      Script: {instanceID: 2814}
+    - Class: 114
+      Script: {instanceID: 2870}
+    - Class: 114
+      Script: {instanceID: 3012}
+    - Class: 114
+      Script: {instanceID: 3150}
+    - Class: 114
+      Script: {instanceID: 3256}
+    - Class: 114
+      Script: {instanceID: 3262}
+    - Class: 114
+      Script: {instanceID: 3720}
+    - Class: 114
+      Script: {instanceID: 3752}
+    - Class: 114
+      Script: {instanceID: 4286}
+    - Class: 114
+      Script: {instanceID: 4606}
+    - Class: 114
+      Script: {instanceID: 4928}
+    - Class: 114
+      Script: {instanceID: 4930}
+    - Class: 114
+      Script: {instanceID: 5106}
+    - Class: 114
+      Script: {instanceID: 53610}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -369,12 +406,6 @@ ScriptsOnlyBuild:
     className: OnClickRpc
   - hash:
       serializedVersion: 2
-      Hash: 7271649844da568677253e9df423644e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Realtime.Demo
-    className: ConnectAndJoinRandomLb
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
@@ -387,12 +418,6 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 11bdd61587db747672b66c52442395d8
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: GameVersionProperty
-  - hash:
-      serializedVersion: 2
       Hash: ab039a385ef4459756519a3fe91dccc6
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -403,24 +428,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
-  - hash:
-      serializedVersion: 2
-      Hash: e7f4e9cb5468a346609dfdb36da26dcc
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: IntInputField
-  - hash:
-      serializedVersion: 2
-      Hash: 4d9f3379d9846c3f857ff61792c5ee3b
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: PlayerUI
-  - hash:
-      serializedVersion: 2
-      Hash: b89ca8c8ae7041500fa1df2b061f55c9
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
-    className: Line
   - hash:
       serializedVersion: 2
       Hash: b7370452a38373e87e22f796ba9e5398
@@ -441,28 +448,10 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CountOfPlayersOnMasterProperty
-  - hash:
-      serializedVersion: 2
-      Hash: b1f26da3046d8b188758169a9d6b1078
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
-    className: BezierSpline
-  - hash:
-      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: LayoutElement
-  - hash:
-      serializedVersion: 2
-      Hash: cba6cca6bb3290c4c00d709cf63843db
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: GameVersionField
   - hash:
       serializedVersion: 2
       Hash: e734f001be71082c61050d7f6e6c5c04
@@ -477,40 +466,16 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: ee84478990d29c6d64a8d3003b44725c
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: PlayerOverviewPanel
-  - hash:
-      serializedVersion: 2
-      Hash: e80cf4684910fdd7f091d85a19a93603
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer
-    className: SlotLanes
-  - hash:
-      serializedVersion: 2
       Hash: d546251d677bee0b6521702ae47afa80
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FindData
   - hash:
       serializedVersion: 2
-      Hash: 4fe8955e1c662935371b0936cafbb89b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.UtilityScripts
-    className: TextButtonTransition
-  - hash:
-      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 55fd795e51da61232a17e9ce0af59f52
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: Spaceship
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -529,18 +494,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Diary
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomIsOpenProperty
-  - hash:
-      serializedVersion: 2
-      Hash: dcd6510802860a8c46ac579712118fc5
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: FriendListView
   - hash:
       serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
@@ -573,18 +526,6 @@ ScriptsOnlyBuild:
     className: OnPointerOverTooltip
   - hash:
       serializedVersion: 2
-      Hash: 55c5d4231b5b81f8762aca1b7e16819e
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: PlayerListEntry
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomIsVisibleProperty
-  - hash:
-      serializedVersion: 2
       Hash: 08f463334c1b8faad3473cd5500de4a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -595,18 +536,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: apearPercent
-  - hash:
-      serializedVersion: 2
-      Hash: 2163458cae41cb1735c8b06fc34a9582
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: UserIdField
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CountOfPlayersInRoomProperty
   - hash:
       serializedVersion: 2
       Hash: 6a8cc8749c7f0ff87ff7a47d5eaded6e
@@ -621,28 +550,10 @@ ScriptsOnlyBuild:
     className: SelectMod
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CloudRegionProperty
-  - hash:
-      serializedVersion: 2
       Hash: 53a80c2bdeae80b6db8d4ee2cf360fe8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPCSave
-  - hash:
-      serializedVersion: 2
-      Hash: 60fb902c3bfc0533f4e7b79e5d161e78
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Hub
-    className: DemoHubManager
-  - hash:
-      serializedVersion: 2
-      Hash: d1f07c9e64b7817e6271f80bb03de25f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -651,22 +562,16 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: ba160f8fe96116c81151a9a24d7d9f4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: RoomListCell
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Procedural
-    className: IngameControlPanel
-  - hash:
-      serializedVersion: 2
       Hash: e0766a0e8938b34dbdc572ce4b274d5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerListItem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: multiStart
   - hash:
       serializedVersion: 2
       Hash: 5172dcc5d847951499daa4e97d7a4152
@@ -705,12 +610,6 @@ ScriptsOnlyBuild:
     className: RestoreHouse
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomAutoCleanupProperty
-  - hash:
-      serializedVersion: 2
       Hash: b795585eaa1da437802629009c20d356
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -735,12 +634,6 @@ ScriptsOnlyBuild:
     className: WeaponInven
   - hash:
       serializedVersion: 2
-      Hash: 7221ab9307aaa6b66a416e2e4561f420
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: ScoreHelper
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -753,52 +646,16 @@ ScriptsOnlyBuild:
     className: QuestionFollowCube
   - hash:
       serializedVersion: 2
-      Hash: f8f5c34557f4103b6547d8f956cec6ea
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer
-    className: PlayerControl
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: BestRegionInPrefsProperty
-  - hash:
-      serializedVersion: 2
-      Hash: 18d89cb858d0cf8a1f38bb786789eaa7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.Demo
-    className: ChatAppIdCheckerUI
-  - hash:
-      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomIsOpenToggle
-  - hash:
-      serializedVersion: 2
-      Hash: 37b66d97ccef5607e80037acafe51b3b
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
-    className: SplineWalker
-  - hash:
-      serializedVersion: 2
       Hash: ab3ac7189ae92de54e2cd3dbded0b99f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timeline
-  - hash:
-      serializedVersion: 2
-      Hash: c380fc5ce39348202e0a58fe3e243a74
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: Launcher
   - hash:
       serializedVersion: 2
       Hash: fcd7f9efbb0521cca332c931872efb44
@@ -811,18 +668,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Procedural
-    className: Cluster
-  - hash:
-      serializedVersion: 2
-      Hash: d329540117e6b6c523bded68046af505
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PropertyListenerBase
   - hash:
       serializedVersion: 2
       Hash: 87207d40b89ca632396b05b3cb1e69b0
@@ -861,28 +706,10 @@ ScriptsOnlyBuild:
     className: NpcPet
   - hash:
       serializedVersion: 2
-      Hash: b25c2463ba9144686d18d7707733226b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.Demo
-    className: NamePickGui
-  - hash:
-      serializedVersion: 2
-      Hash: 80d2851602cb4bcb6f559596c5eb955b
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PlayerListCell
-  - hash:
-      serializedVersion: 2
       Hash: 7893005e3f2043e41098a9b50745d979
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventorySlot
-  - hash:
-      serializedVersion: 2
-      Hash: f941c3a384168571b7d90f58ec4986bc
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: InfosPanelPlaceholder
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -891,22 +718,10 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomIsVisibleToggle
-  - hash:
-      serializedVersion: 2
       Hash: 9f049e1c86999fbd1b6bc05d2574ce37
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnterBbread
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomPropertiesListedInLobbyProperty
   - hash:
       serializedVersion: 2
       Hash: 63e544a51cce7f2ca4300ca7a33e4a09
@@ -999,18 +814,6 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CountOfPlayersProperty
-  - hash:
-      serializedVersion: 2
-      Hash: a8e4bc52348c9279d138a27b5a850d5b
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: RoomListView
-  - hash:
-      serializedVersion: 2
       Hash: 6a0ab3e1e801ee70c2fcb3de82737eb1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1041,12 +844,6 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 267e1e00a8f1d106bd614339db235595
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PunCockpit
-  - hash:
-      serializedVersion: 2
       Hash: c92502a957169784bf716c44551cf860
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1057,12 +854,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: d7f7bc402888d42a0dbb080693e6863c
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: LoaderAnime
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -1101,28 +892,16 @@ ScriptsOnlyBuild:
     className: QuestScript
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: OfflineModeProperty
-  - hash:
-      serializedVersion: 2
       Hash: 44e8b1c73c5e89d7918d995e7ac9182a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryUI
   - hash:
       serializedVersion: 2
-      Hash: 9b00483ad5b3906eaf6d471fa870122d
+      Hash: 76eef944b7b30677a2275d361a2c153c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IcePlayer
-  - hash:
-      serializedVersion: 2
-      Hash: 4c0ebd9e77f5bc0558d19d8313e54bb9
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
-    className: SplinePosition
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1179,22 +958,10 @@ ScriptsOnlyBuild:
     className: GameUI
   - hash:
       serializedVersion: 2
-      Hash: 7602c8d40ade510f4c0e781c7062b246
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.Demo
-    className: ChannelSelector
-  - hash:
-      serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomIsOfflineProperty
   - hash:
       serializedVersion: 2
       Hash: aef315d0a49c5aa4442a1d1a20eb141c
@@ -1209,12 +976,6 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomNameProperty
-  - hash:
-      serializedVersion: 2
       Hash: 5ae7ee875587b2cd141a647a192ae526
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1225,18 +986,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
-  - hash:
-      serializedVersion: 2
-      Hash: 19c703fb20b3231dbd1a21248e8bb11b
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PlayerDetailsController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: PlayerNameInputField
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1263,12 +1012,6 @@ ScriptsOnlyBuild:
     className: BGameManage
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: IsConnectedAndReadyProperty
-  - hash:
-      serializedVersion: 2
       Hash: 23866ef86efb5affbbe8d7f9b41e3619
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1293,40 +1036,10 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 195818f2c3272aa8f74f5d28b9e04e94
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuButton
-  - hash:
-      serializedVersion: 2
       Hash: 79f66eb599444eec2655a68ea3823745
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Interactable
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PingProperty
-  - hash:
-      serializedVersion: 2
-      Hash: 72f0e262cec16c9f4520dc3bf2b81796
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
-    className: BezierCurve
-  - hash:
-      serializedVersion: 2
-      Hash: 5e8a01a14cef8c5fb6866e39e13545df
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: UnityStandardAssets.Characters.ThirdPerson.PunDemos
-    className: ThirdPersonCharacter
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: IsConnectedProperty
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -1359,13 +1072,7 @@ ScriptsOnlyBuild:
     className: ChangeState
   - hash:
       serializedVersion: 2
-      Hash: afb97f21bf5ca1f779240368ac4bb239
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit.Forms
-    className: ConnectToRegionUIForm
-  - hash:
-      serializedVersion: 2
-      Hash: 6e97eeb16e25e49b91f7fecc75e96699
+      Hash: 534b5c464ff34840677d9fde1e3a7fa6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: icecreamButton
@@ -1381,18 +1088,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.Demo
-    className: IgnoreUiRaycastWhenInactive
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomPlayerCountProperty
   - hash:
       serializedVersion: 2
       Hash: 4ce15e99c635d2567873d27549d1f16f
@@ -1413,6 +1108,12 @@ ScriptsOnlyBuild:
     className: breadTrigger
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1423,12 +1124,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: cba6cca6bb3290c4c00d709cf63843db
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: SendRateOnSerializeField
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1449,40 +1144,16 @@ ScriptsOnlyBuild:
     className: AllSave
   - hash:
       serializedVersion: 2
-      Hash: 632731657c90f101a2dca0a2b7a6245c
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: BoolInputField
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: ServerProperty
-  - hash:
-      serializedVersion: 2
       Hash: 4cdc350fef8cc7330d6ec7f42c764af9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayButton
   - hash:
       serializedVersion: 2
-      Hash: cba6cca6bb3290c4c00d709cf63843db
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: NickNameField
-  - hash:
-      serializedVersion: 2
       Hash: 3735f185d04dd0fc5f04bfd892449d3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPC2
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.UtilityScripts
-    className: EventSystemSpawner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1509,12 +1180,6 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: a8d3c943d9168cbdd8596f040ff02ff4
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: Asteroid
-  - hash:
-      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1539,46 +1204,16 @@ ScriptsOnlyBuild:
     className: NewCamera
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo
-    className: WebRpcImplementationExample
-  - hash:
-      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: e7f4e9cb5468a346609dfdb36da26dcc
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit.Forms
-    className: SetRoomCustomPropertyUIForm
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Hub
-    className: ToDemoHubButton
-  - hash:
-      serializedVersion: 2
       Hash: a872e3dae795462f9992369355a30a67
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TransData
-  - hash:
-      serializedVersion: 2
-      Hash: d9aa52c5a283a9b8a790e55c0dee9ccf
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: RegionListCell
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CountOfRoomsProperty
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1605,22 +1240,10 @@ ScriptsOnlyBuild:
     className: Recipe
   - hash:
       serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomMaxPlayersProperty
-  - hash:
-      serializedVersion: 2
       Hash: a81d4c2c1cf3ad164d277d927a193679
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
-  - hash:
-      serializedVersion: 2
-      Hash: cba6cca6bb3290c4c00d709cf63843db
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: BackgroundTimeOutField
   - hash:
       serializedVersion: 2
       Hash: 500298ac60b0d3de3860a789f3929923
@@ -1635,12 +1258,6 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: AutoSyncSceneToggle
-  - hash:
-      serializedVersion: 2
       Hash: ee1dba1a186ac062d564e9eb73a1c56f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -1651,24 +1268,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ae1347d9113eee8b83c5c8047dcf31a8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.Demo
-    className: FriendItem
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: Bullet
-  - hash:
-      serializedVersion: 2
-      Hash: bd4c580f02d31d4be48d7a47440392c4
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: PlayerAnimatorManager
   - hash:
       serializedVersion: 2
       Hash: 80b80887dbdf6dd4f211c1d039b6b662
@@ -1683,22 +1282,10 @@ ScriptsOnlyBuild:
     className: CullArea
   - hash:
       serializedVersion: 2
-      Hash: 92b8fbb1b8e53469d7549c58a3fe58fe
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: LobbyMainPanel
-  - hash:
-      serializedVersion: 2
-      Hash: 4f458e5c11a68d8a32a454eec6b57e44
+      Hash: 1c2e8747033d467e883fdfc2227751f0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Launcher
-  - hash:
-      serializedVersion: 2
-      Hash: 74c875e0f15c48e0a55f06093aa93e15
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: LayoutElementMatchSize
   - hash:
       serializedVersion: 2
       Hash: d5cfdf96b083623a7f3c46ea92750d40
@@ -1719,12 +1306,6 @@ ScriptsOnlyBuild:
     className: CameraBoundary
   - hash:
       serializedVersion: 2
-      Hash: ac1e49249c7034b7330cd0827116d70f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit.Forms
-    className: CreateRoomUiForm
-  - hash:
-      serializedVersion: 2
       Hash: 36c913135e1a122df4047cf80ec7eba1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1741,18 +1322,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: TextButtonTransition
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomExpectedUsersProperty
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomMasterClientIdProperty
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1785,28 +1354,10 @@ ScriptsOnlyBuild:
     className: ButtonInsideScrollList
   - hash:
       serializedVersion: 2
-      Hash: 9c80efe996101ed2f2acdc43e1a95b5b
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: AsteroidsGameManager
-  - hash:
-      serializedVersion: 2
-      Hash: e10400e84c8c573b2b5e4088aca77453
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: PlayerManager
-  - hash:
-      serializedVersion: 2
       Hash: 232f58a76f6ea5bbc513d8f91735fd3c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SignUpServer
-  - hash:
-      serializedVersion: 2
-      Hash: e90137b14c2644736d5abeafc2b26c9a
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: OnlineDocButton
   - hash:
       serializedVersion: 2
       Hash: ed73a38a6df650fdeeacac5cdb11df48
@@ -1845,12 +1396,6 @@ ScriptsOnlyBuild:
     className: PhotonRigidbodyView
   - hash:
       serializedVersion: 2
-      Hash: 48804c7edfd2998cdab1bf456d8dbfd0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PlayerListView
-  - hash:
-      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1875,28 +1420,10 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 8ae3331b163cc121825eeed3975d6c4d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.Demo
-    className: ChatGui
-  - hash:
-      serializedVersion: 2
-      Hash: 1aec3137280638278bc9bcbe5b3bc1b3
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PunCockpitEmbed
-  - hash:
-      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
-  - hash:
-      serializedVersion: 2
-      Hash: 4f417ca0a3b31b376eb402726c240bde
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: RegionListView
   - hash:
       serializedVersion: 2
       Hash: 6ee45d29dac904fc3b6dfadeaef45fe0
@@ -1941,12 +1468,6 @@ ScriptsOnlyBuild:
     className: WeaponInvenUI
   - hash:
       serializedVersion: 2
-      Hash: 74494c459d8da1b3c2f0349d1d8534aa
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: DocLinkButton
-  - hash:
-      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1971,24 +1492,6 @@ ScriptsOnlyBuild:
     className: ObjData
   - hash:
       serializedVersion: 2
-      Hash: f0c4eb24258257daca58a9939f0894d2
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: LobbyTopPanel
-  - hash:
-      serializedVersion: 2
-      Hash: e4aa02db6487ad3aebb8e2f22ee6b699
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Procedural
-    className: WorldGenerator
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CrcCheckToggle
-  - hash:
-      serializedVersion: 2
       Hash: adb92691ab0496634b4241d3545a0010
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
@@ -2001,22 +1504,10 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: ee1dba1a186ac062d564e9eb73a1c56f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.UtilityScripts
-    className: TextToggleIsOnTransition
-  - hash:
-      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
-  - hash:
-      serializedVersion: 2
-      Hash: e37675de1ea5e56da90f5600d33587bd
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: ToggleExpand
   - hash:
       serializedVersion: 2
       Hash: 18e32c458080489abaf9c7c7dd434993
@@ -2025,40 +1516,10 @@ ScriptsOnlyBuild:
     className: NPCSaveLast
   - hash:
       serializedVersion: 2
-      Hash: d2a2698b314a20912af1eb2b1758dc90
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: PropertyCell
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Procedural
-    className: Block
-  - hash:
-      serializedVersion: 2
-      Hash: e7f4e9cb5468a346609dfdb36da26dcc
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit.Forms
-    className: LoadLevelUIForm
-  - hash:
-      serializedVersion: 2
-      Hash: c87a2744a4fec8052f557862b102c4e4
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: FriendListCell
-  - hash:
-      serializedVersion: 2
       Hash: 47cb13937d80a450aefeced75a0d46a3
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: ServerSettings
-  - hash:
-      serializedVersion: 2
-      Hash: e7f4e9cb5468a346609dfdb36da26dcc
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: StringInputField
   - hash:
       serializedVersion: 2
       Hash: e1e615eaf73e560828f53edc8952e615
@@ -2067,40 +1528,10 @@ ScriptsOnlyBuild:
     className: PunTurnManager
   - hash:
       serializedVersion: 2
-      Hash: 11bdd61587db747672b66c52442395d8
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: ServerAddressProperty
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomPlayerTtlProperty
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: UnityStandardAssets.Characters.ThirdPerson.PunDemos
-    className: ThirdPersonUserControl
-  - hash:
-      serializedVersion: 2
       Hash: 191d109f4d5b80ee42811133aa0353aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnterBpudding
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Photon.Chat.UtilityScripts
-    className: OnStartDelete
-  - hash:
-      serializedVersion: 2
-      Hash: 11bdd61587db747672b66c52442395d8
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: AppVersionProperty
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -2127,22 +1558,10 @@ ScriptsOnlyBuild:
     className: Textpercent
   - hash:
       serializedVersion: 2
-      Hash: f68d560cb6efffb7ac89f2f858f94838
+      Hash: edd2ff50e31f45c4b36326c614ef64ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Multichoice
-  - hash:
-      serializedVersion: 2
-      Hash: ea4e73561703f90fbdc820af646becad
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.SlotRacer
-    className: SlotRacerSplashScreen
-  - hash:
-      serializedVersion: 2
-      Hash: c656dcc13ae391b68d594cc8f9c590b0
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: CurrentRoomEmptyRoomTtlProperty
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2169,22 +1588,10 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: e4316571779021b969790af4a77452dd
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Asteroids
-    className: RoomListEntry
-  - hash:
-      serializedVersion: 2
       Hash: abf1930d8126d0b2e00e9449129a0190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: cba6cca6bb3290c4c00d709cf63843db
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit
-    className: SendRateField
   - hash:
       serializedVersion: 2
       Hash: 3cabfa8d2465a07e17e363e7f05fcb69
@@ -2199,29 +1606,18 @@ ScriptsOnlyBuild:
     className: PhotonTeamsManager
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Procedural
-    className: ProceduralController
-  - hash:
-      serializedVersion: 2
-      Hash: 1bbce36c26e06daa73238c07c42b2bc9
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.PunBasics
-    className: CameraWork
-  - hash:
-      serializedVersion: 2
-      Hash: e06af2670173c738702ad2f2c5db8be7
-    assemblyName: PhotonUnityNetworking.Demos.dll
-    namespaceName: Photon.Pun.Demo.Cockpit.Forms
-    className: UserIdUiForm
-  - hash:
-      serializedVersion: 2
       Hash: ccff8b6a7e86962adc97a6b2d4224dca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: textChange
+  - hash:
+      serializedVersion: 2
+      Hash: 67bbaa77566c39c13e626d65be5772e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerManager
   platform: 5
   scenePathNames:
+  - Assets/Scenes/MultiChoice.unity
   - Assets/Scenes/B.unity
-  playerPath: C:/Users/young/Desktop/2/gp.exe
+  playerPath: C:/Users/young/Desktop/1/gp.exe

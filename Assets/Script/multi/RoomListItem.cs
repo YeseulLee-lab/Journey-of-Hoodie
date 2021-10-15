@@ -8,7 +8,7 @@ using TMPro;
 public class RoomListItem : MonoBehaviour
 {
     public TMP_Text FindRoomNametext;
-    RoomInfo info;
+    public RoomInfo info;
     // Start is called before the first frame update
     public void SetUp(RoomInfo _info){
         info = _info;
@@ -16,8 +16,11 @@ public class RoomListItem : MonoBehaviour
     }
 
     public void Onclick(){
-        GameObject.Find("MULTI").GetComponent<Launcher>().JoinRoom(info);
+        GameObject.Find("Canvas").GetComponent<Launcher>().JoinRoom(info);
         Debug.Log("loading...");
     }
 
+    public void FindLoadingFunc(){
+        GameObject.Find("Canvas").GetComponent<Launcher>().FindLoading.SetActive(true);
+    }
 }

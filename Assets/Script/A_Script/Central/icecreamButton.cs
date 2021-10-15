@@ -11,6 +11,7 @@ public class icecreamButton : MonoBehaviour
     public GameObject Mint;
     public GameObject Choco;
     public GameObject icenicknameObject;
+    public GameObject Button;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,7 @@ public class icecreamButton : MonoBehaviour
             Mint.SetActive(false);
             Choco.SetActive(false);
             nickname.SetActive(true);
+            Button.SetActive(true);
             icenicknameObject.GetComponent<TransData>().icekind = iceKind;
         }
         else{

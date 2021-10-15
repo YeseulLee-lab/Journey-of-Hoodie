@@ -9,8 +9,9 @@ public class TransData : MonoBehaviour
     public string icenickname;
     public string icekind;
     public GameObject DataObject;
-    public GameObject New;
-    public GameObject Load;
+    [SerializeField] public GameObject New;
+    
+    [SerializeField] public GameObject Load;
     public void call()
     {
         New.SetActive(true);

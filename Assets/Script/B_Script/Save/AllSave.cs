@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AllSave : MonoBehaviour
 {
-    public Bpercent B;
+    [SerializeField] public Bpercent B;
     public List<string> percentName = new List<string>();
     public List<float> percent = new List<float>();
 
