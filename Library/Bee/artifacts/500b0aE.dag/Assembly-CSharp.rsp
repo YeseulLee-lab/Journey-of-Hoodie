@@ -405,6 +405,7 @@
 "Assets/Script/B_Script/percent/puddingTrigger.cs"
 "Assets/Script/B_Script/percent/Textpercent.cs"
 "Assets/Script/B_Script/PlayerData.cs"
+"Assets/Script/B_Script/PrefabTimline.cs"
 "Assets/Script/B_Script/RythmGame.cs"
 "Assets/Script/B_Script/Save/AllSave.cs"
 "Assets/Script/B_Script/Save/ChangeState.cs"

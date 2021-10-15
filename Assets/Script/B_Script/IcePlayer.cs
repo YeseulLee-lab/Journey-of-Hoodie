@@ -35,7 +35,7 @@ public class IcePlayer : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         PV = GetComponent<PhotonView>();
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         // playerPosData = FindObjectOfType<SavePlayerPos>();
 
         // playerPosData.PlayerPosLoad();
@@ -70,7 +70,7 @@ public class IcePlayer : MonoBehaviour
     }
 
     public void Move(){
-        data = SavePlayerPos.LoadPlayer();
+        //data = SavePlayerPos.LoadPlayer();
 
         moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
 
