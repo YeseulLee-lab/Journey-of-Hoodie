@@ -15,12 +15,21 @@ public class CameraBoundary : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(null != GameObject.Find("MultiPlayer(Clone)"))
+        {
+            target = GameObject.Find("MultiPlayer(Clone)").transform;
+        }
+        else{
+            target = GameObject.Find("Player").transform;
+        }
+
         transform.position = target.position - (1 * Vector3.forward * dist) + (Vector3.up * height);
         transform.LookAt(target);
         transform.position = new Vector3 (Mathf.Clamp(transform.position.x, boundsMin.x, boundsMax.x), 

@@ -25,6 +25,11 @@ public class PlayerManager : MonoBehaviour
     void CreateController()//플레이어 컨트롤러 만들기
     {
         Debug.Log("Instantiated Player Controller");
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "MultiPlayer"), spawnPositin.transform.position, spawnPositin.transform.rotation);
+        if(PV.ViewID == 1001){
+            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "MultiPlayer"), spawnPositin.transform.position, spawnPositin.transform.rotation);            
+        }
+        else{
+            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "MultiPlayer"), spawnPositin.transform.position, spawnPositin.transform.rotation);
+        }
     }
 }

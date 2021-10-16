@@ -31,7 +31,14 @@ public class PrefabTimline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anim = GameObject.Find("MultiPlayer(Clone)").GetComponent<Animator>();
+        if(null != GameObject.Find("MultiPlayer(Clone)")){
+            anim = GameObject.Find("MultiPlayer(Clone)").GetComponent<Animator>();
+        }
+        if(gameObject.activeSelf == true){
+            if(GameObject.Find("MultiPlayer(Clone)").GetComponent<IcePlayer>().PV.ViewID == 1001){
+                GameObject.Find("MultiPlayer(Clone)").SetActive(false);
+            }       
+        }
         BindAnimator(timeline, "Animation Track", anim);
         BindAnimator(timeline, "Animation Track (1)", anim);
     }

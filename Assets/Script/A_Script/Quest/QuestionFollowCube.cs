@@ -11,12 +11,22 @@ public class QuestionFollowCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if(gameObject.transform.parent.gameObject.GetComponent<IcePlayer>().PV.IsMine){
+            Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+        }
+        // else{
+        //     Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall2").gameObject.GetComponent<Button>();       
+        // }
     }
 
     // Update is called once per frame
     void Update()
     {
+        // if(gameObject.transform.parent.gameObject.GetComponent<IcePlayer>().PV.IsMine)
+        // {
+        //     return;
+        // }
+        
         if(Question != null)
         {
             Vector3 questionPos = UnityEngine.Camera.main.WorldToScreenPoint(this.transform.position);

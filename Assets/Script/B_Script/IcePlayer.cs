@@ -29,7 +29,7 @@ public class IcePlayer : MonoBehaviour
     public Text townName;
     public Vector3 position;
     PlayerData data;
-    PhotonView PV;
+    public PhotonView PV;
     //SavePlayerPos playerPosData;
     void Awake()
     {
@@ -47,7 +47,12 @@ public class IcePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+        if(PV.IsMine){
+            ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+        }
+        // else{
+        //     ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall2").gameObject;            
+        // }
         Darker = GameObject.Find("Darker");
         EnterPanel = Darker.transform.Find("EnterPanel").gameObject;
         textpudding = Darker.transform.Find("Textpudding").gameObject;
@@ -55,10 +60,10 @@ public class IcePlayer : MonoBehaviour
         textcheese = Darker.transform.Find("Textcheese").gameObject;
         townName = Darker.transform.Find("TownName").gameObject.GetComponent<Text>();
 
-        if (!PV.IsMine){
-           // Destroy(GameObject.Find("Main Camera"));
+        if(gameObject.name != "MultiPlayer(Clone)"){
+            gameObject.SetActive(true);
         }
-       /* controller = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
         PlayerData data = SavePlayerPos.LoadPlayer();
         Vector3 position;
 
@@ -66,11 +71,11 @@ public class IcePlayer : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         Debug.Log(position);
-        transform.position = position;*/
+        transform.position = position;
     }
 
     public void Move(){
-        //data = SavePlayerPos.LoadPlayer();
+        data = SavePlayerPos.LoadPlayer();
 
         moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
 
@@ -93,10 +98,15 @@ public class IcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PV.IsMine){
-            return;
+        if(gameObject.name == "MultiPlayer(Clone)"){
+            if (!PV.IsMine){
+                return;
+            }
+            Move();         
         }
-        Move();
+        else{
+            Move();
+        }
         
 //        Debug.Log(gameObject.name);
 
