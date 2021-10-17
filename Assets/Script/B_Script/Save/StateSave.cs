@@ -37,7 +37,7 @@ public class StateSave : MonoBehaviour
     void Update()
     {
        // print(Building[0][1]);
-        for (int i = 0; i < 8; i++){
+        for (int i = 0; i < 6; i++){
             if(statenumber[i] == 1){
                 Building[i].SetActive(false);
             }

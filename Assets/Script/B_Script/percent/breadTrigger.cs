@@ -9,7 +9,7 @@ public class breadTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        breadText.text = 56 + " 퍼센트";
+        breadText.text = 0 + " 퍼센트";
     }
 
     // Update is called once per frame

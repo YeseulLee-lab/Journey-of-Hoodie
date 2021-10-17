@@ -14,7 +14,7 @@ public class TimelineManager : MonoBehaviour
         DeleteManager = GameObject.Find("DeleteTimeline");
         Timeline = GameObject.Find("Timeline");  
         Camera = GameObject.Find("Camera");  
-        TalkPanel = GameObject.Find("TalkPanel");
+     //   TalkPanel = GameObject.Find("TalkPanel");
     }
 
     // Update is called once per frame
@@ -24,7 +24,6 @@ public class TimelineManager : MonoBehaviour
             if (DeleteManager.activeSelf == true){
                 Timeline.SetActive(false);
                 Camera.SetActive(false);
-                TalkPanel.SetActive(false);
             }
             else{
                 return;

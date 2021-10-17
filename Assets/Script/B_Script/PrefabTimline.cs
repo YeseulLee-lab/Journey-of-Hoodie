@@ -8,6 +8,8 @@ public class PrefabTimline : MonoBehaviour
 {
     public PlayableDirector timeline;
     public Animator anim;
+    public GameObject Player;
+    public GameObject Camera;
 
     public static void BindAnimator(PlayableDirector director, string trackName, Animator animator)
     {
@@ -25,7 +27,8 @@ public class PrefabTimline : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Camera = GameObject.Find("Camera");
+        //Player = GameObject.Find("MultiPlayer(Clone)");
     }
 
     // Update is called once per frame
@@ -34,11 +37,7 @@ public class PrefabTimline : MonoBehaviour
         if(null != GameObject.Find("MultiPlayer(Clone)")){
             anim = GameObject.Find("MultiPlayer(Clone)").GetComponent<Animator>();
         }
-        if(gameObject.activeSelf == true){
-            if(GameObject.Find("MultiPlayer(Clone)").GetComponent<IcePlayer>().PV.ViewID == 1001){
-                GameObject.Find("MultiPlayer(Clone)").SetActive(false);
-            }       
-        }
+        
         BindAnimator(timeline, "Animation Track", anim);
         BindAnimator(timeline, "Animation Track (1)", anim);
     }

@@ -403,7 +403,6 @@
 "Assets/Script/Login/SignUpServer.cs"
 "Assets/Script/Login/TransData.cs"
 "Assets/Script/multi/Launcher.cs"
-"Assets/Script/multi/Multichoice.cs"
 "Assets/Script/multi/multiStart.cs"
 "Assets/Script/multi/PlayerListItem.cs"
 "Assets/Script/multi/PlayerManager.cs"

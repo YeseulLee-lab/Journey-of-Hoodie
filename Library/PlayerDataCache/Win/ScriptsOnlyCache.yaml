@@ -22,7 +22,6 @@ ScriptsOnlyBuild:
     - Launcher
     - LoadTrigger
     - MapIcePlayer
-    - Multichoice
     - NPC2
     - ObjData
     - PlayerListItem
@@ -54,6 +53,9 @@ ScriptsOnlyBuild:
     - puddingTrigger
     - textChange
     PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PhotonAnimatorViewEditor
+    - Photon.Pun.PhotonTransformViewEditor
+    - Photon.Pun.PhotonViewInspector
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
@@ -82,10 +84,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -149,23 +149,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1568}
     - Class: 114
-      Script: {instanceID: 1574}
-    - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
       Script: {instanceID: 1722}
     - Class: 114
       Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 1916}
-    - Class: 114
       Script: {instanceID: 1964}
     - Class: 114
       Script: {instanceID: 1980}
     - Class: 114
       Script: {instanceID: 2028}
-    - Class: 114
-      Script: {instanceID: 2134}
     - Class: 114
       Script: {instanceID: 2164}
     - Class: 114
@@ -191,11 +185,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 3162}
-    - Class: 114
       Script: {instanceID: 3168}
-    - Class: 114
-      Script: {instanceID: 3170}
     - Class: 114
       Script: {instanceID: 3176}
     - Class: 114
@@ -207,8 +197,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3588}
     - Class: 114
-      Script: {instanceID: 3630}
-    - Class: 114
       Script: {instanceID: 3696}
     - Class: 114
       Script: {instanceID: 3754}
@@ -216,8 +204,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3784}
     - Class: 114
       Script: {instanceID: 4000}
-    - Class: 114
-      Script: {instanceID: 4124}
     - Class: 114
       Script: {instanceID: 4162}
     - Class: 114
@@ -233,17 +219,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4512}
     - Class: 114
-      Script: {instanceID: 4734}
-    - Class: 114
       Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5118}
+      Script: {instanceID: 5124}
     - Class: 114
-      Script: {instanceID: 5126}
+      Script: {instanceID: 5160}
     - Class: 114
-      Script: {instanceID: 5162}
-    - Class: 114
-      Script: {instanceID: 5258}
+      Script: {instanceID: 5256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -328,17 +310,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1916}
     - Class: 114
+      Script: {instanceID: 1964}
+    - Class: 114
       Script: {instanceID: 2134}
+    - Class: 114
+      Script: {instanceID: 2188}
     - Class: 114
       Script: {instanceID: 2208}
     - Class: 114
       Script: {instanceID: 2328}
+    - Class: 114
+      Script: {instanceID: 2498}
     - Class: 114
       Script: {instanceID: 2596}
     - Class: 114
       Script: {instanceID: 2736}
     - Class: 114
       Script: {instanceID: 2792}
+    - Class: 114
+      Script: {instanceID: 2826}
     - Class: 114
       Script: {instanceID: 2928}
     - Class: 114
@@ -349,6 +339,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3168}
     - Class: 114
       Script: {instanceID: 3170}
+    - Class: 114
+      Script: {instanceID: 3202}
     - Class: 114
       Script: {instanceID: 3550}
     - Class: 114
@@ -369,6 +361,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 143
@@ -376,6 +370,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -479,7 +477,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3134}
     - Class: 114
+      Script: {instanceID: 3162}
+    - Class: 114
       Script: {instanceID: 3168}
+    - Class: 114
+      Script: {instanceID: 3170}
     - Class: 114
       Script: {instanceID: 3202}
     - Class: 114
@@ -511,11 +513,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4628}
     - Class: 114
+      Script: {instanceID: 4734}
+    - Class: 114
       Script: {instanceID: 5032}
     - Class: 114
-      Script: {instanceID: 5126}
+      Script: {instanceID: 5124}
     - Class: 114
-      Script: {instanceID: 5162}
+      Script: {instanceID: 5160}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -627,7 +631,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 2c85230a34716ebba18a84cff78d02c4
+      Hash: 4758959a3e94fe891a36c37ca14df096
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PrefabTimline
@@ -795,7 +799,7 @@ ScriptsOnlyBuild:
     className: Client
   - hash:
       serializedVersion: 2
-      Hash: 3a97dc909d49af7e24a78aee643e7f31
+      Hash: ddbd5f575a52e2930570cc751a796eeb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MapIcePlayer
@@ -1101,7 +1105,7 @@ ScriptsOnlyBuild:
     className: InventoryUI
   - hash:
       serializedVersion: 2
-      Hash: cae9afaa7909f4be10eaba3b6b1e96d3
+      Hash: 2338d92daa44fef23b2da336c6d3405c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IcePlayer
@@ -1767,12 +1771,6 @@ ScriptsOnlyBuild:
     className: Textpercent
   - hash:
       serializedVersion: 2
-      Hash: edd2ff50e31f45c4b36326c614ef64ac
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Multichoice
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -1824,4 +1822,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MultiChoice.unity
   - Assets/Scenes/B.unity
   - Assets/Scenes/Pudding.unity
-  playerPath: "D:/\uB2E4\uC6B4\uB85C\uB4DC/1/gp.exe"
+  playerPath: C:/Users/young/Desktop/1/gp.exe

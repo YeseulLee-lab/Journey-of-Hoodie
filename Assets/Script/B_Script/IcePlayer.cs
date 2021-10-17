@@ -30,6 +30,7 @@ public class IcePlayer : MonoBehaviour
     public Vector3 position;
     PlayerData data;
     public PhotonView PV;
+    [SerializeField] GameObject Player;
     //SavePlayerPos playerPosData;
     void Awake()
     {
@@ -47,8 +48,15 @@ public class IcePlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PV.IsMine){
-            ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+        Player = GameObject.Find("Player");
+        if(gameObject.name == "Player"){
+            return;
+        }
+        else
+        {
+            if(PV.IsMine){
+                ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+            }
         }
         // else{
         //     ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall2").gameObject;            
@@ -60,9 +68,6 @@ public class IcePlayer : MonoBehaviour
         textcheese = Darker.transform.Find("Textcheese").gameObject;
         townName = Darker.transform.Find("TownName").gameObject.GetComponent<Text>();
 
-        if(gameObject.name != "MultiPlayer(Clone)"){
-            gameObject.SetActive(true);
-        }
         controller = GetComponent<CharacterController>();
         PlayerData data = SavePlayerPos.LoadPlayer();
         Vector3 position;
@@ -98,7 +103,15 @@ public class IcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*if(null != GameObject.Find("MultiPlayer(Clone")){
+            print("dpd");
+            GameObject.Find("Player").SetActive(false);
+        }*/
+
         if(gameObject.name == "MultiPlayer(Clone)"){
+            if(null != Player){
+                Player.SetActive(false);                
+            }
             if (!PV.IsMine){
                 return;
             }

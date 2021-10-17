@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class QuestionFollowCube : MonoBehaviour
@@ -11,13 +12,25 @@ public class QuestionFollowCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(gameObject.transform.parent.gameObject.GetComponent<IcePlayer>().PV.IsMine){
-            Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+        if(gameObject.transform.parent.gameObject.name == "Player"){
+            return;
         }
+        else{
+            if(SceneManager.GetActiveScene().name == "B"){
+                    if(gameObject.transform.parent.gameObject.GetComponent<IcePlayer>().PV.IsMine){
+                        Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+                    }
+                }
+            else if(SceneManager.GetActiveScene().name == "Pudding" || SceneManager.GetActiveScene().name == "Bread" || SceneManager.GetActiveScene().name == "Cheese"){
+                if(gameObject.transform.parent.gameObject.GetComponent<MapIcePlayer>().PV.IsMine){
+                        Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+                    }
+                }
+            }
+    }
         // else{
         //     Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall2").gameObject.GetComponent<Button>();       
         // }
-    }
 
     // Update is called once per frame
     void Update()

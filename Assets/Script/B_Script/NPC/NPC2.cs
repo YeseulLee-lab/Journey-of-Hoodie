@@ -42,7 +42,7 @@ public class NPC2 : MonoBehaviour
         {
             
         }
-        else if(GameObject.Find("Player").GetComponent<MapIcePlayer>().Allpercent >= 50)
+        else if(GameObject.FindWithTag("Player").GetComponent<MapIcePlayer>().Allpercent >= 50)
         {
             if(Vector3.Distance(transform.position, PlayerTrans.position) <= 5f)
             {

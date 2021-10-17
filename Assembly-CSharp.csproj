@@ -141,7 +141,6 @@
      <Compile Include="Assets\Script\A_Script\Central\CentralGroundEnter.cs" />
      <Compile Include="Assets\Script\A_Script\TriggerEnter\TriggertoSave.cs" />
      <Compile Include="Assets\Script\B_Script\percent\Textpercent.cs" />
-     <Compile Include="Assets\Script\multi\Multichoice.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\ScriptTrigger.cs" />
      <Compile Include="Assets\Script\A_Script\Central\colorchange.cs" />
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleBehaviour.cs" />

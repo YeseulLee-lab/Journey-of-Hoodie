@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraBoundary : MonoBehaviour
 {
@@ -22,12 +23,23 @@ public class CameraBoundary : MonoBehaviour
     void Update()
     {
 
-        if(null != GameObject.Find("MultiPlayer(Clone)"))
-        {
-            target = GameObject.Find("MultiPlayer(Clone)").transform;
+        if(SceneManager.GetActiveScene().name == "B"){
+            if(null != GameObject.Find("MultiPlayer(Clone)"))
+            {
+                target = GameObject.Find("MultiPlayer(Clone)").transform;
+            }
+            else{
+                target = GameObject.Find("Player").transform;
+            }
         }
-        else{
-            target = GameObject.Find("Player").transform;
+        else if(SceneManager.GetActiveScene().name == "Pudding" || SceneManager.GetActiveScene().name == "Bread" || SceneManager.GetActiveScene().name == "Cheese"){
+            if(null != GameObject.Find("TownMultiPlayer(Clone)"))
+            {
+                target = GameObject.Find("TownMultiPlayer(Clone)").transform;
+            }
+            else{
+                target = GameObject.Find("Player").transform;
+            }
         }
 
         transform.position = target.position - (1 * Vector3.forward * dist) + (Vector3.up * height);

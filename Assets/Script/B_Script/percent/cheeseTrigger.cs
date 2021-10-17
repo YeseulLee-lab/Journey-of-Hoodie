@@ -9,7 +9,7 @@ public class cheeseTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cheeseText.text = 42 + " 퍼센트";
+        cheeseText.text = 0 + " 퍼센트";
     }
 
     // Update is called once per frame

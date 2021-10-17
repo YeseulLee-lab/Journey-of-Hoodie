@@ -41,7 +41,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
     {
         Debug.Log("Connected to Master");
         PhotonNetwork.JoinLobby();//마스터 서버 연결시 로비로 연결
-        PhotonNetwork.AutomaticallySyncScene = true;//자동으로 모든 사람들의 scene을 통일 시켜준다. 
+        PhotonNetwork.AutomaticallySyncScene = true;//자동으로 모든 사람들의 scene을 통일 시켜준다.
     }
 
     public override void OnJoinedLobby()//로비에 연결시 작동

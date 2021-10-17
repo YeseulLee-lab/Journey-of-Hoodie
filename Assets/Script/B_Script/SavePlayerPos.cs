@@ -22,6 +22,7 @@ public static class SavePlayerPos
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
+//            Debug.Log(stream);
 
             PlayerData data = formatter.Deserialize(stream) as PlayerData;
             stream.Close();

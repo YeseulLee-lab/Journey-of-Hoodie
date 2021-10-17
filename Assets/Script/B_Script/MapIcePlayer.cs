@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -37,31 +38,71 @@ public class MapIcePlayer : MonoBehaviour
     public GameObject Building1;
     public GameObject Building2;
     public GameObject Building3;
+    public PhotonView PV;
+    [SerializeField] GameObject Player;
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
+        PV = GetComponent<PhotonView>();
         
     }
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameObject.Find("Player");
+        if(gameObject.name == "Player"){
+            return;
+        }
+        else
+        {
+            if(PV.IsMine){
+                ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+            }
+        }
+
+        inventoryUI = GameObject.Find("Canvas").transform.Find("Inventory").gameObject;
+        weaponCreator = GameObject.Find("Canvas").transform.Find("WeaponCreator").gameObject;
+        buildingCreator = GameObject.Find("Canvas").transform.Find("BuildingCreator").gameObject;
+        percentTxt = GameObject.Find("Canvas").transform.Find("percent").gameObject.GetComponent<Text>();
+        AllpercentTxt = GameObject.Find("Canvas").transform.Find("Allpercent").gameObject.GetComponent<Text>();
+        RythmGame = GameObject.Find("Canvas").transform.Find("rythmImage").gameObject;
+        select = GameObject.Find("Canvas").transform.Find("Select").gameObject;
+        
+        controller = GetComponent<CharacterController>();
+
         if (SceneManager.GetActiveScene().name == "Pudding"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
-           // percent = 40;
         }
         else if (SceneManager.GetActiveScene().name == "Bread"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2;
-         //   percent = 15;
         }
         else if (SceneManager.GetActiveScene().name == "Cheese"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3;
-       //     percent = 47;
         }
         Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
+    }
 
-        controller = GetComponent<CharacterController>();
-        //percent = 34;
-        //percentTxt.text = percent.ToString() + "%";
+    void Move(){
+        moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
+
+        hAxis = Input.GetAxisRaw("Horizontal");
+        vAxis = Input.GetAxisRaw("Vertical");
+
+        moveVec = new Vector3(hAxis, 0, vAxis).normalized;
+
+        moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale);
+
+        if (moveVec.magnitude >= 0.1f)
+        {
+            float targetAngle = Mathf.Atan2(moveVec.x, moveVec.z) * Mathf.Rad2Deg;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            RemoveFocus();
+        }
+
+        controller.Move(moveDirection * Time.deltaTime);
+
+        anim.SetBool("isWalk", moveVec != Vector3.zero);
     }
 
     // Update is called once per frame
@@ -77,26 +118,18 @@ public class MapIcePlayer : MonoBehaviour
             
         }
         else{
-            moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
-
-            hAxis = Input.GetAxisRaw("Horizontal");
-            vAxis = Input.GetAxisRaw("Vertical");
-
-            moveVec = new Vector3(hAxis, 0, vAxis).normalized;
-
-            moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale);
-
-            if (moveVec.magnitude >= 0.1f)
-            {
-                float targetAngle = Mathf.Atan2(moveVec.x, moveVec.z) * Mathf.Rad2Deg;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
-                RemoveFocus();
+            if(gameObject.name == "TownMultiPlayer(Clone)"){
+                if(null != Player){
+                    Player.SetActive(false);                
+                }
+                if (!PV.IsMine){
+                    return;
+                }
+                Move();         
             }
-
-            controller.Move(moveDirection * Time.deltaTime);
-
-            anim.SetBool("isWalk", moveVec != Vector3.zero);
+            else{
+                Move();
+            }
 
             Debug.DrawRay(transform.position + transform.up * 3.0f, transform.forward * MaxDistance, Color.blue, 0.3f);
             if(Physics.Raycast(transform.position + transform.up * 3.0f, transform.forward, out hit, MaxDistance)){

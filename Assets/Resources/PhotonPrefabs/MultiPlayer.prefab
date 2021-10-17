@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 1040527258759822711}
   m_Layer: 0
   m_Name: MultiPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
   townName: {fileID: 0}
   position: {x: 0, y: 0, z: 0}
   PV: {fileID: 0}
-  multianim: {fileID: 9100000, guid: a00649caf14d97b4faa0a071292e1413, type: 2}
+  Player: {fileID: 0}
 --- !u!114 &-7461760193435898665
 MonoBehaviour:
   m_ObjectHideFlags: 0
