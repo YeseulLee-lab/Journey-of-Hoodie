@@ -20296,6 +20296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207748187}
   - component: {fileID: 1207748186}
+  - component: {fileID: 1207748188}
   m_Layer: 0
   m_Name: TimeLine
   m_TagString: Untagged
@@ -20346,6 +20347,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207748188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207748185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d41fc1c8dc7dd143964bd5c4342a4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeline: {fileID: 1207748186}
+  anim: {fileID: 1534805497}
+  Player: {fileID: 0}
+  Camera: {fileID: 0}
 --- !u!1001 &1212015008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29930,6 +29947,8 @@ MonoBehaviour:
   Building1: {fileID: 1339204798}
   Building2: {fileID: 304251859}
   Building3: {fileID: 1720403036}
+  PV: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!1001 &1694818008
 PrefabInstance:
   m_ObjectHideFlags: 0

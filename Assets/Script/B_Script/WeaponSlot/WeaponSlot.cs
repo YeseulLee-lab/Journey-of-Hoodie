@@ -18,6 +18,18 @@ public class WeaponSlot : MonoBehaviour
     public GameObject Building2;
     public GameObject Building3;
     public GameObject select;
+    public GameObject[] Player;
+    void Start() {
+        Player = GameObject.FindGameObjectsWithTag("Player");
+        if(Player.Length == 2){
+            small = Player[0].transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("SmallSpoon3D").gameObject;
+            medium = Player[0].transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("MediumSpoon3D").gameObject;
+            fork = Player[0].transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("Fork (1)").gameObject;
+        }
+        else{
+            return;
+        }
+    }
     public void AddItem (Item newItem)
     {
         item = newItem;
