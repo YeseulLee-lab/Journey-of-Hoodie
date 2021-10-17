@@ -10,6 +10,7 @@ public class RythmGame : MonoBehaviour
     public RectTransform shrinkCircle;
     RaycastHit hit;
     public Text count;
+    public GameObject[] Player;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,9 @@ public class RythmGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hit = FindObjectOfType<MapIcePlayer>().hit;
+        Player = GameObject.FindGameObjectsWithTag("Player");
+        hit = Player[0].GetComponent<MapIcePlayer>().hit;
+    //    hit = FindObjectOfType<MapIcePlayer>().hit;
         shrinkCircle.sizeDelta -= new Vector2(1, 1) * Time.deltaTime * circleShrinkSpeed;
         if(gameObject.activeSelf == true)
         {

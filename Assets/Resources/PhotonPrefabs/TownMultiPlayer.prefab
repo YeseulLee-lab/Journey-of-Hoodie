@@ -5635,6 +5635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Question: {fileID: 0}
+  Question2: {fileID: 0}
 --- !u!1 &6425740368898969566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,6 +6237,7 @@ MonoBehaviour:
   weaponCreator: {fileID: 0}
   buildingCreator: {fileID: 0}
   ButtonAlert: {fileID: 0}
+  ButtonAlert2: {fileID: 0}
   BuildingParticle: {fileID: 3564836147854207917, guid: a7a690ca3a387a1429fceb86ca3bbc4a,
     type: 3}
   small: {fileID: 6537199949104432799}
@@ -6303,7 +6305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
+  m_SynchronizeScale: 1
   m_UseLocal: 1
 --- !u!114 &7652204365414963319
 MonoBehaviour:

@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Question: {fileID: 0}
+  Question2: {fileID: 0}
 --- !u!1 &2097549426408455731
 GameObject:
   m_ObjectHideFlags: 0
