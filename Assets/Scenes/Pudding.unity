@@ -2560,12 +2560,6 @@ Transform:
   m_Father: {fileID: 1701670308}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &105131360 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6537199947833998533, guid: 2aa411c9530ee5442815d61f36d41b1b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6537199947796500901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &107752416
 GameObject:
   m_ObjectHideFlags: 0
@@ -8299,17 +8293,17 @@ PrefabInstance:
         type: 3}
       propertyPath: fork
       value: 
-      objectReference: {fileID: 105131360}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: small
       value: 
-      objectReference: {fileID: 1376687930}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: medium
       value: 
-      objectReference: {fileID: 1835796498}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: select
@@ -8330,6 +8324,11 @@ PrefabInstance:
       propertyPath: Building3
       value: 
       objectReference: {fileID: 954913795}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Player.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!1 &447277197
@@ -23306,12 +23305,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9efd586120e7ad4f94d35381b633d5c, type: 3}
---- !u!1 &1376687930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6537199949104432799, guid: 2aa411c9530ee5442815d61f36d41b1b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6537199947796500901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1377984890
 GameObject:
   m_ObjectHideFlags: 0
@@ -25926,17 +25919,17 @@ PrefabInstance:
         type: 3}
       propertyPath: fork
       value: 
-      objectReference: {fileID: 105131360}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: small
       value: 
-      objectReference: {fileID: 1376687930}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: medium
       value: 
-      objectReference: {fileID: 1835796498}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: select
@@ -25957,6 +25950,11 @@ PrefabInstance:
       propertyPath: Building3
       value: 
       objectReference: {fileID: 954913795}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Player.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!4 &1547895910 stripped
@@ -30783,12 +30781,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825869769}
   m_CullTransparentMesh: 1
---- !u!1 &1835796498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6537199949362289079, guid: 2aa411c9530ee5442815d61f36d41b1b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6537199947796500901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1837283039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32443,17 +32435,17 @@ PrefabInstance:
         type: 3}
       propertyPath: fork
       value: 
-      objectReference: {fileID: 105131360}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: small
       value: 
-      objectReference: {fileID: 1376687930}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: medium
       value: 
-      objectReference: {fileID: 1835796498}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: select
@@ -32474,6 +32466,11 @@ PrefabInstance:
       propertyPath: Building3
       value: 
       objectReference: {fileID: 954913795}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Player.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!1 &1923908440
@@ -35316,17 +35313,17 @@ PrefabInstance:
         type: 3}
       propertyPath: fork
       value: 
-      objectReference: {fileID: 105131360}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: small
       value: 
-      objectReference: {fileID: 1376687930}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: medium
       value: 
-      objectReference: {fileID: 1835796498}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: select
@@ -35347,6 +35344,11 @@ PrefabInstance:
       propertyPath: Building3
       value: 
       objectReference: {fileID: 954913795}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Player.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!4 &2081263782 stripped
@@ -36953,17 +36955,17 @@ PrefabInstance:
         type: 3}
       propertyPath: fork
       value: 
-      objectReference: {fileID: 105131360}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: small
       value: 
-      objectReference: {fileID: 1376687930}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: medium
       value: 
-      objectReference: {fileID: 1835796498}
+      objectReference: {fileID: 0}
     - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
         type: 3}
       propertyPath: select
@@ -36984,6 +36986,11 @@ PrefabInstance:
       propertyPath: Building3
       value: 
       objectReference: {fileID: 954913795}
+    - target: {fileID: 7506772189846663975, guid: f74ed2c5252b8694ba1772c3a8775426,
+        type: 3}
+      propertyPath: Player.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74ed2c5252b8694ba1772c3a8775426, type: 3}
 --- !u!1 &7269571173875879616 stripped
