@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class QuestionFollowCube : MonoBehaviour
 {
     public Button Question;
+    public Button Question2;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class QuestionFollowCube : MonoBehaviour
             else if(SceneManager.GetActiveScene().name == "Pudding" || SceneManager.GetActiveScene().name == "Bread" || SceneManager.GetActiveScene().name == "Cheese"){
                 if(gameObject.transform.parent.gameObject.GetComponent<MapIcePlayer>().PV.IsMine){
                         Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+                        Question2 = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall (2)").gameObject.GetComponent<Button>();
                     }
                 }
             }
@@ -44,6 +46,11 @@ public class QuestionFollowCube : MonoBehaviour
         {
             Vector3 questionPos = UnityEngine.Camera.main.WorldToScreenPoint(this.transform.position);
             Question.transform.position = questionPos;
+        }
+        if(Question2 != null)
+        {
+            Vector3 questionPos = UnityEngine.Camera.main.WorldToScreenPoint(this.transform.position);
+            Question2.transform.position = questionPos;
         }
         
     }

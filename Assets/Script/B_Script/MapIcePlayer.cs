@@ -24,6 +24,7 @@ public class MapIcePlayer : MonoBehaviour
     public GameObject weaponCreator;
     public GameObject buildingCreator;
     public GameObject ButtonAlert;
+    public GameObject ButtonAlert2;
     public GameObject BuildingParticle;
     //public GameObject BuildingWreck;
     public GameObject small;
@@ -50,15 +51,6 @@ public class MapIcePlayer : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("Player");
-        if(gameObject.name == "Player"){
-            return;
-        }
-        else
-        {
-            if(PV.IsMine){
-                ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
-            }
-        }
 
         inventoryUI = GameObject.Find("Canvas").transform.Find("Inventory").gameObject;
         weaponCreator = GameObject.Find("Canvas").transform.Find("WeaponCreator").gameObject;
@@ -67,6 +59,13 @@ public class MapIcePlayer : MonoBehaviour
         AllpercentTxt = GameObject.Find("Canvas").transform.Find("Allpercent").gameObject.GetComponent<Text>();
         RythmGame = GameObject.Find("Canvas").transform.Find("rythmImage").gameObject;
         select = GameObject.Find("Canvas").transform.Find("Select").gameObject;
+
+        if(gameObject.name != "Player"){
+            if(PV.IsMine){
+                ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject;
+                ButtonAlert2 = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall (2)").gameObject;
+            }
+        }
         
         controller = GetComponent<CharacterController>();
 
@@ -150,9 +149,9 @@ public class MapIcePlayer : MonoBehaviour
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
                             
-                            ButtonAlert.SetActive(true);
+                            ButtonAlert2.SetActive(true);
                             //Debug.Log("왜안돼");
-                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            ButtonAlert2.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
                                 RythmGame.SetActive(true);
                                 //Debug.Log("건물 부수기");
@@ -193,7 +192,7 @@ public class MapIcePlayer : MonoBehaviour
                                     }                         
                         }
                         else{
-                            ButtonAlert.SetActive(false);
+                            ButtonAlert2.SetActive(false);
                         }
                     }
                     else if(small.activeSelf == true)
@@ -205,9 +204,9 @@ public class MapIcePlayer : MonoBehaviour
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
                             
-                            ButtonAlert.SetActive(true);
+                            ButtonAlert2.SetActive(true);
                             //Debug.Log("왜안돼");
-                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            ButtonAlert2.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
                                 RythmGame.SetActive(true);
                                 //Debug.Log("건물 부수기");
@@ -248,7 +247,7 @@ public class MapIcePlayer : MonoBehaviour
                                     }                         
                         }
                         else{
-                            ButtonAlert.SetActive(false);
+                            ButtonAlert2.SetActive(false);
                         }
                     }
                     else if(medium.activeSelf == true)
@@ -260,8 +259,8 @@ public class MapIcePlayer : MonoBehaviour
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
                         //Debug.Log("왜안돼");
-                            ButtonAlert.SetActive(true);
-                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            ButtonAlert2.SetActive(true);
+                            ButtonAlert2.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
                                 RythmGame.SetActive(true);
                                 //Debug.Log("건물 부수기");
@@ -301,7 +300,7 @@ public class MapIcePlayer : MonoBehaviour
                             
                         }
                         else{
-                            ButtonAlert.SetActive(false); 
+                            ButtonAlert2.SetActive(false); 
                         }
                     }
                     else if(hit.transform.gameObject.tag == "WeaponCreator"){
@@ -312,7 +311,7 @@ public class MapIcePlayer : MonoBehaviour
                         inventoryUI.SetActive(true);
                     }   
                     }else{
-                        ButtonAlert.SetActive(false);
+                        ButtonAlert2.SetActive(false);
                     }
                 }
                 if(select.GetComponent<SelectMod>().destroying == false)
@@ -331,8 +330,8 @@ public class MapIcePlayer : MonoBehaviour
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
                             //Debug.Log("왜안돼");
-                            ButtonAlert.SetActive(true);
-                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            ButtonAlert2.SetActive(true);
+                            ButtonAlert2.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
                                 RythmGame.SetActive(true);
                                 //Debug.Log("건물 부수기");
@@ -369,7 +368,7 @@ public class MapIcePlayer : MonoBehaviour
                                         
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
-                                        ButtonAlert.SetActive(false);
+                                        ButtonAlert2.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
                                         Allpercent = Mathf.Round((Allpercent + percent)/3);
@@ -378,7 +377,7 @@ public class MapIcePlayer : MonoBehaviour
                             
                         }
                         else{
-                            ButtonAlert.SetActive(false); 
+                            ButtonAlert2.SetActive(false); 
                         }
                     }
                     else if(Building2.activeSelf == true)
@@ -390,8 +389,8 @@ public class MapIcePlayer : MonoBehaviour
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
                             //Debug.Log("왜안돼");
-                            ButtonAlert.SetActive(true);
-                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            ButtonAlert2.SetActive(true);
+                            ButtonAlert2.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
                                 RythmGame.SetActive(true);
                                 //Debug.Log("건물 부수기");
@@ -423,7 +422,7 @@ public class MapIcePlayer : MonoBehaviour
                                         }
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
-                                        ButtonAlert.SetActive(false);
+                                        ButtonAlert2.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
                                         Allpercent = Mathf.Round((Allpercent + percent)/3);
@@ -432,7 +431,7 @@ public class MapIcePlayer : MonoBehaviour
                             
                         }
                         else{
-                            ButtonAlert.SetActive(false); 
+                            ButtonAlert2.SetActive(false); 
                         }
                     }
                     if(Building3.activeSelf == true)
@@ -444,8 +443,8 @@ public class MapIcePlayer : MonoBehaviour
                         {
                             anim.SetBool("isFix", moveVec != Vector3.zero);
                             //Debug.Log("왜안돼");
-                            ButtonAlert.SetActive(true);
-                            ButtonAlert.GetComponentInChildren<Text>().text = "B";
+                            ButtonAlert2.SetActive(true);
+                            ButtonAlert2.GetComponentInChildren<Text>().text = "B";
                             if(Input.GetButtonDown("Break"))
                                 RythmGame.SetActive(true);
                                 //Debug.Log("건물 부수기");
@@ -477,7 +476,7 @@ public class MapIcePlayer : MonoBehaviour
                                         }
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
-                                        ButtonAlert.SetActive(false);
+                                        ButtonAlert2.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
                                         Allpercent = Mathf.Round((Allpercent + percent)/3);
@@ -486,7 +485,7 @@ public class MapIcePlayer : MonoBehaviour
                             
                         }
                         else{
-                            ButtonAlert.SetActive(false); 
+                            ButtonAlert2.SetActive(false); 
                         }
                     }
                 }
