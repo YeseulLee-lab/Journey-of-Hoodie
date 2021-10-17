@@ -15339,6 +15339,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 308189830}
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 1
 --- !u!4 &308284428 stripped
 Transform:
@@ -20012,6 +20013,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 422281194}
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 2
 --- !u!1001 &423949171
 PrefabInstance:
@@ -27326,6 +27328,7 @@ MonoBehaviour:
   StartQuest: {fileID: 0}
   talkPanel: {fileID: 811547723}
   Question: {fileID: 0}
+  Image: {fileID: 0}
   QuestButton: {fileID: 0}
   portrait: {fileID: 811547726}
   talkText: {fileID: 811547727}
@@ -39939,6 +39942,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1923908444}
     m_Modifications:
+    - target: {fileID: 1840164316, guid: b9dbe49c1586d6c47b910a8bdaa55f7d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3650746455951055240, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -46395,7 +46402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: 4.9999847}
+  m_AnchoredPosition: {x: 20, y: 5}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &932929519
@@ -46834,6 +46841,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 948015196}
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 1
 --- !u!1001 &949318334
 PrefabInstance:
@@ -53753,6 +53761,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 1096941212}
   building: {fileID: 11400000, guid: 24799ecd75f5abd4f928e2554c5ce374, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 3
 --- !u!1001 &1097322063
 PrefabInstance:
@@ -58667,6 +58676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207748187}
   - component: {fileID: 1207748186}
+  - component: {fileID: 1207748188}
   m_Layer: 0
   m_Name: TimeLine
   m_TagString: Untagged
@@ -58723,6 +58733,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207748188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207748185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d41fc1c8dc7dd143964bd5c4342a4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeline: {fileID: 1207748186}
+  anim: {fileID: 1534805497}
+  Player: {fileID: 0}
+  Camera: {fileID: 0}
 --- !u!1001 &1208877702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76164,6 +76190,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 1563519650}
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 2
 --- !u!4 &1563658417 stripped
 Transform:
@@ -83374,7 +83401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 60, y: 5.000046}
+  m_AnchoredPosition: {x: 60, y: 5.000061}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1679768339
@@ -84479,8 +84506,6 @@ MonoBehaviour:
   ButtonAlert: {fileID: 367451929}
   BuildingParticle: {fileID: 3564836147854207917, guid: a7a690ca3a387a1429fceb86ca3bbc4a,
     type: 3}
-  BuildingWreck: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
-    type: 3}
   small: {fileID: 1564058008}
   medium: {fileID: 1564058007}
   fork: {fileID: 1564058006}
@@ -84493,6 +84518,8 @@ MonoBehaviour:
   Building1: {fileID: 1731860097}
   Building2: {fileID: 1526453447}
   Building3: {fileID: 1247490982}
+  PV: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!1001 &1694818008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87936,6 +87963,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 1771367499}
   building: {fileID: 11400000, guid: 24799ecd75f5abd4f928e2554c5ce374, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 3
 --- !u!1001 &1774032616
 PrefabInstance:
@@ -101689,6 +101717,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 2056472446}
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 1
 --- !u!1001 &2057256672
 PrefabInstance:
@@ -104545,6 +104574,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 2113552593}
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
+  BuildingWreck: {fileID: 0}
   count: 2
 --- !u!1001 &2113618443
 PrefabInstance:

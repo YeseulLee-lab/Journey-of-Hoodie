@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using UnityEngine.SceneManagement;
 
 public class PrefabTimline : MonoBehaviour
 {
@@ -27,15 +28,23 @@ public class PrefabTimline : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Camera = GameObject.Find("Camera");
+        
         //Player = GameObject.Find("MultiPlayer(Clone)");
     }
 
     // Update is called once per frame
     void Update()
     {
+        Scene scene = SceneManager.GetActiveScene();
+
+        if(scene.name == "B"){
+            Camera = GameObject.Find("Camera");
+        }
+
         if(null != GameObject.Find("MultiPlayer(Clone)")){
             anim = GameObject.Find("MultiPlayer(Clone)").GetComponent<Animator>();
+        }else if(null != GameObject.Find("TownMultiPlayer(Clone)")){
+            anim = GameObject.Find("TownMultiPlayer(Clone)").GetComponent<Animator>();
         }
         
         BindAnimator(timeline, "Animation Track", anim);
