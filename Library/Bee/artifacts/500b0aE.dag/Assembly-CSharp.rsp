@@ -411,6 +411,7 @@
 "Assets/Script/B_Script/Save/ChangeState.cs"
 "Assets/Script/B_Script/Save/LoadTrigger.cs"
 "Assets/Script/B_Script/Save/SaveChangeState.cs"
+"Assets/Script/B_Script/Save/SaveColor.cs"
 "Assets/Script/B_Script/Save/StateChange.cs"
 "Assets/Script/B_Script/Save/StateSave.cs"
 "Assets/Script/B_Script/SaveData.cs"

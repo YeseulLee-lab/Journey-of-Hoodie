@@ -4774,6 +4774,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 92c97545a0edadd4588f10c6d06c2db7, type: 2}
   - {fileID: 11400000, guid: bdda432cf87e77f4da7d3fdd618547e6, type: 2}
   weapons: []
+--- !u!114 &1776162221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776162219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfe0d739edbc384cb0d852fcf08cbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChange: {fileID: 0}
+  icekindname: []
+  icekind: []
 --- !u!114 &1776162222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4806,7 +4821,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776162219}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fd9f630f139246488355edfdd665944, type: 3}
   m_Name: 

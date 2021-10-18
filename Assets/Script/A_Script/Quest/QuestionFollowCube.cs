@@ -13,22 +13,28 @@ public class QuestionFollowCube : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(gameObject.transform.parent.gameObject.name == "Player"){
-            return;
+        if(null != gameObject.transform.parent)
+        {
+            if(gameObject.transform.parent.gameObject.name == "Player"){
+                return;
+            }
+            else{
+                if(SceneManager.GetActiveScene().name == "B"){
+                        if(gameObject.transform.parent.gameObject.GetComponent<IcePlayer>().PV.IsMine){
+                            Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+                        }
+                    }
+                else if(SceneManager.GetActiveScene().name == "Pudding" || SceneManager.GetActiveScene().name == "Bread" || SceneManager.GetActiveScene().name == "Cheese"){
+                    if(gameObject.transform.parent.gameObject.GetComponent<MapIcePlayer>().PV.IsMine){
+                            Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
+                            Question2 = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall (2)").gameObject.GetComponent<Button>();
+                        }
+                    }
+            }
         }
         else{
-            if(SceneManager.GetActiveScene().name == "B"){
-                    if(gameObject.transform.parent.gameObject.GetComponent<IcePlayer>().PV.IsMine){
-                        Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
-                    }
-                }
-            else if(SceneManager.GetActiveScene().name == "Pudding" || SceneManager.GetActiveScene().name == "Bread" || SceneManager.GetActiveScene().name == "Cheese"){
-                if(gameObject.transform.parent.gameObject.GetComponent<MapIcePlayer>().PV.IsMine){
-                        Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall").gameObject.GetComponent<Button>();
-                        Question2 = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall (2)").gameObject.GetComponent<Button>();
-                    }
-                }
-            }
+            return;
+        }
     }
         // else{
         //     Question = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall2").gameObject.GetComponent<Button>();       
@@ -52,6 +58,5 @@ public class QuestionFollowCube : MonoBehaviour
             Vector3 questionPos = UnityEngine.Camera.main.WorldToScreenPoint(this.transform.position);
             Question2.transform.position = questionPos;
         }
-        
     }
 }

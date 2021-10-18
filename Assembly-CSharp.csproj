@@ -88,6 +88,7 @@
      <Compile Include="Assets\Script\B_Script\IcePlayer.cs" />
      <Compile Include="Assets\Script\B_Script\Save\LoadTrigger.cs" />
      <Compile Include="Assets\Script\A_Script\Quest\Quest.cs" />
+     <Compile Include="Assets\Script\B_Script\Save\SaveColor.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponSlot.cs" />
      <Compile Include="Assets\Script\A_Script\Central\CentralEnter.cs" />
      <Compile Include="Assets\Script\Net\GameUI.cs" />
