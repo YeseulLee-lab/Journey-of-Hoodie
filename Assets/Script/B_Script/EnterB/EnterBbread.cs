@@ -13,6 +13,8 @@ public class EnterBbread : MonoBehaviour
             // PlayerPrefs.DeleteKey("p_y");
             // PlayerPrefs.DeleteKey("p_z");
             // PlayerPrefs.DeleteKey("TimeToLoad");
+            GameObject.FindWithTag("Player").GetComponent<SaveAndLoad>().Save();
+            GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
             SceneManager.LoadScene("B");
             DontDestroyOnLoad(DeleteTimeline);
             GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;

@@ -4787,7 +4787,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorChange: {fileID: 0}
-  icekindname: []
   icekind: []
 --- !u!114 &1776162222
 MonoBehaviour:
@@ -4802,6 +4801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeState: {fileID: 0}
+  StateMulti: {fileID: 0}
 --- !u!114 &1776162223 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3158802225563581499, guid: 473639aa34e584b4abb45d4561fd6ee8,

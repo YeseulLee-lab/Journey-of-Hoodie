@@ -7,12 +7,14 @@ using UnityEngine.SceneManagement;
 public class SaveChangeState : MonoBehaviour
 {
     [SerializeField] public StateSave changeState;
+    [SerializeField] public StateMulti StateMulti;
     //public List<int> stateNum = new List<int>();
 
     // Start is called before the first frame update
     void Start()
     {
         changeState = GameObject.Find("StateSave").GetComponent<StateSave>();
+        StateMulti = GameObject.Find("StateSave").GetComponent<StateMulti>();
     }
 
     // Update is called once per frame
@@ -40,7 +42,15 @@ public class SaveChangeState : MonoBehaviour
 
         string jsonS = customJSON.ToJson(StateToLoad);
 
-        File.WriteAllText(Application.persistentDataPath + transform.name + "state", jsonS);
+        if(SceneManager.GetActiveScene().name == "Pudding"){
+            File.WriteAllText(Application.persistentDataPath + transform.name + "puddingstate", jsonS);
+        }
+        else if(SceneManager.GetActiveScene().name == "Bread"){
+            File.WriteAllText(Application.persistentDataPath + transform.name + "breadstate", jsonS);
+        }
+        else if(SceneManager.GetActiveScene().name == "Cheese"){
+            File.WriteAllText(Application.persistentDataPath + transform.name + "cheesestate", jsonS);
+        }
 
         Debug.Log("State Saving..");
     }
@@ -48,13 +58,25 @@ public class SaveChangeState : MonoBehaviour
     public void Load()
     {
         Debug.Log("State Loading..");
-        
-        List<StateLoad> StateToLoad = customJSON.FromJson<StateLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "state"));
+
+        List<StateLoad> StateToLoad = new List<StateLoad>();
+
+        if(SceneManager.GetActiveScene().name == "Pudding"){
+            StateToLoad = customJSON.FromJson<StateLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "puddingstate"));
+        }
+        else if(SceneManager.GetActiveScene().name == "Bread"){
+            StateToLoad = customJSON.FromJson<StateLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "breadstate"));
+        }
+        else if(SceneManager.GetActiveScene().name == "Cheese"){
+            StateToLoad = customJSON.FromJson<StateLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "cheesestate"));
+        }
 
         for(int i = 0; i < StateToLoad.Count; i++)
         {
             //Debug.Log(StateToLoad[i].stateNum);
             changeState.statenumber[i] = StateToLoad[i].stateNum;
+            StateMulti.multistatenumber[i] = StateToLoad[i].stateNum;
+
             //Debug.Log(changeState.statenumber[i]);
         }
     }

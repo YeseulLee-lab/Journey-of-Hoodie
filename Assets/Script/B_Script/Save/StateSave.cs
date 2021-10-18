@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,12 +10,14 @@ public class StateSave : MonoBehaviour
     public GameObject[] Building;
     //public GameObject[][] Building;
    // public List<GameObject> Building = new List<GameObject>();
-    public int[] statenumber = new int[8];
+    public int[] statenumber = new int[6];
     public GameObject SaveManager;
+    public PhotonView PV;
     //List<int> statenumber = new List<int>();
     // Start is called before the first frame update
     void Start()
     {
+        PV = gameObject.GetComponent<PhotonView>();
       //  SaveManager = GameObject.Find("SaveManager");
 
         /*Building.Add(GameObject.Find("Puddingfork1"));
@@ -36,6 +39,7 @@ public class StateSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PV.RPC("StateChange", RpcTarget.All, "RpcSucces");
        // print(Building[0][1]);
         for (int i = 0; i < 6; i++){
             if(statenumber[i] == 1){
@@ -44,7 +48,7 @@ public class StateSave : MonoBehaviour
             else{
                 Building[i].SetActive(true);
             }
-    }
+        }
        /* if (null != SaveManager){
             for (int i = 0; i < 6; i++){
                 statenumber[i] = SaveManager.GetComponent<ChangeState>().statenumber[i];

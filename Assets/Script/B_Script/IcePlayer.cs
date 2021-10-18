@@ -135,9 +135,9 @@ public class IcePlayer : MonoBehaviour
                 if(Input.GetButtonDown("Enter")){
                     if(Physics.Raycast(transform.position + transform.up * 3.0f, transform.forward, out Enterhit, MaxDistance)){
                         if(hit.transform.gameObject.tag == "Building"){
+                            Darker.GetComponent<Image>().enabled = true;
                             Darker.SetActive(true);
-                            EnterPanel.SetActive(true);
-                            townName.transform.gameObject.SetActive(true);
+                            EnterPanel.SetActive(true);                            townName.transform.gameObject.SetActive(true);
                             textpudding.SetActive(true);
                             textbread.SetActive(false);
                             textcheese.SetActive(false);
@@ -148,6 +148,7 @@ public class IcePlayer : MonoBehaviour
                             position.z = data.position[2];
                         }
                         else if(hit.transform.gameObject.tag == "Building2"){
+                            Darker.GetComponent<Image>().enabled = true;
                             Darker.SetActive(true);
                             EnterPanel.SetActive(true);
                             townName.transform.gameObject.SetActive(true);
@@ -161,6 +162,7 @@ public class IcePlayer : MonoBehaviour
                             position.z = data.position[2];
                         }
                         else if(hit.transform.gameObject.tag == "Building3"){
+                            Darker.GetComponent<Image>().enabled = true;
                             Darker.SetActive(true);
                             EnterPanel.SetActive(true);
                             townName.transform.gameObject.SetActive(true);
