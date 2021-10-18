@@ -39,7 +39,7 @@ public class StateSave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PV.RPC("StateChange", RpcTarget.All, "RpcSucces");
+        //PV.RPC("StateChange", RpcTarget.All, "RpcSucces");
        // print(Building[0][1]);
         for (int i = 0; i < 6; i++){
             if(statenumber[i] == 1){
@@ -74,4 +74,15 @@ public class StateSave : MonoBehaviour
             }
      //  }*/
     }
+
+    /*public bool isStart { get => isStart; set => PV.RPC(nameof(SetIsStartRPC), RpcTarget.AllBufferedViaServer, value); }
+    [PunRPC] void SetIsStartRPC(bool value) => isStart = value;
+
+    void ActionRPC(string functionName, object value){
+        PV.RPC(functionName, RpcTarget.All, value);
+    }
+
+    public void InvokeProperties(){
+        statenumber[i] = statenumber[i];
+    }*/
 }

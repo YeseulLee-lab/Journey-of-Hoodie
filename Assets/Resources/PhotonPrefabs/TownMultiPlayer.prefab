@@ -6254,6 +6254,7 @@ MonoBehaviour:
   Building3: {fileID: 6537199948481824166}
   PV: {fileID: 0}
   Player: {fileID: 0}
+  stateSave: {fileID: 0}
 --- !u!114 &6537199949487085196
 MonoBehaviour:
   m_ObjectHideFlags: 0

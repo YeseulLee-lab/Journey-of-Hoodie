@@ -39,6 +39,7 @@
      <Compile Include="Assets\Script\B_Script\PrefabTimline.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet2.cs" />
      <Compile Include="Assets\Script\B_Script\SaveData.cs" />
+     <Compile Include="Assets\Script\multi\StateMulti.cs" />
      <Compile Include="Assets\Script\A_Script\Central\nicknameAdd.cs" />
      <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
      <Compile Include="Assets\Script\Login\FindData.cs" />
@@ -146,7 +147,6 @@
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleBehaviour.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\textChange.cs" />
-     <Compile Include="Assets\Script\multi\StateMulti.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

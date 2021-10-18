@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,7 @@ public class WeaponSlot : MonoBehaviour
     public GameObject Building3;
     public GameObject select;
     public GameObject[] Player;
+    public PhotonView PV;
     void Update() {
         Player = GameObject.FindGameObjectsWithTag("Player");
         //if(Player.Length == 2){
@@ -60,6 +62,7 @@ public class WeaponSlot : MonoBehaviour
                 if(item.id == 100)
                 {
                     small.SetActive(true);
+                    Player[0].GetComponent<MapIcePlayer>().PV.RPC("smallItemMulti", RpcTarget.Others, true);
                     medium.SetActive(false);
                     fork.SetActive(false);
                 }
@@ -67,6 +70,7 @@ public class WeaponSlot : MonoBehaviour
                 {
                     small.SetActive(false);
                     medium.SetActive(true);
+                    Player[0].GetComponent<MapIcePlayer>().PV.RPC("mediumItemMulti", RpcTarget.Others, true);
                     fork.SetActive(false);
                 }
                 else if(item.id == 300)
@@ -74,6 +78,7 @@ public class WeaponSlot : MonoBehaviour
                     small.SetActive(false);
                     medium.SetActive(false);
                     fork.SetActive(true);
+                    Player[0].GetComponent<MapIcePlayer>().PV.RPC("forkItemMulti", RpcTarget.Others, true);
                 }
             }
             else if(select.GetComponent<SelectMod>().destroying == false)
@@ -100,4 +105,6 @@ public class WeaponSlot : MonoBehaviour
             
         }
     }
+
+
 }
