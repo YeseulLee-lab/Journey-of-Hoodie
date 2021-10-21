@@ -33149,7 +33149,7 @@ PrefabInstance:
     - target: {fileID: 3794687870030683814, guid: 6ad5f3c9d47d6ff42b69c98cb8071521,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3794687870030683814, guid: 6ad5f3c9d47d6ff42b69c98cb8071521,
         type: 3}
@@ -68421,7 +68421,7 @@ RectTransform:
   - {fileID: 606810178}
   - {fileID: 354923209}
   m_Father: {fileID: 1923908444}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -86796,6 +86796,7 @@ MonoBehaviour:
   fork: {fileID: 1564058006}
   percent: 0
   Allpercent: 0
+  Allpercentmid: 0
   percentTxt: {fileID: 1679768339}
   AllpercentTxt: {fileID: 833393175}
   RythmGame: {fileID: 1511949294}
@@ -97267,8 +97268,8 @@ RectTransform:
   - {fileID: 367451930}
   - {fileID: 1848638411}
   - {fileID: 4340718826317003933}
-  - {fileID: 1637835099}
   - {fileID: 1342264225}
+  - {fileID: 1637835099}
   - {fileID: 883991202}
   - {fileID: 932929518}
   - {fileID: 272158960}

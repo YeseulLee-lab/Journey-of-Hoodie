@@ -17,7 +17,8 @@ public class EnterBcheese : MonoBehaviour
             GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
             SceneManager.LoadScene("B");
             DontDestroyOnLoad(DeleteTimeline);
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("Player").GetComponent<MapIcePlayer>().Allpercent;// - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = GameObject.Find("Player").GetComponent<MapIcePlayer>().Allpercentmid;
             GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 = GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
             GameObject.Find("SaveManager").GetComponent<Bpercent>().state = true;
         }

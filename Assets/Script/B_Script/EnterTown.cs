@@ -41,16 +41,25 @@ public class EnterTown : MonoBehaviour
                 // playerPosData.PlayerPosSave();
                 SavePlayerPos.SavePlayer(Player);
                 if(TownName.text == "푸딩마을"){
+                    if(null != Player.PV){
+                        Player.PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "Pudding", percentManager);
+                    }
                     SceneManager.LoadScene("Pudding");
                     DontDestroyOnLoad(percentManager);
                     Destroy(DeleteManager);
                 }
                 else if(TownName.text == "빵마을"){
+                    if(null != Player.PV){
+                        Player.PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "Bread", percentManager);
+                    }
                     SceneManager.LoadScene("Bread");
                     DontDestroyOnLoad(percentManager);
                     Destroy(DeleteManager);
                 }
                 else if(TownName.text == "치즈마을"){
+                    if(null != Player.PV){
+                        Player.PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "cheese", percentManager);
+                    }
                     SceneManager.LoadScene("Cheese");
                     DontDestroyOnLoad(percentManager);
                     Destroy(DeleteManager);

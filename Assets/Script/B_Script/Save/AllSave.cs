@@ -73,6 +73,7 @@ public class AllSave : MonoBehaviour
         B.percent1 = ((int)PercentToLoad[0].percent);
         B.percent2 = ((int)PercentToLoad[1].percent);
         B.percent3 = ((int)PercentToLoad[2].percent);
+        B.Allpercent = (PercentToLoad[3].percent)*3;
         B.Allpercentmid = PercentToLoad[3].percent;
     }
 }

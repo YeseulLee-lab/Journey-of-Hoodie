@@ -6245,6 +6245,7 @@ MonoBehaviour:
   fork: {fileID: 6537199947833998533}
   percent: 0
   Allpercent: 0
+  Allpercentmid: 0
   percentTxt: {fileID: 0}
   AllpercentTxt: {fileID: 0}
   RythmGame: {fileID: 0}

@@ -32,6 +32,7 @@ public class MapIcePlayer : MonoBehaviour
     public GameObject fork;
     public int percent;
     public float Allpercent;
+    public float Allpercentmid;
     public Text percentTxt;
     public Text AllpercentTxt;
     public GameObject RythmGame;
@@ -80,7 +81,8 @@ public class MapIcePlayer : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "Cheese"){
             percent = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3;
         }
-        Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
+        Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent;
+        Allpercentmid = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
     }
 
     void Move(){
@@ -164,11 +166,15 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.SetActive(false);
                                         if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[0]){
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 1;
-                                            PV.RPC("State", RpcTarget.All, 0);
+                                            if(null != PV){
+                                                PV.RPC("State", RpcTarget.All, 0);
+                                            }
                                         }
                                         else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[1]){
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 1;
-                                            PV.RPC("State", RpcTarget.All, 1);
+                                            if(null != PV){
+                                                PV.RPC("State", RpcTarget.All, 1);
+                                            }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         //BuildingWreck.SetActive(true);
@@ -180,7 +186,11 @@ public class MapIcePlayer : MonoBehaviour
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
-                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                        Allpercentmid = Allpercentmid + 14;
+                                        Allpercent = Mathf.Round(Allpercentmid/3);
+                                        if(null != PV){
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
+                                        }
                                     }                         
                         }
                         else{
@@ -209,11 +219,15 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.SetActive(false);
                                         if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[2]){
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 1;
-                                            PV.RPC("State", RpcTarget.All, 2);
+                                            if(null != PV){
+                                                PV.RPC("State", RpcTarget.All, 2);
+                                            }
                                         }
                                         else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[3]){
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 1;
-                                            PV.RPC("State", RpcTarget.All, 3);
+                                            if(null != PV){
+                                                PV.RPC("State", RpcTarget.All, 3);
+                                            }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         //BuildingWreck.SetActive(true);
@@ -225,7 +239,11 @@ public class MapIcePlayer : MonoBehaviour
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
-                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                        Allpercentmid = Allpercentmid + 14;
+                                        Allpercent = Mathf.Round(Allpercentmid/3);
+                                        if(null != PV){
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
+                                        }
                                     }                         
                         }
                         else{
@@ -253,11 +271,15 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.SetActive(false);
                                         if (hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[4]){
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 1;
-                                            PV.RPC("State", RpcTarget.All, 4);
+                                            if(null != PV){
+                                                PV.RPC("State", RpcTarget.All, 4);
+                                            }
                                         }
                                         else if(hit.transform.gameObject == GameObject.Find("StateSave").GetComponent<StateSave>().Building[5]){
                                             GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 1;
-                                            PV.RPC("State", RpcTarget.All, 5);
+                                            if(null != PV){
+                                                PV.RPC("State", RpcTarget.All, 5);
+                                            }
                                         }
                                         Instantiate(BuildingParticle, hit.transform.position, hit.transform.rotation);
                                         //BuildingWreck.SetActive(true);
@@ -269,7 +291,11 @@ public class MapIcePlayer : MonoBehaviour
                                         ButtonAlert.SetActive(false);
                                         percent += 14;
                                         RythmGame.SetActive(false);
-                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                        Allpercentmid = Allpercentmid + 14;
+                                        Allpercent = Mathf.Round(Allpercentmid/3);
+                                        if(null != PV){
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
+                                        }
                                     }
                                 
                             
@@ -321,11 +347,15 @@ public class MapIcePlayer : MonoBehaviour
                                         if (hit.transform.gameObject.name == "BulidingWreckfork1"){
                                                 print("엉??");
                                                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[0] = 0;
-                                                PV.RPC("Statezero", RpcTarget.All, 0);
+                                                if(null != PV){
+                                                    PV.RPC("Statezero", RpcTarget.All, 0);
+                                                }
                                             }
                                             else if(hit.transform.gameObject.name == "BulidingWreckfork2"){
                                                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[1] = 0;
-                                                PV.RPC("Statezero", RpcTarget.All, 1);
+                                                if(null != PV){
+                                                    PV.RPC("Statezero", RpcTarget.All, 1);
+                                                }
                                             }
                                         
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
@@ -366,11 +396,15 @@ public class MapIcePlayer : MonoBehaviour
                                         //Instantiate(Building1, hit.transform.position, hit.transform.rotation);
                                         if (hit.transform.gameObject.name == "BulidingWreckspoon1"){
                                                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[2] = 0;
-                                                PV.RPC("Statezero", RpcTarget.All, 2);
+                                                if(null != PV){
+                                                    PV.RPC("Statezero", RpcTarget.All, 2);
+                                                }
                                             }
                                             else if(hit.transform.gameObject.name == "BulidingWreckspoon2"){
                                                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[3] = 0;
-                                                PV.RPC("Statezero", RpcTarget.All, 3);
+                                                if(null != PV){
+                                                    PV.RPC("Statezero", RpcTarget.All, 3);
+                                                }
                                             }
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
@@ -409,11 +443,15 @@ public class MapIcePlayer : MonoBehaviour
                                         //Instantiate(Building1, hit.transform.position, hit.transform.rotation);
                                         if (hit.transform.gameObject.name == "BulidingWreckLS1"){
                                                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[4] = 0;
-                                                PV.RPC("Statezero", RpcTarget.All, 4);
+                                                if(null != PV){
+                                                    PV.RPC("Statezero", RpcTarget.All, 4);
+                                                }
                                             }
                                             else if(hit.transform.gameObject.name == "BulidingWreckLS2"){
                                                 GameObject.Find("StateSave").GetComponent<StateSave>().statenumber[5] = 0;
-                                                PV.RPC("Statezero", RpcTarget.All, 5);
+                                                if(null != PV){
+                                                    PV.RPC("Statezero", RpcTarget.All, 5);
+                                                }
                                             }
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
@@ -503,6 +541,16 @@ public class MapIcePlayer : MonoBehaviour
         stateSave.statenumber[i] = 0;
     }
 
+    [PunRPC]
+    void percentsync(int percent, int Allpercentmid, int Allperent)
+    {
+        if(!PV.IsMine){
+            gameObject.GetComponent<MapIcePlayer>().percent = percent;
+            gameObject.GetComponent<MapIcePlayer>().Allpercentmid = Allpercentmid;
+            gameObject.GetComponent<MapIcePlayer>().Allpercent = Allpercent;
+        }
+    }
+
     /*
 
     [PunRPC]
@@ -541,5 +589,4 @@ public class MapIcePlayer : MonoBehaviour
             gameObject.transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("Fork (1)").gameObject.SetActive(true);                     
         }
     }
-
 }

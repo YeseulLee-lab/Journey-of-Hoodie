@@ -80,8 +80,6 @@ public class IcePlayer : MonoBehaviour
     }
 
     public void Move(){
-        data = SavePlayerPos.LoadPlayer();
-
         moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
 
         hAxis = Input.GetAxisRaw("Horizontal");
@@ -103,6 +101,7 @@ public class IcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        data = SavePlayerPos.LoadPlayer();
         /*if(null != GameObject.Find("MultiPlayer(Clone")){
             print("dpd");
             GameObject.Find("Player").SetActive(false);
@@ -182,5 +181,11 @@ public class IcePlayer : MonoBehaviour
         }else{
             ButtonAlert.SetActive(false);
         }
+    }
+
+    [PunRPC]
+    void Sceneunify(string townname, GameObject SaveManager){
+        SceneManager.LoadScene(townname);
+        DontDestroyOnLoad(SaveManager);        
     }
 }

@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pudding.unity
     guid: f12769b687eed744db81bd77328d9759
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Bread.unity
     guid: d33706218ea4b0f4d9b8c46609a2334b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Cheese.unity
     guid: 25d4e84d031001945a2b0f862b447637
   m_configObjects: {}

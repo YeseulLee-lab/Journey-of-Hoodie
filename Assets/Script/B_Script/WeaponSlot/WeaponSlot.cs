@@ -27,6 +27,7 @@ public class WeaponSlot : MonoBehaviour
         small = Player[0].transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("SmallSpoon3D").gameObject;
         medium = Player[0].transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("MediumSpoon3D").gameObject;
         fork = Player[0].transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("Fork (1)").gameObject;
+        PV = Player[0].GetComponent<PhotonView>();
         //}
        // else{
        //     return;
@@ -62,7 +63,9 @@ public class WeaponSlot : MonoBehaviour
                 if(item.id == 100)
                 {
                     small.SetActive(true);
-                    Player[0].GetComponent<MapIcePlayer>().PV.RPC("smallItemMulti", RpcTarget.Others, true);
+                    if(null != PV){
+                        Player[0].GetComponent<MapIcePlayer>().PV.RPC("smallItemMulti", RpcTarget.Others, true);
+                    }
                     medium.SetActive(false);
                     fork.SetActive(false);
                 }
@@ -70,7 +73,9 @@ public class WeaponSlot : MonoBehaviour
                 {
                     small.SetActive(false);
                     medium.SetActive(true);
-                    Player[0].GetComponent<MapIcePlayer>().PV.RPC("mediumItemMulti", RpcTarget.Others, true);
+                    if(null != PV){
+                        Player[0].GetComponent<MapIcePlayer>().PV.RPC("mediumItemMulti", RpcTarget.Others, true);
+                    }
                     fork.SetActive(false);
                 }
                 else if(item.id == 300)
@@ -78,7 +83,9 @@ public class WeaponSlot : MonoBehaviour
                     small.SetActive(false);
                     medium.SetActive(false);
                     fork.SetActive(true);
-                    Player[0].GetComponent<MapIcePlayer>().PV.RPC("forkItemMulti", RpcTarget.Others, true);
+                    if(null != PV){
+                        Player[0].GetComponent<MapIcePlayer>().PV.RPC("forkItemMulti", RpcTarget.Others, true);
+                    }
                 }
             }
             else if(select.GetComponent<SelectMod>().destroying == false)

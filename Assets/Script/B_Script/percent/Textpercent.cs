@@ -18,7 +18,7 @@ public class Textpercent : MonoBehaviour
     void Update()
     {
         if (GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid != 0){
-            Allpercenttext.text = "B행성 침략 중 " + GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid + "%";
+            Allpercenttext.text = "B행성 침략 중 " + GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent + "%";
         }
     }
 }
