@@ -21,7 +21,12 @@ public class textChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroytext.transform.Find("Text").gameObject.GetComponent<Text>().text = nick + " 세뇌 중";
+        if(GameObject.Find("SaveManager").GetComponent<Bpercent>().state == true){
+            Destroytext.transform.Find("Text").gameObject.GetComponent<Text>().text = nick + " 세뇌 중";
+        }
+        else{
+            Destroytext.transform.Find("Text").gameObject.GetComponent<Text>().text = nick + " 세뇌 실패!";
+        }
        /* if(nick == "아이스 플레이어"){
             subtitleClip.subtitleText = "우아아";
         }

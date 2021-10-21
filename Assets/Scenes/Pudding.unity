@@ -5716,7 +5716,7 @@ RectTransform:
   m_Children:
   - {fileID: 507418798}
   m_Father: {fileID: 1923908444}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33167,9 +33167,9 @@ RectTransform:
   - {fileID: 1342264225}
   - {fileID: 1637835099}
   - {fileID: 3147898}
+  - {fileID: 2049391148}
   - {fileID: 312524232}
   - {fileID: 2140316896}
-  - {fileID: 2049391148}
   - {fileID: 83222355}
   - {fileID: 1659285133}
   m_Father: {fileID: 0}
@@ -34633,7 +34633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -35174,6 +35174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nickname: 
+  icenickname: 
   portraitArr:
   - {fileID: 21300000, guid: c901a08db258d3d4c812aab41713d19a, type: 3}
   - {fileID: 21300000, guid: 0a9db1f73873a4c4b80f99b974b67b25, type: 3}
@@ -38608,7 +38609,7 @@ PrefabInstance:
     - target: {fileID: 8749915467588188878, guid: c1eb826d7a27b5641a56c84d13f0665a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8749915467588188878, guid: c1eb826d7a27b5641a56c84d13f0665a,
         type: 3}

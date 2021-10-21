@@ -122,7 +122,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아�
 
     public void StartMultiGame()
     {
-        PhotonNetwork.LoadLevel(1);//1인 이유는 빌드에서 scene 번호가 1번씩이기 때문이다. 0은 초기 씬.
+        PhotonNetwork.LoadLevel(5);//1인 이유는 빌드에서 scene 번호가 1번씩이기 때문이다. 0은 초기 씬.
     }
 
     public void StartGame(){

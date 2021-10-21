@@ -17826,7 +17826,7 @@ RectTransform:
   m_Children:
   - {fileID: 2078877851}
   m_Father: {fileID: 1923908444}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32857,6 +32857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nickname: 
+  icenickname: 
   portraitArr:
   - {fileID: 21300000, guid: e6bc42127716666438091d0921af8513, type: 3}
   - {fileID: 21300000, guid: 0a9db1f73873a4c4b80f99b974b67b25, type: 3}
@@ -85864,7 +85865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -97301,8 +97302,8 @@ RectTransform:
   - {fileID: 1679768338}
   - {fileID: 833393174}
   - {fileID: 2140316896}
-  - {fileID: 348384029}
   - {fileID: 1681036458}
+  - {fileID: 348384029}
   - {fileID: 1027208120}
   - {fileID: 598173043}
   m_Father: {fileID: 0}

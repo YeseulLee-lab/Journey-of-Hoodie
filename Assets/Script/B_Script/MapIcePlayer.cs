@@ -83,6 +83,13 @@ public class MapIcePlayer : MonoBehaviour
         }
         Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent;
         Allpercentmid = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
+
+        select.GetComponent<SelectMod>().destroying = GameObject.Find("SaveManager").GetComponent<Bpercent>().state;
+
+        if(select.GetComponent<SelectMod>().destroying == false){
+            select.GetComponent<SelectMod>().Jaeryo.SetActive(false);
+            select.GetComponent<SelectMod>().BuildingCrack.SetActive(true);
+        }
     }
 
     void Move(){
@@ -115,6 +122,7 @@ public class MapIcePlayer : MonoBehaviour
             if(Input.GetButtonDown("Cancel")){
                 weaponCreator.SetActive(false);
                 inventoryUI.SetActive(false);
+                buildingCreator.SetActive(false);
             }
         }
         if(inventoryUI.activeSelf == true || GameManager.MyGameManager.SelectPanel.activeSelf == true){
@@ -184,9 +192,9 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
                                         
                                         ButtonAlert.SetActive(false);
-                                        percent += 14;
+                                        percent += 17;
                                         RythmGame.SetActive(false);
-                                        Allpercentmid = Allpercentmid + 14;
+                                        Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
                                             PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
@@ -237,9 +245,9 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
 
                                         ButtonAlert.SetActive(false);
-                                        percent += 14;
+                                        percent += 17;
                                         RythmGame.SetActive(false);
-                                        Allpercentmid = Allpercentmid + 14;
+                                        Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
                                             PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
@@ -289,9 +297,9 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
 
                                         ButtonAlert.SetActive(false);
-                                        percent += 14;
+                                        percent += 17;
                                         RythmGame.SetActive(false);
-                                        Allpercentmid = Allpercentmid + 14;
+                                        Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
                                             PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
@@ -317,7 +325,7 @@ public class MapIcePlayer : MonoBehaviour
                 }
                 if(select.GetComponent<SelectMod>().destroying == false)
                 {
-                    Destroy(weaponCreator);
+                    weaponCreator.SetActive(false);
                     if(hit.transform.gameObject.tag == "WeaponCreator"){
                             EnterBuildingCreator();
                     }
@@ -362,7 +370,7 @@ public class MapIcePlayer : MonoBehaviour
                                        // PV.RPC("WreckTrue", RpcTarget.All, true);
 
                                         ButtonAlert2.SetActive(false);
-                                        percent += 14;
+                                        percent += 17;
                                         RythmGame.SetActive(false);
                                         Allpercent = Mathf.Round((Allpercent + percent)/3);
                                     }
@@ -409,7 +417,7 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert2.SetActive(false);
-                                        percent += 14;
+                                        percent += 17;
                                         RythmGame.SetActive(false);
                                         Allpercent = Mathf.Round((Allpercent + percent)/3);
                                     }
@@ -420,7 +428,7 @@ public class MapIcePlayer : MonoBehaviour
                             ButtonAlert2.SetActive(false); 
                         }
                     }
-                    if(Building3.activeSelf == true)
+                    else if(Building3.activeSelf == true)
                     {
                         if(hit.transform.gameObject.tag == "WeaponCreator"){
                             EnterBuildingCreator();
@@ -456,7 +464,7 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert2.SetActive(false);
-                                        percent += 14;
+                                        percent += 17;
                                         RythmGame.SetActive(false);
                                         Allpercent = Mathf.Round((Allpercent + percent)/3);
                                     }
@@ -467,17 +475,17 @@ public class MapIcePlayer : MonoBehaviour
                             ButtonAlert2.SetActive(false); 
                         }
                     }
-                }
-                else if(hit.transform.gameObject.tag == "WeaponCreator"){
-                    ButtonAlert.SetActive(true);
-                    ButtonAlert.GetComponentInChildren<Text>().text = "C";
-                    if(Input.GetButtonDown("Enter")){
-                        weaponCreator.SetActive(true);
-                        inventoryUI.SetActive(true);
+                    else if(hit.transform.gameObject.tag == "WeaponCreator"){
+                        ButtonAlert.SetActive(true);
+                        ButtonAlert.GetComponentInChildren<Text>().text = "C";
+                        if(Input.GetButtonDown("Enter")){
+                            //weaponCreator.SetActive(true);
+                            inventoryUI.SetActive(true);
+                        }
+                        
+                    }else{
+                        ButtonAlert.SetActive(false);
                     }
-                    
-                }else{
-                    ButtonAlert.SetActive(false);
                 }
             }
         }

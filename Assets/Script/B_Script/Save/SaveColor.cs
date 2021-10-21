@@ -7,7 +7,7 @@ public class SaveColor : MonoBehaviour
 {
     [SerializeField] public ColorChange colorChange;
     public List<string> icekind = new List<string>();
-
+    string icenickname;
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +15,24 @@ public class SaveColor : MonoBehaviour
         colorChange = GameObject.Find("SaveManager").GetComponent<ColorChange>();
 
         icekind.Add(colorChange.icekind);
+
+        if(null != GameObject.Find("DataObject")){
+            icenickname = GameObject.Find("DataObject").GetComponent<TransData>().icenickname;
+        }
+        else{
+            icenickname = "아이스";
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(null != GameObject.Find("DataObject")){
+            if(GameObject.Find("DataObject").GetComponent<TransData>().Loadstate == true){
+                Load();
+            }
+        }
+        
         if(Input.GetKeyDown(KeyCode.S)){
             Save();
         }else if(Input.GetKeyDown(KeyCode.L)){
@@ -27,7 +40,7 @@ public class SaveColor : MonoBehaviour
         }
     }
 
-    void Save()
+    public void Save()
     {
         List<ColorLoad> ColortoLoad = new List<ColorLoad>();
 
@@ -40,16 +53,16 @@ public class SaveColor : MonoBehaviour
         //PercenttoLoad.ToString();
         string jsonP = customJSON.ToJson(ColortoLoad);
 
-        File.WriteAllText(Application.persistentDataPath + transform.name + "color", jsonP);
+        File.WriteAllText(Application.persistentDataPath + icenickname + "color", jsonP);
 
         Debug.Log("Color Saving");
     }
 
-    void Load()
+    public void Load()
     {
         Debug.Log("Color Loading");
 
-        List<ColorLoad> ColorToLoad = customJSON.FromJson<ColorLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "color"));
+        List<ColorLoad> ColorToLoad = customJSON.FromJson<ColorLoad>(File.ReadAllText(Application.persistentDataPath + icenickname + "color"));
 
         for(int i = 0; i < ColorToLoad.Count; i++)
         {

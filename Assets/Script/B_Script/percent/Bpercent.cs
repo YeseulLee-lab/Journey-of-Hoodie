@@ -19,7 +19,12 @@ public class Bpercent : MonoBehaviour
 
     void Start()
     {
-        state = false;
+        percent1 = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
+        percent2 = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2;
+        percent3 = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3;
+        Allpercent = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent;
+        Allpercentmid = GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid;
+        state = GameObject.Find("SaveManager").GetComponent<Bpercent>().state;
        // percent1 = 0;
        // percent2 = 0;
         //percent3 = 0;
@@ -55,13 +60,13 @@ public class Bpercent : MonoBehaviour
             cheeseText.text = percent3 + "퍼센트";
         }*/
 
-        if(state == true){
+     //   if(state == true){
             //if (percent1 != 0 && percent2 != 0 && percent3 != 0){
                 //Allpercentmid = Mathf.Round(GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent/3);
                 //if (Allpercentmid >= 50){
                 //    print("세뇌 풀래 말래");
                // }
-                state = false;
+          //      state = false;
            // }
             //else if((percent1 != 0 && percent2 != 0) || (percent1 != 0 && percent3 != 0) || (percent2 != 0 && percent3 != 0)){
                // Allpercentmid = Mathf.Round(GameObject.Find("percentManager").GetComponent<Bpercent>().Allpercent/3);
@@ -73,4 +78,3 @@ public class Bpercent : MonoBehaviour
             //}
         }
     }
-}

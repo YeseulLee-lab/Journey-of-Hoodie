@@ -10,11 +10,19 @@ public class SaveAndLoad : MonoBehaviour
 
     public Item[] items;
     public Item[] weapons;
+    string icenickname;
 
     private void Start()
     {
         inv = GetComponent<Inventory>();
         wpinv = GetComponent<WeaponInven>();
+
+        if(null != GameObject.Find("DataObject")){
+            icenickname = GameObject.Find("DataObject").GetComponent<TransData>().icenickname;
+        }
+        else{
+            icenickname = "아이스";
+        }
     }
 
     private void Update()
@@ -64,8 +72,8 @@ public class SaveAndLoad : MonoBehaviour
         string json = customJSON.ToJson(itemsToLoad);
         string jsonWp = customJSON.ToJson(weaponsToLoad);
 
-        File.WriteAllText(Application.persistentDataPath + transform.name, json);
-        File.WriteAllText(Application.persistentDataPath + transform.name + "weapon", jsonWp);
+        File.WriteAllText(Application.persistentDataPath + icenickname, json);
+        File.WriteAllText(Application.persistentDataPath + icenickname + "weapon", jsonWp);
 
         Debug.Log("Saving...");
     }
@@ -74,8 +82,8 @@ public class SaveAndLoad : MonoBehaviour
     {
         Debug.Log("Loading...");
         
-        List<ItemLoad> itemsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + transform.name));
-        List<ItemLoad> weaponsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "weapon"));
+        List<ItemLoad> itemsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + icenickname));
+        List<ItemLoad> weaponsToLoad = customJSON.FromJson<ItemLoad>(File.ReadAllText(Application.persistentDataPath + icenickname + "weapon"));
         //Debug.Log(Application.persistentDataPath);
         //Debug.Log(InventoryUI.instance.slots.Length);
         //Debug.Log(WeaponInvenUI.instance.slots.Length);

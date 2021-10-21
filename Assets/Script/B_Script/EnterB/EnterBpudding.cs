@@ -21,7 +21,6 @@ public class EnterBpudding : MonoBehaviour
             GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = GameObject.Find("Player").GetComponent<MapIcePlayer>().Allpercent;// - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;   
             GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = GameObject.Find("Player").GetComponent<MapIcePlayer>().Allpercentmid;
             GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().state = true;
         }
     }
 

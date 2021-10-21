@@ -8,8 +8,7 @@ public class AllSave : MonoBehaviour
     [SerializeField] public Bpercent B;
     public List<string> percentName = new List<string>();
     public List<float> percent = new List<float>();
-
-
+    string icenickname;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +20,31 @@ public class AllSave : MonoBehaviour
         percentName.Add("percent2");
         percentName.Add("percent3");
         percentName.Add("Allpercentmid");
+        percentName.Add("Allpercent");
 
         percent.Add(B.percent1);
         percent.Add(B.percent2);
         percent.Add(B.percent3);
         percent.Add(B.Allpercentmid);
+        percent.Add(B.Allpercent);
+
+        if(null != GameObject.Find("DataObject")){
+            icenickname = GameObject.Find("DataObject").GetComponent<TransData>().icenickname;
+        }
+        else{
+            icenickname = "아이스";
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(null != GameObject.Find("DataObject")){
+            if(GameObject.Find("DataObject").GetComponent<TransData>().Loadstate == true){
+                Load();
+            }
+        }
+
         if(Input.GetKeyDown(KeyCode.S)){
             Save();
         }else if(Input.GetKeyDown(KeyCode.L)){
@@ -39,7 +53,7 @@ public class AllSave : MonoBehaviour
         
     }
 
-    void Save()
+    public void Save()
     {
         List<PercentLoad> PercenttoLoad = new List<PercentLoad>();
 
@@ -53,16 +67,16 @@ public class AllSave : MonoBehaviour
         //PercenttoLoad.ToString();
         string jsonP = customJSON.ToJson(PercenttoLoad);
 
-        File.WriteAllText(Application.persistentDataPath + transform.name + "percent", jsonP);
+        File.WriteAllText(Application.persistentDataPath + icenickname + "percent", jsonP);
 
         Debug.Log("percent Saving");
     }
 
-    void Load()
+    public void Load()
     {
         Debug.Log("percent Loading");
 
-        List<PercentLoad> PercentToLoad = customJSON.FromJson<PercentLoad>(File.ReadAllText(Application.persistentDataPath + transform.name + "percent"));
+        List<PercentLoad> PercentToLoad = customJSON.FromJson<PercentLoad>(File.ReadAllText(Application.persistentDataPath + icenickname + "percent"));
 
         for(int i = 0; i < PercentToLoad.Count; i++)
         {
@@ -73,8 +87,8 @@ public class AllSave : MonoBehaviour
         B.percent1 = ((int)PercentToLoad[0].percent);
         B.percent2 = ((int)PercentToLoad[1].percent);
         B.percent3 = ((int)PercentToLoad[2].percent);
-        B.Allpercent = (PercentToLoad[3].percent)*3;
         B.Allpercentmid = PercentToLoad[3].percent;
+        B.Allpercent = PercentToLoad[4].percent;
     }
 }
 

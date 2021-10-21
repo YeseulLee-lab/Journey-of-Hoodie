@@ -28,7 +28,7 @@ public class NPC2 : MonoBehaviour
         PressC.transform.position = questionPos;
 
         Quaternion targetRotation = Quaternion.LookRotation ((Building.transform.position - new Vector3(0,5, 0)) - transform.position);
-		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * curRotSpeed);
+      transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * curRotSpeed);
         if(Building.activeSelf == true){
             anim.SetBool("isFix", true);
             //Particle.SetActive(true);
@@ -46,13 +46,17 @@ public class NPC2 : MonoBehaviour
         {
             if(Vector3.Distance(transform.position, PlayerTrans.position) <= 5f)
             {
-                //Debug.Log("어쩔겨?");
-                PressC.SetActive(true);
-                PressC.GetComponentInChildren<Text>().text = "C";
-                if(Input.GetButtonDown("Enter"))
+                if(GameObject.Find("Canvas").transform.Find("Select").gameObject.GetComponent<SelectMod>().destroying == true)
                 {
-                    GameManager.MyGameManager.Action(gameObject);
+                    //Debug.Log("어쩔겨?");
+                    PressC.SetActive(true);
+                    PressC.GetComponentInChildren<Text>().text = "C";
+                    if(Input.GetButtonDown("Enter"))
+                    {
+                        GameManager.MyGameManager.Action(gameObject);
+                    }
                 }
+                
             }
             else{
                 PressC.SetActive(false);
