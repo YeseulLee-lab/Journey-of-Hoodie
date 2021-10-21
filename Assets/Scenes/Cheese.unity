@@ -20564,7 +20564,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 422281194}
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
-  BuildingWreck: {fileID: 0}
+  BuildingWreck: {fileID: 839190797}
   count: 2
 --- !u!1001 &423949171
 PrefabInstance:
@@ -42115,6 +42115,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
       propertyPath: m_TagString
       value: BuildingWreck2
       objectReference: {fileID: 0}
@@ -48024,7 +48029,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 948015196}
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
-  BuildingWreck: {fileID: 0}
+  BuildingWreck: {fileID: 1489006408}
   count: 1
 --- !u!1001 &949318334
 PrefabInstance:
@@ -48457,6 +48462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckLS2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -55397,7 +55407,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 1096941212}
   building: {fileID: 11400000, guid: 24799ecd75f5abd4f928e2554c5ce374, type: 2}
-  BuildingWreck: {fileID: 0}
+  BuildingWreck: {fileID: 1771883550}
   count: 3
 --- !u!1001 &1097322063
 PrefabInstance:
@@ -62458,6 +62468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckspoon1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -74123,6 +74138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckfork2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -90191,7 +90211,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 1771367499}
   building: {fileID: 11400000, guid: 24799ecd75f5abd4f928e2554c5ce374, type: 2}
-  BuildingWreck: {fileID: 0}
+  BuildingWreck: {fileID: 958812739}
   count: 3
 --- !u!1001 &1771883548
 PrefabInstance:
@@ -90204,6 +90224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckLS1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -103918,6 +103943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
       propertyPath: m_TagString
       value: BuildingWreck1
       objectReference: {fileID: 0}
@@ -104118,7 +104148,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 2056472446}
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
-  BuildingWreck: {fileID: 0}
+  BuildingWreck: {fileID: 2055472956}
   count: 1
 --- !u!1001 &2057256672
 PrefabInstance:
@@ -107050,7 +107080,7 @@ MonoBehaviour:
   radius: 8
   interactionTransform: {fileID: 2113552593}
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
-  BuildingWreck: {fileID: 0}
+  BuildingWreck: {fileID: 1226161897}
   count: 2
 --- !u!1001 &2113618443
 PrefabInstance:
