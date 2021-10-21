@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\B_Script\endingTrigger.cs" />
      <Compile Include="Assets\Script\B_Script\PrefabTimline.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet2.cs" />
      <Compile Include="Assets\Script\B_Script\SaveData.cs" />
@@ -53,6 +54,7 @@
      <Compile Include="Assets\Script\B_Script\ColorChange.cs" />
      <Compile Include="Assets\Script\B_Script\Select\SelectMod.cs" />
      <Compile Include="Assets\Script\A_Script\NPC\NPCSave.cs" />
+     <Compile Include="Assets\Script\B_Script\Pause.cs" />
      <Compile Include="Assets\Script\multi\PlayerListItem.cs" />
      <Compile Include="Assets\Script\B_Script\WeaponSlot\WeaponCreate.cs" />
      <Compile Include="Assets\Script\Net\Client.cs" />
@@ -147,8 +149,6 @@
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleBehaviour.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\textChange.cs" />
-     <Compile Include="Assets\Script\B_Script\endingTrigger.cs" />
-     <Compile Include="Assets\Script\B_Script\Pause.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

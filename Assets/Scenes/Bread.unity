@@ -7907,7 +7907,7 @@ PrefabInstance:
     - target: {fileID: 3320373915929230425, guid: 1b3a079a744cef741a860924510520f6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3320373915929230427, guid: 1b3a079a744cef741a860924510520f6,
         type: 3}
@@ -9231,6 +9231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nickname: 
+  icenickname: 
   portraitArr:
   - {fileID: 21300000, guid: e6bc42127716666438091d0921af8513, type: 3}
   - {fileID: 21300000, guid: 0a9db1f73873a4c4b80f99b974b67b25, type: 3}
@@ -16128,7 +16129,7 @@ PrefabInstance:
     - target: {fileID: 3794687870990360785, guid: 6ad5f3c9d47d6ff42b69c98cb8071521,
         type: 3}
       propertyPath: m_Text
-      value: B
+      value: ESC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad5f3c9d47d6ff42b69c98cb8071521, type: 3}
@@ -26423,6 +26424,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HowtoPlay 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3335286851784279179, guid: c2ca6dbad44486c4b88259bb69bd6e26,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3335286851827573724, guid: c2ca6dbad44486c4b88259bb69bd6e26,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -28595,7 +28601,7 @@ PrefabInstance:
     - target: {fileID: 3794687870990360785, guid: 6ad5f3c9d47d6ff42b69c98cb8071521,
         type: 3}
       propertyPath: m_Text
-      value: B
+      value: ESC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad5f3c9d47d6ff42b69c98cb8071521, type: 3}
@@ -28612,6 +28618,7 @@ GameObject:
   - component: {fileID: 1539993535}
   - component: {fileID: 1539993538}
   - component: {fileID: 1539993539}
+  - component: {fileID: 1539993540}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -28716,6 +28723,102 @@ MonoBehaviour:
   height: 20
   boundsMax: {x: 48.31025, y: 38.31153, z: 11.69508}
   boundsMin: {x: -28, y: 38.31153, z: -62}
+--- !u!82 &1539993540
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539993534}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8e38a1d53141e784980a5a3609f75d05, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1541569612
 PrefabInstance:
   m_ObjectHideFlags: 0
