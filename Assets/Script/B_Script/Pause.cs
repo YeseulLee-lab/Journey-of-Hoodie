@@ -13,10 +13,6 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(Input.GetButtonDown("Cancel"))
-        {
-            Pause.SetActive(!Pause.activeSelf);
-        }*/
     }
 
     public void Exit()

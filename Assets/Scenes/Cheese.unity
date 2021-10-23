@@ -61626,6 +61626,13 @@ MonoBehaviour:
   - {fileID: 422281192}
   - {fileID: 1096941210}
   - {fileID: 1771367497}
+  Wreck:
+  - {fileID: 2055472956}
+  - {fileID: 1489006408}
+  - {fileID: 1226161897}
+  - {fileID: 839190797}
+  - {fileID: 1771883550}
+  - {fileID: 958812739}
   statenumber: 000000000000000000000000000000000000000000000000
   SaveManager: {fileID: 0}
   PV: {fileID: 0}
@@ -110730,12 +110737,12 @@ PrefabInstance:
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}

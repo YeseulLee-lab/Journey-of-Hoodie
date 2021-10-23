@@ -128,6 +128,10 @@ public class IcePlayer : MonoBehaviour
         else{
             Move();
         }
+
+        if(EnterPanel.activeSelf == true){
+            Pause.SetActive(false);
+        }
         
 //        Debug.Log(gameObject.name);
 

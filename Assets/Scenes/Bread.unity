@@ -2051,6 +2051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
       propertyPath: m_TagString
       value: BuildingWreck2
       objectReference: {fileID: 0}
@@ -5396,12 +5401,51 @@ MonoBehaviour:
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
   BuildingWreck: {fileID: 40214267}
   count: 2
+--- !u!114 &333500678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333500676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 333500680}
+  sceneViewId: 4
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &333500679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7533131479737858344, guid: a317e88ae926fe249aed64d89d47efcc,
     type: 3}
   m_PrefabInstance: {fileID: 3802160261504198388}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &333500680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333500676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!4 &333761554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86867478039833235, guid: f6ca4c1dced543b4babf1ba61b224a87,
@@ -6421,6 +6465,44 @@ MonoBehaviour:
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
   BuildingWreck: {fileID: 1168843390}
   count: 1
+--- !u!114 &375207144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375207142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 3
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &375207145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375207142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!4 &375207147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8460228488147335536, guid: 045fd8d37de7ed846bb669b5fcd740df,
@@ -9340,6 +9422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckfork1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -16774,12 +16861,50 @@ MonoBehaviour:
   building: {fileID: 11400000, guid: 24799ecd75f5abd4f928e2554c5ce374, type: 2}
   BuildingWreck: {fileID: 1428414816}
   count: 3
+--- !u!114 &917487479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917487477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &917487480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5628227465075901798, guid: 96637178f52d4df44bf6232d0164fdea,
     type: 3}
   m_PrefabInstance: {fileID: 6378839645464842188}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &917487481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917487477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &923371361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20935,6 +21060,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckfork2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -29822,12 +29952,50 @@ MonoBehaviour:
   building: {fileID: 11400000, guid: 24799ecd75f5abd4f928e2554c5ce374, type: 2}
   BuildingWreck: {fileID: 1294500791}
   count: 3
+--- !u!114 &1571981210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571981208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 5
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &1571981211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5628227465075901798, guid: 96637178f52d4df44bf6232d0164fdea,
     type: 3}
   m_PrefabInstance: {fileID: 1836823251}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1571981212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571981208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &1578609136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30886,6 +31054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulidingWreckLS1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
@@ -33503,6 +33676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
       propertyPath: m_TagString
       value: BuildingWreck3
       objectReference: {fileID: 0}
@@ -35008,12 +35186,51 @@ MonoBehaviour:
   building: {fileID: 11400000, guid: 9c1beeb4d699f59479f1cd5f5506d519, type: 2}
   BuildingWreck: {fileID: 129836749}
   count: 2
+--- !u!114 &1804950966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804950964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1804950968}
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &1804950967 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7533131479737858344, guid: a317e88ae926fe249aed64d89d47efcc,
     type: 3}
   m_PrefabInstance: {fileID: 780330755}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1804950968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804950964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &1805052164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35196,6 +35413,45 @@ MonoBehaviour:
   building: {fileID: 11400000, guid: b583be508032a0842933e66c78251b71, type: 2}
   BuildingWreck: {fileID: 556417478}
   count: 1
+--- !u!114 &1806749565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806749563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1806749566}
+  sceneViewId: 6
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &1806749566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806749563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!4 &1806749568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8460228488147335536, guid: 045fd8d37de7ed846bb669b5fcd740df,
@@ -35316,12 +35572,12 @@ PrefabInstance:
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
@@ -38999,6 +39255,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664378559159319857, guid: 3afb49072a8abca4faa4c62f54ef5b49,
+        type: 3}
       propertyPath: m_TagString
       value: BuildingWreck2
       objectReference: {fileID: 0}
@@ -39447,7 +39708,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2048551279}
   - component: {fileID: 2048551278}
-  - component: {fileID: 2048551277}
   m_Layer: 0
   m_Name: StateSave
   m_TagString: Untagged
@@ -39455,20 +39715,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2048551277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048551276}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63eddf795bf1d4448b5ccda82cffc476, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StateSave: {fileID: 0}
-  statenumber: 000000000000000000000000000000000000000000000000
 --- !u!114 &2048551278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39488,6 +39734,13 @@ MonoBehaviour:
   - {fileID: 333500676}
   - {fileID: 917487477}
   - {fileID: 1571981208}
+  Wreck:
+  - {fileID: 556417478}
+  - {fileID: 1168843390}
+  - {fileID: 129836749}
+  - {fileID: 40214267}
+  - {fileID: 1428414816}
+  - {fileID: 1294500791}
   statenumber: 000000000000000000000000000000000000000000000000
   SaveManager: {fileID: 0}
   PV: {fileID: 0}

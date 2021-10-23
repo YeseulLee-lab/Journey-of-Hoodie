@@ -12,6 +12,7 @@ public class TransData : MonoBehaviour
     public GameObject DataObject;
     [SerializeField] public GameObject New;
     [SerializeField] public GameObject Load;
+    [SerializeField] public GameObject warning;
     public bool Loadstate;
     public void call()
     {
@@ -32,7 +33,7 @@ public class TransData : MonoBehaviour
             DontDestroyOnLoad(DataObject);
         }
         else{
-            print("경고창");
+            warning.SetActive(true);
         }
         /*for(int i = 0; i < GameObject.Find("Data").GetComponent<FindData>().file.Count; i++){
             if((GameObject.Find("Data").GetComponent<FindData>().file[i] == (icenickname + "percent"))){ // || (GameObject.Find("Data").GetComponent<FindData>().file[i] != (icenickname + "color"))){

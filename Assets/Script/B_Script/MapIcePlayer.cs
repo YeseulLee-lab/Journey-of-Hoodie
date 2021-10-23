@@ -342,7 +342,6 @@ public class MapIcePlayer : MonoBehaviour
                     if(hit.transform.gameObject.tag == "WeaponCreator"){
                             EnterBuildingCreator();
                     }
-                    Debug.Log("복구선택");
                     if(Building1.activeSelf == true)
                     {
                         if(hit.transform.gameObject.tag == "WeaponCreator"){

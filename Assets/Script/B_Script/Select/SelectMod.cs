@@ -32,5 +32,9 @@ public class SelectMod : MonoBehaviour
         BuildingCrack.SetActive(true);
         destroying = false;
         GameObject.Find("SaveManager").GetComponent<Bpercent>().state = destroying;
+
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = 100 - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 = 100 - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 = 100 - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3;
     }
 }

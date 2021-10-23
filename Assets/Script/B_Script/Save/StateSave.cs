@@ -8,6 +8,7 @@ public class StateSave : MonoBehaviour
 {
    // [SerializeField]
     public GameObject[] Building;
+    public GameObject[] Wreck;
     //public GameObject[][] Building;
    // public List<GameObject> Building = new List<GameObject>();
     public int[] statenumber = new int[6];
@@ -44,9 +45,11 @@ public class StateSave : MonoBehaviour
         for (int i = 0; i < 6; i++){
             if(statenumber[i] == 1){
                 Building[i].SetActive(false);
+                Wreck[i].SetActive(true);
             }
             else{
                 Building[i].SetActive(true);
+                Wreck[i].SetActive(false);
             }
         }
        /* if (null != SaveManager){
