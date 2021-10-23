@@ -192,8 +192,8 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
                                         
                                         ButtonAlert.SetActive(false);
-                                        percent += 17;
                                         RythmGame.SetActive(false);
+                                        percent += 17;
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
@@ -245,8 +245,8 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
 
                                         ButtonAlert.SetActive(false);
-                                        percent += 17;
                                         RythmGame.SetActive(false);
+                                        percent += 17;
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
@@ -297,8 +297,8 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().count = 1;
 
                                         ButtonAlert.SetActive(false);
-                                        percent += 17;
                                         RythmGame.SetActive(false);
+                                        percent += 17;
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
@@ -370,9 +370,10 @@ public class MapIcePlayer : MonoBehaviour
                                        // PV.RPC("WreckTrue", RpcTarget.All, true);
 
                                         ButtonAlert2.SetActive(false);
-                                        percent += 17;
                                         RythmGame.SetActive(false);
-                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                        percent += 17;
+                                        Allpercentmid = Allpercentmid + 17;
+                                        Allpercent = Mathf.Round(Allpercentmid/3);
                                     }
                                 
                             
@@ -417,9 +418,10 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert2.SetActive(false);
-                                        percent += 17;
                                         RythmGame.SetActive(false);
-                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                        percent += 17;
+                                        Allpercentmid = Allpercentmid + 17;
+                                        Allpercent = Mathf.Round(Allpercentmid/3);
                                     }
                                 
                             
@@ -464,9 +466,10 @@ public class MapIcePlayer : MonoBehaviour
                                         hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(true);
 
                                         ButtonAlert2.SetActive(false);
-                                        percent += 17;
                                         RythmGame.SetActive(false);
-                                        Allpercent = Mathf.Round((Allpercent + percent)/3);
+                                        percent += 17;
+                                        Allpercentmid = Allpercentmid + 17;
+                                        Allpercent = Mathf.Round(Allpercentmid/3);
                                     }
                                 
                             
@@ -491,8 +494,14 @@ public class MapIcePlayer : MonoBehaviour
         }
         percentTxt.text = percent.ToString() + "%";
         AllpercentTxt.text = Allpercent.ToString() + "%";
-        if(Allpercent >= 50){
-            //print("세뇌푸나요?");
+        if(percent > 100){
+            percent = 100;
+        }
+        if(Allpercent > 100){
+            Allpercent = 100;
+        }
+        if(Allpercentmid > 300){
+            Allpercentmid = 300;
         }
     }
 

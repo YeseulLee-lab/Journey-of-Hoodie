@@ -3698,6 +3698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usernameinfo: []
+  files: []
+  file: []
 --- !u!4 &1062779490
 Transform:
   m_ObjectHideFlags: 0

@@ -10033,8 +10033,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uD29C\uD1A0\uB9AC\uC5BC: \uD6C4\uB514 \uD589\uC131\uC758 \uC774\uC57C\uAE30"
 --- !u!222 &556002669

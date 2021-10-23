@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,8 +26,24 @@ public class TransData : MonoBehaviour
     }
 
     public void OnClickConfirmLoad(){
-        Loadstate = true;
-        SceneManager.LoadScene("B");
-        DontDestroyOnLoad(DataObject);
+        if(GameObject.Find("Data").GetComponent<FindData>().file.Contains(icenickname + "percent")){
+            Loadstate = true;
+            SceneManager.LoadScene("B");
+            DontDestroyOnLoad(DataObject);
+        }
+        else{
+            print("경고창");
+        }
+        /*for(int i = 0; i < GameObject.Find("Data").GetComponent<FindData>().file.Count; i++){
+            if((GameObject.Find("Data").GetComponent<FindData>().file[i] == (icenickname + "percent"))){ // || (GameObject.Find("Data").GetComponent<FindData>().file[i] != (icenickname + "color"))){
+                Loadstate = true;
+                SceneManager.LoadScene("B");
+                DontDestroyOnLoad(DataObject);
+                return;
+            }
+            else{
+                print("경고창");
+            }
+        }*/
     }
 }

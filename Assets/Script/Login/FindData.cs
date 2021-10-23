@@ -22,11 +22,18 @@ public class FindData : MonoBehaviour
     public IMongoCollection<BsonDocument> collection;
     public List<users> allinfo;
     public List<string> usernameinfo;
-
+    public string[] files;
+    public List<string> file;
     void Start()
     {
         database = client.GetDatabase("testdb");
         collection = database.GetCollection<BsonDocument>("users");
+        files = Directory.GetFiles(Application.persistentDataPath.Replace("gp", ""));
+        foreach (var filename in files)
+        {
+            file.Add((Path.GetFileName(filename)).Replace("gp", ""));
+        }
+        //fprint(Directory.GetFiles(@Application.persistentDataPath)); // + "서영" + "percent"));
      //   usernameData();
     }
 
