@@ -852,7 +852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 20, y: 4.9999695}
+  m_AnchoredPosition: {x: 20, y: 5}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &33114224
@@ -2433,7 +2433,7 @@ PrefabInstance:
     - target: {fileID: 3650746456146600852, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3650746456146600852, guid: b9dbe49c1586d6c47b910a8bdaa55f7d,
         type: 3}
@@ -3219,7 +3219,7 @@ PrefabInstance:
     - target: {fileID: 796080913916478903, guid: ab505ade9a3fee440964757d386b9ead,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 796080913916478903, guid: ab505ade9a3fee440964757d386b9ead,
         type: 3}
@@ -4117,12 +4117,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 86867478039833235, guid: f6ca4c1dced543b4babf1ba61b224a87,
     type: 3}
   m_PrefabInstance: {fileID: 578583381}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &269508808 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 104108, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1848806146}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &269508809 stripped
 RectTransform:
@@ -6027,7 +6021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1806749563}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &357193782
@@ -7074,6 +7068,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414381538}
   m_CullTransparentMesh: 1
+--- !u!1 &418272814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 104108, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1848806146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &424686756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4645402649511075249, guid: d55375c3663764044b268499404a5ca6,
@@ -7680,7 +7680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1571981208}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &455704468
@@ -9068,7 +9068,7 @@ PrefabInstance:
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.16
+      value: 14.1
       objectReference: {fileID: 0}
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
@@ -9078,7 +9078,7 @@ PrefabInstance:
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.23
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
@@ -9808,7 +9808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -10159,7 +10159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1806749563}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &575138153
@@ -13148,7 +13148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1804950964}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &716464658
@@ -14334,7 +14334,7 @@ PrefabInstance:
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.16
+      value: 15.98
       objectReference: {fileID: 0}
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
@@ -14344,7 +14344,7 @@ PrefabInstance:
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.23
+      value: -43.32
       objectReference: {fileID: 0}
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
@@ -14427,7 +14427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 333500676}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!1 &783457541
@@ -14904,7 +14904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849297568
@@ -17947,7 +17947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 375207142}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &983666888
@@ -18318,7 +18318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 60, y: 5.0000305}
+  m_AnchoredPosition: {x: 60, y: 5}
   m_SizeDelta: {x: 160, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1009711119
@@ -26982,8 +26982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe1eb169a9b9b543b53ab5ae210ba18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Building: {fileID: 1804950964}
-  PressC: {fileID: 269508808}
+  Building: {fileID: 333500676}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &1461680953
@@ -29692,7 +29692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 917487477}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &1566757434
@@ -32844,7 +32844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 375207142}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &1702819190
@@ -35291,7 +35291,7 @@ PrefabInstance:
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3334170090662343728, guid: 5092c4de78dfcb640ad69a93ccc0b9dc,
         type: 3}
@@ -35420,7 +35420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 1571981208}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &1821491624
@@ -35713,7 +35713,7 @@ RectTransform:
   m_Children:
   - {fileID: 345991983}
   m_Father: {fileID: 1923908444}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35783,7 +35783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 22403700, guid: 4aed93fc7e7072b4fb1be7f62ee11fa3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -37633,12 +37633,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 746346676}
-  - {fileID: 154272952}
   - {fileID: 1394484656}
   - {fileID: 694075007}
   - {fileID: 91306549}
   - {fileID: 1848638411}
   - {fileID: 269508809}
+  - {fileID: 154272952}
   - {fileID: 4340718826317003933}
   - {fileID: 1342264225}
   - {fileID: 1637835099}
@@ -37715,7 +37715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 917487477}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!114 &1925345630
@@ -38291,7 +38291,7 @@ PrefabInstance:
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.16
+      value: 24.72
       objectReference: {fileID: 0}
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
@@ -38301,7 +38301,7 @@ PrefabInstance:
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.23
+      value: -4.82
       objectReference: {fileID: 0}
     - target: {fileID: 4185372363504594821, guid: 55adfe44831510249a70bd2afe7c048d,
         type: 3}
@@ -38384,7 +38384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Building: {fileID: 333500676}
-  PressC: {fileID: 269508808}
+  PressC: {fileID: 418272814}
   talkPanel: {fileID: 154272951}
   Particle: {fileID: 0}
 --- !u!4 &1984812896 stripped

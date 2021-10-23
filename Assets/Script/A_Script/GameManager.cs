@@ -140,7 +140,7 @@ public class GameManager : MonoBehaviour
                 GameObject.Find("Player").GetComponent<PlayerMove>().a++;
             }
 
-            if(scene.name == "Pudding")
+            if(scene.name == "Pudding" || scene.name == "Bread" || scene.name == "Cheese")
             {
                 SelectPanel.SetActive(true);
             }

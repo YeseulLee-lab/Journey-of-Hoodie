@@ -122,7 +122,17 @@ public class MapIcePlayer : MonoBehaviour
             if(Input.GetButtonDown("Cancel")){
                 weaponCreator.SetActive(false);
                 inventoryUI.SetActive(false);
+                //buildingCreator.SetActive(false);
+                //ButtonAlert.SetActive(false);
+            }
+        }
+        if(inventoryUI.activeSelf ==true && buildingCreator.activeSelf ==true)
+        {
+            if(Input.GetButtonDown("Cancel")){
+                //weaponCreator.SetActive(false);
+                inventoryUI.SetActive(false);
                 buildingCreator.SetActive(false);
+                //ButtonAlert.SetActive(false);
             }
         }
         if(inventoryUI.activeSelf == true || GameManager.MyGameManager.SelectPanel.activeSelf == true){
@@ -203,6 +213,8 @@ public class MapIcePlayer : MonoBehaviour
                         }
                         else{
                             ButtonAlert2.SetActive(false);
+                            ButtonAlert.SetActive(false);
+                            //print("dd");
                         }
                     }
                     else if(small.activeSelf == true)
@@ -321,6 +333,7 @@ public class MapIcePlayer : MonoBehaviour
                     }   
                     }else{
                         ButtonAlert2.SetActive(false);
+                        ButtonAlert.SetActive(false);
                     }
                 }
                 if(select.GetComponent<SelectMod>().destroying == false)
@@ -488,6 +501,7 @@ public class MapIcePlayer : MonoBehaviour
                         
                     }else{
                         ButtonAlert.SetActive(false);
+                        ButtonAlert2.SetActive(false);
                     }
                 }
             }

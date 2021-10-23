@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637704760726019059
+      ticks: 637705919482866194
     m_Hash: 14654477
   m_LockFileStatus:
     m_FilePath: C:/Unity/Journey of Hoodie/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637704760726019059
+      ticks: 637705919482866194
     m_Hash: 1826189357
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -3099,7 +3099,6 @@ m_ResolvedPackages:
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0
-    - 1.6.1
     compatible:
     - 1.4.1
     - 1.4.2
@@ -3128,7 +3127,6 @@ m_ResolvedPackages:
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0
-    - 1.6.1
     verified: 1.4.11
   dependencies:
   - name: com.unity.mathematics

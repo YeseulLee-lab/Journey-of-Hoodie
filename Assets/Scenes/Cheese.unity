@@ -18020,7 +18020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348384030
@@ -44884,7 +44884,7 @@ MonoBehaviour:
   amount1Text: {fileID: 820275241}
   amount2Text: {fileID: 1215655531}
   recipes:
-  - {fileID: 11400000, guid: 04d2e01e0fb440a468f7503e9ca03649, type: 2}
+  - {fileID: 11400000, guid: af7d772752844e04295359cf0d012c6f, type: 2}
   - {fileID: 11400000, guid: 04d2e01e0fb440a468f7503e9ca03649, type: 2}
   - {fileID: 11400000, guid: f3294f2075bff8e4b830772a0d6c864f, type: 2}
   - {fileID: 11400000, guid: 2a9fbf9f1afc50b4590f847fd82e33e6, type: 2}
