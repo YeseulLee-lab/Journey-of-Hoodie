@@ -62,7 +62,7 @@ public class IcePlayer : MonoBehaviour
         // else{
         //     ButtonAlert = GameObject.Find("Canvas").transform.Find("BubbleWhiteSmall2").gameObject;            
         // }
-        Darker = GameObject.Find("Darker");
+        Darker = GameObject.Find("Canvas").transform.Find("Darker").gameObject;
         EnterPanel = Darker.transform.Find("EnterPanel").gameObject;
         textpudding = Darker.transform.Find("Textpudding").gameObject;
         textbread = Darker.transform.Find("Textbread").gameObject;
@@ -108,6 +108,9 @@ public class IcePlayer : MonoBehaviour
         if(Input.GetButtonDown("Cancel"))
         {
             Pause.SetActive(!Pause.activeSelf);
+            if(Darker.activeSelf == true){
+                Pause.SetActive(false);
+            }
         }
 
         data = SavePlayerPos.LoadPlayer();
@@ -129,9 +132,9 @@ public class IcePlayer : MonoBehaviour
             Move();
         }
 
-        if(EnterPanel.activeSelf == true){
-            Pause.SetActive(false);
-        }
+        // if(EnterPanel.activeSelf == true){
+        //     Pause.SetActive(false);
+        // }
         
 //        Debug.Log(gameObject.name);
 
@@ -149,7 +152,8 @@ public class IcePlayer : MonoBehaviour
                         if(hit.transform.gameObject.tag == "Building"){
                             Darker.GetComponent<Image>().enabled = true;
                             Darker.SetActive(true);
-                            EnterPanel.SetActive(true);                            townName.transform.gameObject.SetActive(true);
+                            EnterPanel.SetActive(true);                            
+                            townName.transform.gameObject.SetActive(true);
                             textpudding.SetActive(true);
                             textbread.SetActive(false);
                             textcheese.SetActive(false);
@@ -197,9 +201,11 @@ public class IcePlayer : MonoBehaviour
     }
 
     [PunRPC]
-    void Sceneunify(string townname, GameObject SaveManager){
+    void Sceneunify(string townname){
+        Debug.Log(" 불려지는중");
         SceneManager.LoadScene(townname);
-        DontDestroyOnLoad(SaveManager);        
+        DontDestroyOnLoad(GameObject.Find("SaveManager"));    
+        //PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]

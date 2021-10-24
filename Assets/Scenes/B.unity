@@ -954,6 +954,8 @@ MonoBehaviour:
   icecolorMint: {fileID: 8830196273332348141, guid: 62f73b70acc1dc74c8d125be7b9e80eb,
     type: 3}
   icekind: 
+  othericekind: 
+  Player: []
 --- !u!1 &486523660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &536995926
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1176,6 +1178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TownName: {fileID: 619724633}
+  MultiPlayer: []
 --- !u!1 &537165915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,6 +1714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TownName: {fileID: 0}
+  MultiPlayer: []
 --- !u!224 &700676455 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8749915467737257458, guid: c1eb826d7a27b5641a56c84d13f0665a,

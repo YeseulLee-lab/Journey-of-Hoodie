@@ -14,6 +14,7 @@ public class EnterTown : MonoBehaviour
     GameObject breadpercent;
     GameObject cheesepercent;
     GameObject percentManager;
+    public GameObject[] MultiPlayer;
     void Start()
     {
         //playerPosData = FindObjectOfType<SavePlayerPos>();
@@ -33,6 +34,8 @@ public class EnterTown : MonoBehaviour
     }
 
     void Update(){
+        MultiPlayer = GameObject.FindGameObjectsWithTag("Player");
+
         if(gameObject.activeSelf == true){
             if(Input.GetButtonDown("Cancel")){
                 gameObject.SetActive(false);
@@ -41,8 +44,8 @@ public class EnterTown : MonoBehaviour
                 // playerPosData.PlayerPosSave();
                 SavePlayerPos.SavePlayer(Player);
                 if(TownName.text == "푸딩마을"){
-                    if(null != Player.PV){
-                        Player.PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "Pudding", percentManager);
+                    if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "Pudding");
                     }
                     SceneManager.LoadScene("Pudding");
                     DontDestroyOnLoad(percentManager);

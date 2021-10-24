@@ -34,11 +34,12 @@ public class ColorChange : MonoBehaviour
     void Update()
     {
         Player = GameObject.FindGameObjectsWithTag("Player");
-        GameObject.Find("MultiPlayer(Clone)").GetComponent<IcePlayer>().PV.RPC("getColor", RpcTarget.Others, icekind);
 
         if(SceneManager.GetActiveScene().name == "B"){
             if(null != GameObject.Find("MultiPlayer(Clone)"))
             {
+                GameObject.Find("MultiPlayer(Clone)").GetComponent<IcePlayer>().PV.RPC("getColor", RpcTarget.Others, icekind);
+                
                 if(icekind == "Mint"){
                     Player[0].transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
                 }
