@@ -26,20 +26,51 @@ public class ColorChange : MonoBehaviour
     void Update()
     {
         if(SceneManager.GetActiveScene().name == "B"){
+            if(null != GameObject.Find("MultiPlayer(Clone)")){
+                if(icekind == "Mint"){
+                    GameObject.Find("MultiPlayer(Clone)").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
+                }
+                else if(icekind == "Choco"){
+                    GameObject.Find("MultiPlayer(Clone)").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
+                }
+            }
+            else
+            {
+                if(icekind == "Mint"){
+                    GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
+                }
+                else if(icekind == "Choco"){
+                    GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
+                }
+            }
+        }
+        else
+        {
+            if(null != GameObject.Find("MultiPlayer(Clone)")){
+                if(icekind == "Mint"){
+                    GameObject.Find("TownMultiPlayer(Clone)").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
+                }
+                else if(icekind == "Choco"){
+                    GameObject.Find("TownMultiPlayer(Clone)").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
+                }
+            }
+            else
+            {
+                if(icekind == "Mint"){
+                    GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
+                }
+                else if(icekind == "Choco"){
+                    GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
+                }
+            }
+        }
+        /*else{
             if(icekind == "Mint"){
                 GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
             }
             else if(icekind == "Choco"){
                 GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
             }
-        }
-        else{
-            if(icekind == "Mint"){
-                GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorMint;
-            }
-            else if(icekind == "Choco"){
-                GameObject.Find("Player").transform.Find("OilTank001").gameObject.GetComponent<SkinnedMeshRenderer>().material = icecolorChoco;
-            }
-        }
+        }*/
     }
 }
