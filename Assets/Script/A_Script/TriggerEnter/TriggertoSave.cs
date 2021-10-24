@@ -20,7 +20,7 @@ public class TriggertoSave : MonoBehaviour
     void Update()
     {
         if(AlertPanel.activeSelf == true){
-            if (Input.GetKeyDown(KeyCode.Space)){
+            if (Input.GetButtonDown("Enter")){
                 AlertPanel.SetActive(false);
             }
         }  

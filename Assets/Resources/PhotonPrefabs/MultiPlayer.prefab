@@ -719,6 +719,7 @@ MonoBehaviour:
   townName: {fileID: 0}
   position: {x: 0, y: 0, z: 0}
   PV: {fileID: 0}
+  Pause: {fileID: 0}
   Player: {fileID: 0}
 --- !u!114 &-7461760193435898665
 MonoBehaviour:

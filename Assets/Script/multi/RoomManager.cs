@@ -37,12 +37,12 @@ public class RoomManager : MonoBehaviourPunCallbacks//다른 포톤 반응 받�
 
     void OnSceneLoaded(Scene scene, LoadSceneMode load)
     {
-        if (scene.buildIndex == 1)//게임씬이면. 0은 현재 시작메뉴 씬이다. 
+        if (scene.buildIndex == 5)//게임씬이면. 0은 현재 시작메뉴 씬이다. 
         {
             PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, Quaternion.identity);
             //포톤 프리펩에 있는 플레이어 매니저를 저 위치에 저 각도로 만들어주기
         }
-        else if (scene.buildIndex == 2)//게임씬이면. 0은 현재 시작메뉴 씬이다. 
+        else if (scene.buildIndex == 6)//게임씬이면. 0은 현재 시작메뉴 씬이다. 
         {
             PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), Vector3.zero, Quaternion.identity);
             //포톤 프리펩에 있는 플레이어 매니저를 저 위치에 저 각도로 만들어주기
