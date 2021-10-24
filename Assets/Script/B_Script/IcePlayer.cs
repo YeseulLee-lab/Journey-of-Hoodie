@@ -201,4 +201,12 @@ public class IcePlayer : MonoBehaviour
         SceneManager.LoadScene(townname);
         DontDestroyOnLoad(SaveManager);        
     }
+
+    [PunRPC]
+    void getColor(string icekind)
+    {
+        //Debug.Log("불려지니");
+        GameObject.Find("SaveManager").GetComponent<ColorChange>().othericekind = icekind;
+    }
+
 }
