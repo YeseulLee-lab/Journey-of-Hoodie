@@ -43,6 +43,7 @@ public class MapIcePlayer : MonoBehaviour
     public PhotonView PV;
     [SerializeField] GameObject Player;
     public StateSave stateSave;
+    GameObject[] MultiPlayer;
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -118,6 +119,7 @@ public class MapIcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MultiPlayer = GameObject.FindGameObjectsWithTag("Player");
         if(inventoryUI.activeSelf == true && weaponCreator.activeSelf == true){
             if(Input.GetButtonDown("Cancel")){
                 weaponCreator.SetActive(false);
@@ -207,7 +209,8 @@ public class MapIcePlayer : MonoBehaviour
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
-                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
                                         }
                                     }                         
                         }
@@ -262,7 +265,8 @@ public class MapIcePlayer : MonoBehaviour
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
-                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
                                         }
                                     }                         
                         }
@@ -314,7 +318,8 @@ public class MapIcePlayer : MonoBehaviour
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
                                         if(null != PV){
-                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercentmid, Allpercent);
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
                                         }
                                     }
                                 
@@ -386,6 +391,10 @@ public class MapIcePlayer : MonoBehaviour
                                         percent += 17;
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
+                                        if(null != PV){
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                        }
                                     }
                                 
                             
@@ -434,6 +443,10 @@ public class MapIcePlayer : MonoBehaviour
                                         percent += 17;
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
+                                        if(null != PV){
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                        }
                                     }
                                 
                             
@@ -482,6 +495,10 @@ public class MapIcePlayer : MonoBehaviour
                                         percent += 17;
                                         Allpercentmid = Allpercentmid + 17;
                                         Allpercent = Mathf.Round(Allpercentmid/3);
+                                        if(null != PV){
+                                            PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("percentsync", RpcTarget.All, percent, Allpercent, Allpercentmid);
+                                        }
                                     }
                                 
                             
@@ -572,23 +589,12 @@ public class MapIcePlayer : MonoBehaviour
     }
 
     [PunRPC]
-    void percentsync(int percent, int Allpercentmid, int Allperent)
+    void percentsync(int percent, float Allpercent, float Allpercentmid)
     {
-        if(!PV.IsMine){
-            gameObject.GetComponent<MapIcePlayer>().percent = percent;
-            gameObject.GetComponent<MapIcePlayer>().Allpercentmid = Allpercentmid;
-            gameObject.GetComponent<MapIcePlayer>().Allpercent = Allpercent;
-        }
+        gameObject.GetComponent<MapIcePlayer>().percent = percent;
+        gameObject.GetComponent<MapIcePlayer>().Allpercent = Allpercent;
+        gameObject.GetComponent<MapIcePlayer>().Allpercentmid = Allpercentmid;
     }
-
-    /*
-
-    [PunRPC]
-    void WreckTrue(bool b){
-        Debug.Log(("3불려지는 중"));
-        hit.transform.gameObject.GetComponent<BreakBuilding>().BuildingWreck.SetActive(b);        
-    }*/
-
     
     [PunRPC]
     void smallItemMulti(bool b){
@@ -618,5 +624,41 @@ public class MapIcePlayer : MonoBehaviour
             gameObject.transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("MediumSpoon3D").gameObject.SetActive(false);
             gameObject.transform.Find("Bone002").transform.Find("Bone009").transform.Find("Bone030").transform.Find("Fork (1)").gameObject.SetActive(true);                     
         }
+    }
+
+    [PunRPC]
+    void EnterB(string b)
+    {
+        Debug.Log("비 불려지는중");
+        SceneManager.LoadScene(b);
+        DontDestroyOnLoad(GameObject.Find("DeleteTimeline"));
+        //PhotonNetwork.AutomaticallySyncScene = true;
+    }
+
+    [PunRPC]
+    void BpercentSyncp(int percent, float Allpercent, float Allpercentmid)
+    {
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = Allpercent;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = Allpercentmid;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = percent;
+        //PhotonNetwork.AutomaticallySyncScene = true;
+    }
+
+    [PunRPC]
+    void BpercentSyncb(int percent, float Allpercent, float Allpercentmid)
+    {
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = Allpercent;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = Allpercentmid;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 = percent;
+        //PhotonNetwork.AutomaticallySyncScene = true;
+    }
+
+    [PunRPC]
+    void BpercentSyncc(int percent, float Allpercent, float Allpercentmid)
+    {
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = Allpercent;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = Allpercentmid;
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 = percent;
+        //PhotonNetwork.AutomaticallySyncScene = true;
     }
 }

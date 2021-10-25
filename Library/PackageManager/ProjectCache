@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637706012735625608
+      ticks: 637706798064075306
     m_Hash: 14654477
   m_LockFileStatus:
     m_FilePath: C:/Unity/Journey of Hoodie/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637706012735625608
+      ticks: 637706798064075306
     m_Hash: 1826189357
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -125,6 +125,8 @@ m_ResolvedPackages:
     - 1.11.2
     - 1.12.5
     - 1.13.5
+    - 1.14.1
+    - 1.15.1
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -147,6 +149,8 @@ m_ResolvedPackages:
     - 1.11.2
     - 1.12.5
     - 1.13.5
+    - 1.14.1
+    - 1.15.1
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -466,12 +470,14 @@ m_ResolvedPackages:
     - 1.1.26
     - 1.1.27
     - 1.1.29
+    - 1.1.30
     compatible:
     - 1.1.24
     - 1.1.26
     - 1.1.27
     - 1.1.29
-    verified: 1.1.29
+    - 1.1.30
+    verified: 1.1.30
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -755,23 +761,27 @@ m_ResolvedPackages:
     - 1.5.4
     - 1.5.5
     - 1.5.6
+    - 1.5.7
     - 1.6.0-pre.1
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0-pre.5
     - 1.6.1
     - 1.6.2
+    - 1.6.3
     compatible:
     - 1.5.4
     - 1.5.5
     - 1.5.6
+    - 1.5.7
     - 1.6.0-pre.1
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0-pre.5
     - 1.6.1
     - 1.6.2
-    verified: 1.5.6
+    - 1.6.3
+    verified: 1.5.7
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -3099,6 +3109,7 @@ m_ResolvedPackages:
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0
+    - 1.6.1
     compatible:
     - 1.4.1
     - 1.4.2
@@ -3127,6 +3138,7 @@ m_ResolvedPackages:
     - 1.6.0-pre.3
     - 1.6.0-pre.4
     - 1.6.0
+    - 1.6.1
     verified: 1.4.11
   dependencies:
   - name: com.unity.mathematics

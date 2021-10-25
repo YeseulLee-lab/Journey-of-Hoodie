@@ -45,26 +45,23 @@ public class EnterTown : MonoBehaviour
                 SavePlayerPos.SavePlayer(Player);
                 if(TownName.text == "푸딩마을"){
                     if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
-                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "Pudding");
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.All, "Pudding");
                     }
                     SceneManager.LoadScene("Pudding");
-                    DontDestroyOnLoad(percentManager);
                     Destroy(DeleteManager);
                 }
                 else if(TownName.text == "빵마을"){
-                    if(null != Player.PV){
-                        Player.PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "Bread", percentManager);
+                    if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.All, "Bread");
                     }
                     SceneManager.LoadScene("Bread");
-                    DontDestroyOnLoad(percentManager);
                     Destroy(DeleteManager);
                 }
                 else if(TownName.text == "치즈마을"){
-                    if(null != Player.PV){
-                        Player.PV.RPC("Sceneunify", Photon.Pun.RpcTarget.Others, "cheese", percentManager);
+                    if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.All, "Cheese");
                     }
                     SceneManager.LoadScene("Cheese");
-                    DontDestroyOnLoad(percentManager);
                     Destroy(DeleteManager);
                 }
             }

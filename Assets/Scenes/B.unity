@@ -881,7 +881,6 @@ GameObject:
   m_Component:
   - component: {fileID: 460872952}
   - component: {fileID: 460872951}
-  - component: {fileID: 460872950}
   - component: {fileID: 460872953}
   m_Layer: 0
   m_Name: SaveManager
@@ -890,22 +889,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &460872950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460872949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4a3697858d1154bbfe812fc1de47ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DeleteManager: {fileID: 0}
-  Timeline: {fileID: 0}
-  Camera: {fileID: 0}
-  TalkPanel: {fileID: 0}
 --- !u!114 &460872951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,6 +939,9 @@ MonoBehaviour:
   icekind: 
   othericekind: 
   Player: []
+  MyPlayer: {fileID: 0}
+  OtherPlayer: {fileID: 0}
+  state: 1
 --- !u!1 &486523660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,6 +1713,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1922910699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &731154679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731154680}
+  m_Layer: 0
+  m_Name: SpawnPositionCheese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731154680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731154679}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -4.24, y: -2.3, z: 4.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &769312911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,13 +2500,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044414541}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 3.84, y: -2.3, z: -8.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1065474569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,6 +3312,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1eb826d7a27b5641a56c84d13f0665a, type: 3}
+--- !u!1 &1116703420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116703421}
+  m_Layer: 0
+  m_Name: SpawnPositionBread
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1116703421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116703420}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 4.18, y: -2.3, z: 5.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1157084631
 GameObject:
   m_ObjectHideFlags: 0
@@ -4023,7 +4069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1361530561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4039,7 +4085,6 @@ MonoBehaviour:
   DeleteManager: {fileID: 0}
   Timeline: {fileID: 0}
   Camera: {fileID: 0}
-  TalkPanel: {fileID: 0}
 --- !u!4 &1361530562
 Transform:
   m_ObjectHideFlags: 0
@@ -4607,6 +4652,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561546246}
   m_CullTransparentMesh: 1
+--- !u!1 &1660633993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660633994}
+  m_Layer: 0
+  m_Name: SpawnPositionPudding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1660633994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660633993}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 18.37, y: -2.3, z: 5.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1663991422
 GameObject:
   m_ObjectHideFlags: 0
@@ -6773,7 +6848,7 @@ PrefabInstance:
     - target: {fileID: 3628779491403180217, guid: ba9773efc696c7c48a44b423d4b10284,
         type: 3}
       propertyPath: m_Name
-      value: Cheese
+      value: CheeseB
       objectReference: {fileID: 0}
     - target: {fileID: 3628779491403180217, guid: ba9773efc696c7c48a44b423d4b10284,
         type: 3}
@@ -7274,7 +7349,7 @@ PrefabInstance:
     - target: {fileID: 9089130810016605130, guid: 045fd8d37de7ed846bb669b5fcd740df,
         type: 3}
       propertyPath: m_Name
-      value: Bread
+      value: BreadB
       objectReference: {fileID: 0}
     - target: {fileID: 9089130810016605130, guid: 045fd8d37de7ed846bb669b5fcd740df,
         type: 3}
@@ -7382,7 +7457,7 @@ PrefabInstance:
     - target: {fileID: 8259082635244564844, guid: 86c0ae398272902419099c3c8005057b,
         type: 3}
       propertyPath: m_Name
-      value: Pudding
+      value: PuddingB
       objectReference: {fileID: 0}
     - target: {fileID: 8259082635244564844, guid: 86c0ae398272902419099c3c8005057b,
         type: 3}

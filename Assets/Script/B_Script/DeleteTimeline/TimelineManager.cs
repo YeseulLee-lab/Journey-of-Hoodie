@@ -7,7 +7,6 @@ public class TimelineManager : MonoBehaviour
     public GameObject DeleteManager;
     public GameObject Timeline;
     public GameObject Camera;
-    public GameObject TalkPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +20,7 @@ public class TimelineManager : MonoBehaviour
     void Update()
     {
         if (null != DeleteManager){
-            if (DeleteManager.activeSelf == true){
+            if (gameObject.activeSelf == true){
                 Timeline.SetActive(false);
                 Camera.SetActive(false);
             }

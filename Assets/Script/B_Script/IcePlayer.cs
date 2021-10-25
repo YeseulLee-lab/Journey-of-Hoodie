@@ -32,6 +32,7 @@ public class IcePlayer : MonoBehaviour
     public PhotonView PV;
     public GameObject Pause;
     [SerializeField] GameObject Player;
+    GameObject Camera;
     //SavePlayerPos playerPosData;
     void Awake()
     {
@@ -69,6 +70,7 @@ public class IcePlayer : MonoBehaviour
         textcheese = Darker.transform.Find("Textcheese").gameObject;
         townName = Darker.transform.Find("TownName").gameObject.GetComponent<Text>();
         Pause = GameObject.Find("Canvas").transform.Find("Pause").gameObject;
+        Camera = GameObject.Find("Camera");
 
         controller = GetComponent<CharacterController>();
 
@@ -105,6 +107,16 @@ public class IcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PV.IsMine && Camera.activeSelf == true){
+            PV.RPC("TimelineManager", RpcTarget.Others, false);                      
+        }
+        
+        
+        if(PV.IsMine && Camera.activeSelf == false)
+        {
+            PV.RPC("TimelineManager", RpcTarget.Others, true);   
+        }
+
         if(Input.GetButtonDown("Cancel"))
         {
             Pause.SetActive(!Pause.activeSelf);
@@ -204,8 +216,8 @@ public class IcePlayer : MonoBehaviour
     void Sceneunify(string townname){
         Debug.Log(" 불려지는중");
         SceneManager.LoadScene(townname);
-        DontDestroyOnLoad(GameObject.Find("SaveManager"));    
-        //PhotonNetwork.AutomaticallySyncScene = true;
+        Destroy(GameObject.Find("DeleteTimeline"));
+       // PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
@@ -215,4 +227,9 @@ public class IcePlayer : MonoBehaviour
         GameObject.Find("SaveManager").GetComponent<ColorChange>().othericekind = icekind;
     }
 
+    [PunRPC]
+    void TimelineManager(bool b)
+    {
+        gameObject.SetActive(b);
+    }
 }

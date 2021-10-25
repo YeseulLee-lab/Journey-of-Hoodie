@@ -45,6 +45,7 @@ public class icecreamButton : MonoBehaviour
             icenicknameObject.GetComponent<nicknameObject>().icenickname = "아이스";
             DontDestroyOnLoad(icenicknameObject);
             SceneManager.LoadScene("B");
+           // SceneManager.LoadScene("MultiChoice");
         }
     }
 }

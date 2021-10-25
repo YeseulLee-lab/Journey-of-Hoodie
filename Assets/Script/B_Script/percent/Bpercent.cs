@@ -15,8 +15,16 @@ public class Bpercent : MonoBehaviour
     public float Allpercent;
     public float Allpercentmid;
     public bool state;
-    //public Text townName;
-
+    public static Bpercent Instance;
+    void Awake() {
+        if (Instance)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+        Instance = this;
+    }
     void Start()
     {
         percent1 = GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1;
