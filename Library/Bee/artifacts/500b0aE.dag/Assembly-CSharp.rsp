@@ -422,7 +422,6 @@
 "Assets/Script/B_Script/SaveData.cs"
 "Assets/Script/B_Script/SavePlayerPos.cs"
 "Assets/Script/B_Script/Select/SelectMod.cs"
-"Assets/Script/B_Script/SpawnPosition.cs"
 "Assets/Script/B_Script/textChange.cs"
 "Assets/Script/B_Script/Timeline/SubtitleBehaviour.cs"
 "Assets/Script/B_Script/Timeline/SubtitleClip.cs"

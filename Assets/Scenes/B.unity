@@ -2559,7 +2559,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044414542}
-  - component: {fileID: 1044414543}
   m_Layer: 0
   m_Name: SpawnPosition
   m_TagString: Untagged
@@ -2581,23 +2580,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1044414543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044414541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2cf0d5506d1339478303300069fdf88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpawnPositionList:
-  - {fileID: 1044414541}
-  - {fileID: 1660633993}
-  - {fileID: 1116703420}
-  - {fileID: 731154679}
 --- !u!1 &1065474569
 GameObject:
   m_ObjectHideFlags: 0

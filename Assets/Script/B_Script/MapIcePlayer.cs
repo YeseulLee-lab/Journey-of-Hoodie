@@ -628,60 +628,48 @@ public class MapIcePlayer : MonoBehaviour
     [PunRPC]
     void EnterB(string b)
     {
-        if(!PV.IsMine){
-            Debug.Log("비 불려지는중");
-            GameObject.FindWithTag("Player").GetComponent<SaveAndLoad>().Save();
-            GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
-            if(PhotonNetwork.IsMasterClient){
-                SceneManager.LoadScene(b);            
-            }
-            DontDestroyOnLoad(GameObject.Find("DeleteTimeline"));
+        Debug.Log("비 불려지는중");
+        GameObject.FindWithTag("Player").GetComponent<SaveAndLoad>().Save();
+        GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
+        if(PhotonNetwork.IsMasterClient){
+            SceneManager.LoadScene(b);            
         }
+        DontDestroyOnLoad(GameObject.Find("DeleteTimeline"));
         //PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
     void BpercentSyncp(int percent)
     {
-        if(!PV.IsMine){
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = percent;
-        }
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = percent;
         //PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
     void BpercentSyncb(int percent)
     {
-        if(!PV.IsMine){
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 = percent;
-        }
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 = percent;
         //PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
     void BpercentSyncc(int percent)
     {
-        if(!PV.IsMine){
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 = percent;
-        }
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().percent3 = percent;
         //PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
     void BAllpercentSync(float Allpercent)
     {
-        if(!PV.IsMine){
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = Allpercent;
-        }
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = Allpercent;
         //PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     [PunRPC]
     void BAllpercentmidSync(float Allpercentmid)
     {
-        if(!PV.IsMine){
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = Allpercentmid;
-        }
+        GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = Allpercentmid;
         //PhotonNetwork.AutomaticallySyncScene = true;
     }
 }
