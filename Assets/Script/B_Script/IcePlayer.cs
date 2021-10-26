@@ -70,7 +70,7 @@ public class IcePlayer : MonoBehaviour
         textcheese = Darker.transform.Find("Textcheese").gameObject;
         townName = Darker.transform.Find("TownName").gameObject.GetComponent<Text>();
         Pause = GameObject.Find("Canvas").transform.Find("Pause").gameObject;
-        Camera = GameObject.Find("Camera");
+        Camera = GameObject.Find("CameraCheckParent").transform.Find("CameraCheck").gameObject;
 
         controller = GetComponent<CharacterController>();
 
@@ -107,14 +107,15 @@ public class IcePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PV.IsMine && Camera.activeSelf == true){
-            PV.RPC("TimelineManager", RpcTarget.Others, false);                      
-        }
-        
-        
-        if(PV.IsMine && Camera.activeSelf == false)
-        {
-            PV.RPC("TimelineManager", RpcTarget.Others, true);   
+        if(gameObject.name != "Player"){
+            if(PV.IsMine && Camera.activeSelf == true){
+                PV.RPC("TimelineManager", RpcTarget.Others, false);                      
+            }
+            
+            if(PV.IsMine && Camera.activeSelf == false)
+            {
+                PV.RPC("TimelineManager", RpcTarget.Others, true);   
+            }
         }
 
         if(Input.GetButtonDown("Cancel"))

@@ -21,6 +21,7 @@ public class EnterBbread : MonoBehaviour
             GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
             if(null != MultiPlayer[0].GetComponent<MapIcePlayer>().PV){
                 MultiPlayer[0].GetComponent<MapIcePlayer>().PV.RPC("EnterB", Photon.Pun.RpcTarget.Others, "B");
+                MultiPlayer[0].GetComponent<MapIcePlayer>().PV.RPC("BpercentSyncb", Photon.Pun.RpcTarget.All, MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercent, MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercentmid, MultiPlayer[0].GetComponent<MapIcePlayer>().percent);
             }            
             SceneManager.LoadScene("B");
             DontDestroyOnLoad(DeleteTimeline);
@@ -28,7 +29,6 @@ public class EnterBbread : MonoBehaviour
             GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercent;// - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;
             GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercentmid;
             GameObject.Find("SaveManager").GetComponent<Bpercent>().percent2 = MultiPlayer[0].GetComponent<MapIcePlayer>().percent;
-            MultiPlayer[1].GetComponent<MapIcePlayer>().PV.RPC("BpercentSyncb", Photon.Pun.RpcTarget.All, MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercent, MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercentmid, MultiPlayer[0].GetComponent<MapIcePlayer>().percent);
         }
     }
 

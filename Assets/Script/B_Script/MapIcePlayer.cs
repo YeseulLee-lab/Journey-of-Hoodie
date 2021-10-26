@@ -49,7 +49,6 @@ public class MapIcePlayer : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         PV = GetComponent<PhotonView>();
         stateSave = GameObject.Find("StateSave").GetComponent<StateSave>();
-        
     }
     // Start is called before the first frame update
     void Start()
@@ -630,6 +629,8 @@ public class MapIcePlayer : MonoBehaviour
     void EnterB(string b)
     {
         Debug.Log("비 불려지는중");
+        GameObject.FindWithTag("Player").GetComponent<SaveAndLoad>().Save();
+        GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
         SceneManager.LoadScene(b);
         DontDestroyOnLoad(GameObject.Find("DeleteTimeline"));
         //PhotonNetwork.AutomaticallySyncScene = true;

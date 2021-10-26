@@ -131,6 +131,7 @@
      <Compile Include="Assets\Script\B_Script\percent\cheeseTrigger.cs" />
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleClip.cs" />
      <Compile Include="Assets\Script\A_Script\spawnTRG.cs" />
+     <Compile Include="Assets\Script\B_Script\respawnsingleton.cs" />
      <Compile Include="Assets\Script\Login\SignUpServer.cs" />
      <Compile Include="Assets\Script\B_Script\percent\Bpercent.cs" />
      <Compile Include="Assets\Script\B_Script\PlayerData.cs" />
@@ -150,7 +151,7 @@
      <Compile Include="Assets\Script\B_Script\Timeline\SubtitleBehaviour.cs" />
      <Compile Include="Assets\Script\A_Script\NPCFollow\NpcPet3.cs" />
      <Compile Include="Assets\Script\B_Script\textChange.cs" />
-     <Compile Include="Assets\Script\B_Script\respawnsingleton.cs" />
+     <Compile Include="Assets\Script\A_Script\Skip.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

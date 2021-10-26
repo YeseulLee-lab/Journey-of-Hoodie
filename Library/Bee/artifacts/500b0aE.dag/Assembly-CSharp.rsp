@@ -368,6 +368,7 @@
 "Assets/Script/A_Script/Quest/QuestScript.cs"
 "Assets/Script/A_Script/Restore/RestoreFirst.cs"
 "Assets/Script/A_Script/Restore/RestoreHouse.cs"
+"Assets/Script/A_Script/Skip.cs"
 "Assets/Script/A_Script/spawnTRG.cs"
 "Assets/Script/A_Script/Talk/ObjData.cs"
 "Assets/Script/A_Script/Talk/TalkManager.cs"

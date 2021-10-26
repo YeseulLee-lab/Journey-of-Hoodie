@@ -40,6 +40,12 @@ public class RestoreFirst : MonoBehaviour
                         //     gameManager.SavedNPC --;
                         // }
                         Instantiate(DustExplosion, transform.position, transform.rotation);
+                        if(gameObject.name == "broken bridge")
+                        {
+                            Debug.Log("부러진 다리 고치기 파티클");
+                            Instantiate(DustExplosion, new Vector3(70.7f, 121.1f, 11.2f), transform.rotation);
+                        }
+                        GameManager.MyGameManager.isSavable = false;
                         Debug.Log("제발ㅃ더랑");
                         //QuestLog.MyInstance.ShowDescription(quest);
                     }

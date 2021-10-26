@@ -10,11 +10,11 @@ public class ColorChange : MonoBehaviour
     public Material icecolorMint;
     public string icekind;
     public string othericekind;
-    public GameObject[] Player;
-    public GameObject MyPlayer;
-    public GameObject OtherPlayer;
+    GameObject[] Player;
+    GameObject MyPlayer;
+    GameObject OtherPlayer;
     public bool state;
-    GameObject Camera;
+    public GameObject Camera;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +33,7 @@ public class ColorChange : MonoBehaviour
             return;
         }
 
-        Camera = GameObject.Find("Camera");
+        Camera = GameObject.Find("CameraCheckParent").transform.Find("CameraCheck").gameObject;
     }
 
     // Update is called once per frame
