@@ -35,6 +35,7 @@ public class EnterTown : MonoBehaviour
 
     void Update(){
         MultiPlayer = GameObject.FindGameObjectsWithTag("Player");
+        
 
         if(gameObject.activeSelf == true){
             if(Input.GetButtonDown("Cancel")){
@@ -45,21 +46,21 @@ public class EnterTown : MonoBehaviour
                 SavePlayerPos.SavePlayer(Player);
                 if(TownName.text == "푸딩마을"){
                     if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
-                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.All, "Pudding");
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.AllBuffered, "Pudding");
                     }
                     SceneManager.LoadScene("Pudding");
                     Destroy(DeleteManager);
                 }
                 else if(TownName.text == "빵마을"){
                     if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
-                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.All, "Bread");
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.AllBuffered, "Bread");
                     }
                     SceneManager.LoadScene("Bread");
                     Destroy(DeleteManager);
                 }
                 else if(TownName.text == "치즈마을"){
                     if(null != MultiPlayer[0].GetComponent<IcePlayer>().PV){
-                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.All, "Cheese");
+                        MultiPlayer[0].GetComponent<IcePlayer>().PV.RPC("Sceneunify", Photon.Pun.RpcTarget.AllBuffered, "Cheese");
                     }
                     SceneManager.LoadScene("Cheese");
                     Destroy(DeleteManager);

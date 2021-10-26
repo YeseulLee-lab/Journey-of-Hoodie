@@ -19,16 +19,17 @@ public class EnterBpudding : MonoBehaviour
             // PlayerPrefs.DeleteKey("TimeToLoad");
             GameObject.FindWithTag("Player").GetComponent<SaveAndLoad>().Save();
             GameObject.FindWithTag("Player").GetComponent<SaveChangeState>().Save();
-            if(null != MultiPlayer[0].GetComponent<MapIcePlayer>().PV){
-                MultiPlayer[0].GetComponent<MapIcePlayer>().PV.RPC("EnterB", Photon.Pun.RpcTarget.Others, "B");
-                MultiPlayer[0].GetComponent<MapIcePlayer>().PV.RPC("BpercentSyncp", Photon.Pun.RpcTarget.All, MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercent, MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercentmid, MultiPlayer[0].GetComponent<MapIcePlayer>().percent);
+            if(null != col.GetComponent<MapIcePlayer>().PV){
+                col.GetComponent<MapIcePlayer>().PV.RPC("EnterB", Photon.Pun.RpcTarget.OthersBuffered, "B");
+                col.GetComponent<MapIcePlayer>().PV.RPC("BAllpercentSync", Photon.Pun.RpcTarget.OthersBuffered, col.GetComponent<MapIcePlayer>().Allpercent);
+                col.GetComponent<MapIcePlayer>().PV.RPC("BAllpercentmidSync", Photon.Pun.RpcTarget.OthersBuffered, col.GetComponent<MapIcePlayer>().Allpercentmid);
+                col.GetComponent<MapIcePlayer>().PV.RPC("BpercentSyncp", Photon.Pun.RpcTarget.OthersBuffered, col.GetComponent<MapIcePlayer>().percent);
             }
             SceneManager.LoadScene("B");
             DontDestroyOnLoad(DeleteTimeline);
-            DontDestroyOnLoad(GameObject.Find("Pudding"));
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercent;// - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;   
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = MultiPlayer[0].GetComponent<MapIcePlayer>().Allpercentmid;
-            GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = MultiPlayer[0].GetComponent<MapIcePlayer>().percent;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercent = col.GetComponent<MapIcePlayer>().Allpercent;// - GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 + GameObject.Find("Player").GetComponent<MapIcePlayer>().percent;   
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().Allpercentmid = col.GetComponent<MapIcePlayer>().Allpercentmid;
+            GameObject.Find("SaveManager").GetComponent<Bpercent>().percent1 = col.GetComponent<MapIcePlayer>().percent;
         }
     }
 

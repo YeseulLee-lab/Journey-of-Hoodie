@@ -75,7 +75,7 @@ public class IcePlayer : MonoBehaviour
         controller = GetComponent<CharacterController>();
 
         if(gameObject.name == "Player"){
-            return;
+
         }
         else
         {
@@ -216,7 +216,9 @@ public class IcePlayer : MonoBehaviour
     [PunRPC]
     void Sceneunify(string townname){
         Debug.Log(" 불려지는중");
-        SceneManager.LoadScene(townname);
+        if(PhotonNetwork.IsMasterClient){
+            SceneManager.LoadScene(townname);
+        }
         Destroy(GameObject.Find("DeleteTimeline"));
        // PhotonNetwork.AutomaticallySyncScene = true;
     }

@@ -40,7 +40,7 @@ public class AllSave : MonoBehaviour
     void Update()
     {
         if(null != GameObject.Find("DataObject")){
-            if(GameObject.Find("DataObject").GetComponent<TransData>().Loadstate == true){
+            if(GameObject.Find("DataObject").GetComponent<TransData>().Loadstate == true && GameObject.Find("B") != null){
                 Load();
             }
         }

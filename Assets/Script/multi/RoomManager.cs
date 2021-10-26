@@ -8,7 +8,6 @@ using System.IO;//Path사용위에 사용
 public class RoomManager : MonoBehaviourPunCallbacks//다른 포톤 반응 받아들이기
 {
     public static RoomManager Instance;//Room Manager 스크립트를 메서드로 사용하기 위해 선언
-    GameObject spawnPositin;
 
 
     void Awake()
@@ -20,7 +19,6 @@ public class RoomManager : MonoBehaviourPunCallbacks//다른 포톤 반응 받�
         }
         DontDestroyOnLoad(gameObject);//룸매니저 나혼자면 그대로 
         Instance = this;
-        spawnPositin = GameObject.Find("SpawnPosition");
     }
 
     public override void OnEnable()
@@ -42,7 +40,7 @@ public class RoomManager : MonoBehaviourPunCallbacks//다른 포톤 반응 받�
     {
         if (scene.buildIndex == 5)//게임씬이면. 0은 현재 시작메뉴 씬이다. 
         {
-            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"), spawnPositin.transform.position, spawnPositin.transform.rotation);
+            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerManager"),Vector3.zero, Quaternion.identity);
             //포톤 프리펩에 있는 플레이어 매니저를 저 위치에 저 각도로 만들어주기
         }
         else if(scene.buildIndex == 6 || scene.buildIndex == 7 || scene.buildIndex == 8)
