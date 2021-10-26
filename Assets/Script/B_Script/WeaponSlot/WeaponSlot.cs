@@ -90,6 +90,9 @@ public class WeaponSlot : MonoBehaviour
             }
             else if(select.GetComponent<SelectMod>().destroying == false)
             {
+                small.SetActive(false);
+                medium.SetActive(false);
+                fork.SetActive(false);
                 if(item.id == 1000)
                 {
                     Building1.SetActive(true);

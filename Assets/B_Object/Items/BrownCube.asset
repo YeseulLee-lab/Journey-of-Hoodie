@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: BrownCube
   id: 4
-  icon: {fileID: 21300000, guid: c32770157a185444fabbbcd55925396b, type: 3}
+  icon: {fileID: 21300000, guid: aee60dd4282bc1b46bdb830c737d8d34, type: 3}
   amount: 0
   isDefaultItem: 0
   isStackable: 0

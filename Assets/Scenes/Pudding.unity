@@ -38202,6 +38202,101 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1923908444}
     m_Modifications:
+    - target: {fileID: 484403858311654465, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858423023713, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858533697829, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858611372178, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858634541461, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858648387308, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858828984824, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858866180309, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858874722871, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858919914819, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403858941299556, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859035951324, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859118099852, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859206087001, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859309045919, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859387498534, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859409600031, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859481960231, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
+    - target: {fileID: 484403859581976552, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
     - target: {fileID: 2524597931606666459, guid: c1eb826d7a27b5641a56c84d13f0665a,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -38232,6 +38327,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5533301625647055629, guid: c1eb826d7a27b5641a56c84d13f0665a,
+        type: 3}
+      propertyPath: weaponCreator
+      value: 
+      objectReference: {fileID: 1342264224}
     - target: {fileID: 7600917612189528305, guid: c1eb826d7a27b5641a56c84d13f0665a,
         type: 3}
       propertyPath: m_AnchorMax.y

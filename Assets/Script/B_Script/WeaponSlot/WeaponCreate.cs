@@ -120,29 +120,33 @@ public class WeaponCreate : MonoBehaviour
         foreach(Recipe r in recipes)
         {
             Debug.Log("foreach 들어옴");
-
-            if(Jaeryo[0] == r.Materials[0].Item.icon && Jaeryo[1] == r.Materials[1].Item.icon)
+            
+            if(Jaeryo.Count != 0)
             {
-                Debug.Log("아이템비교" + amount1Text.text +" "+ r.Materials[0].Amount.ToString());
-
-                if(amount1Text.text == r.Materials[0].Amount.ToString() && amount2Text.text == r.Materials[1].Amount.ToString())
+                if(Jaeryo[0] == r.Materials[0].Item.icon && Jaeryo[1] == r.Materials[1].Item.icon)
                 {
-                    Debug.Log("개수비교");
-                    Result.enabled = true;
-                    Result.sprite = r.Results[0].Item.icon;
-                    WeaponInven.instance.Add(r.Results[0].Item);
-                    // Jaeryo.Clear();
+                    Debug.Log("아이템비교" + amount1Text.text +" "+ r.Materials[0].Amount.ToString());
 
-                    // for(int i = 0; i < jaeryoImage.Count; i++)
-                    // {
-                    //     jaeryoImage[i].enabled = false;
-                    //     jaeryoImage[i].sprite = null;
-                    // }
-                    // newItem.Clear();
-                    // amount1Text.text = "";
-                    // amount2Text.text = "";
+                    if(amount1Text.text == r.Materials[0].Amount.ToString() && amount2Text.text == r.Materials[1].Amount.ToString())
+                    {
+                        Debug.Log("개수비교");
+                        Result.enabled = true;
+                        Result.sprite = r.Results[0].Item.icon;
+                        WeaponInven.instance.Add(r.Results[0].Item);
+                        Jaeryo.Clear();
+
+                        for(int i = 0; i < jaeryoImage.Count; i++)
+                        {
+                            jaeryoImage[i].enabled = false;
+                            jaeryoImage[i].sprite = null;
+                        }
+                        newItem.Clear();
+                        amount1Text.text = "";
+                        amount2Text.text = "";
+                    }
                 }
             }
+            
         }
         
     }

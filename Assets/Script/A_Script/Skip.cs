@@ -8,6 +8,7 @@ public class Skip : MonoBehaviour
     // Start is called before the first frame update
 
     public static Skip Instance;
+    public bool state;
     void Awake(){
         if (Instance)
         {
@@ -16,6 +17,7 @@ public class Skip : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
         Instance = this;
+        state = true;
     }
     void Start()
     {
@@ -25,7 +27,7 @@ public class Skip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Central")
+        if(SceneManager.GetActiveScene().name == "Central" && state == false)
         {
             GameObject.Find("TimeLine").SetActive(false);
             gameObject.SetActive(false);
@@ -34,6 +36,7 @@ public class Skip : MonoBehaviour
 
     public void NextScene()
     {
+        state = false;
         SceneManager.LoadScene("Central");
     }
 }

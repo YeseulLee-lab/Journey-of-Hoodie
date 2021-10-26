@@ -32,7 +32,11 @@ public class TimelineManager : MonoBehaviour
             }
         }
         else{
-            return;
+            if(GameObject.Find("DataObject").GetComponent<TransData>().Loadstate == true){
+                Timeline.SetActive(false);
+                Camera.SetActive(false);
+                CameraCheck.SetActive(false);
+            }
         }
     }
 }

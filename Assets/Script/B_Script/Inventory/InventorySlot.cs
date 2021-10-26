@@ -7,6 +7,7 @@ public class InventorySlot : MonoBehaviour
     public Image icon;
     public Button removeButton;
     public Button ItemButton;
+    public GameObject weaponCreator;
 
     GameObject Player;
     Item item;
@@ -16,10 +17,11 @@ public class InventorySlot : MonoBehaviour
     //     icon = SaveData.instance.SeticonSave();
     // }
 
-    // void Update()
-    // {
-    //     SaveData.instance.GeticonSave(icon);
-    // }
+    void Update()
+    {
+        
+    }
+
     public void AddItem (Item newItem)
     {
         item = newItem;
@@ -58,13 +60,17 @@ public class InventorySlot : MonoBehaviour
         {
             item.Use();
             Debug.Log(item.name);
-            WeaponCreate.instance.getImageOfJaeryo(item);
+            if(weaponCreator.activeSelf == true)
+            {
+                WeaponCreate.instance.getImageOfJaeryo(item);
 
-            icon.sprite = null;
-            icon.enabled = false;
-            removeButton.interactable = false;
-            ItemButton.enabled = false;
-            Inventory.instance.Remove(item);
+                icon.sprite = null;
+                icon.enabled = false;
+                removeButton.interactable = false;
+                ItemButton.enabled = false;
+                Inventory.instance.Remove(item);
+            }
+            
         }else{
             Debug.Log("안되는디");
         }
